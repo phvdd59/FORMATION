@@ -4,6 +4,7 @@ package vdd.cyclicrotation;
  * 
  * @author philippe
  *Allangros = Allan Gros
+ *VDD PH
  */
 public class CyclicRotation {
 	public static void main(String[] args) {
