@@ -3,7 +3,7 @@ package vdd.cyclicrotation;
 /**
  * 
  * @author philippe
- *
+ *Allangros = Allan Gros
  */
 public class CyclicRotation {
 	public static void main(String[] args) {
