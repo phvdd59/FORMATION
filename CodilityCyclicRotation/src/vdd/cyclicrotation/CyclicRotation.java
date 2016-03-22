@@ -1,5 +1,10 @@
 package vdd.cyclicrotation;
 
+/**
+ * 
+ * @author philippe
+ *
+ */
 public class CyclicRotation {
 	public static void main(String[] args) {
 		CyclicRotation b = new CyclicRotation();
