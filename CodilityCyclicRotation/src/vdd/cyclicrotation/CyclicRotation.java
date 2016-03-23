@@ -6,6 +6,7 @@ package vdd.cyclicrotation;
  *Allangros = Allan Gros
  *VDD PH
  *salut FrVDD Yoloooo
+ *modif de cedric
  */
 public class CyclicRotation {
 	public static void main(String[] args) {
