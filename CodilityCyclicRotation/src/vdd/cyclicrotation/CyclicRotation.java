@@ -10,6 +10,7 @@ package vdd.cyclicrotation;
  *modif de Adeline
  *modif d'Amandine
  *modif de Floriane
+ *modif de Alexia
  */
 public class CyclicRotation {
 	public static void main(String[] args) {
