@@ -7,6 +7,7 @@ package vdd.cyclicrotation;
  *         Alexia modif de MAthias modif de Patick modif damien
  *         modif Baptiste
  *         modif Souad
+ *         modif 2 Souad 
  */
 public class CyclicRotation {
 	public static void main(String[] args) {
