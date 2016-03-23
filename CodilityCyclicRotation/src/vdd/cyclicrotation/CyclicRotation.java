@@ -5,7 +5,7 @@ package vdd.cyclicrotation;
  * @author philippe
  *Allangros = Allan Gros
  *VDD PH
- *salut FrVDD
+ *salut FrVDD Yoloooo
  */
 public class CyclicRotation {
 	public static void main(String[] args) {
@@ -19,6 +19,7 @@ public class CyclicRotation {
 	}
 
 	public int[] solution(int[] A, int K) {
+		
 		return null;
 	}
 	
