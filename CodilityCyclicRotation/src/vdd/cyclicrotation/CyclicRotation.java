@@ -20,6 +20,12 @@ public class CyclicRotation {
 		affTab(solution(a, 3));
 	}
 
+	/**
+	 * 
+	 * @param A
+	 * @param K
+	 * @return
+	 */
 	public int[] solution(int[] A, int K) {
 		int[] n = null;
 		if (A != null) {
