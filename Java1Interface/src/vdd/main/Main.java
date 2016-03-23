@@ -8,5 +8,6 @@ public class Main {
 	}
 
 	private void init() {
+
 	}
 }
