@@ -12,6 +12,7 @@ package vdd.cyclicrotation;
  *modif de Floriane
  *modif de Alexia
  *modif de MAthias
+ *modif de Patick
  */
 public class CyclicRotation {
 	public static void main(String[] args) {
