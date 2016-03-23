@@ -21,8 +21,15 @@ public class CyclicRotation {
 	}
 
 	public int[] solution(int[] A, int K) {
-
-		return null;
+		int[] n = null;
+		if (A != null) {
+			n = new int[A.length];
+			for (int i = 0; i < A.length; i++) {
+				int j = (i + K) % A.length;
+				n[j] = A[i];
+			}
+		}
+		return n;
 	}
 
 	public void affTab(int[] t) {
