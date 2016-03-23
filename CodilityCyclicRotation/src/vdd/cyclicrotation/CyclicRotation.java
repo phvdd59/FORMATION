@@ -8,6 +8,7 @@ package vdd.cyclicrotation;
  *salut FrVDD Yoloooo
  *modif de cedric
  *modif de Adeline
+ *modif d'Amandine
  */
 public class CyclicRotation {
 	public static void main(String[] args) {
