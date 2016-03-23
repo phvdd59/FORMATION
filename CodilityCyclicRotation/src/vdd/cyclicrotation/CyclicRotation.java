@@ -6,6 +6,7 @@ package vdd.cyclicrotation;
  *         cedric modif de Adeline modif d'Amandine modif de Floriane modif de
  *         Alexia modif de MAthias modif de Patick modif damien
  *         modif Baptiste
+ *         modif Souad
  */
 public class CyclicRotation {
 	public static void main(String[] args) {
