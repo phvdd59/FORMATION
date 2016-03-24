@@ -7,7 +7,6 @@ package vdd.cyclicrotation;
  *         Alexia modif de MAthias modif de Patick modif damien
  *         modif Baptiste
  *         modif Souad Erreur 20
- *         modif Souad Erreur 10
  *         modif 2 Souad 
  */
 public class CyclicRotation {
