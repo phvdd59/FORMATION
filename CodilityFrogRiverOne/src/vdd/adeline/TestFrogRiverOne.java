@@ -2,6 +2,8 @@ package vdd.adeline;
 
 import static org.junit.Assert.assertEquals;
 
+import java.util.ArrayList;
+
 import org.junit.Before;
 import org.junit.Test;
 
@@ -58,42 +60,40 @@ public class TestFrogRiverOne {
 		assertEquals(99999, reponse);
 	}
 
-	// @Test
-	// public void smallRandom() {
-	// int suite = (int) (Math.random() * 10);
-	// int cpt = 0;
-	// int x = -1;
-	// boolean[] nb = new boolean[3];
-	// ArrayList<Integer> list = new ArrayList<Integer>();
-	// boolean tout = false;
-	// while (!tout) {
-	// int val = (int) (Math.random() * nb.length);
-	// list.add(val);
-	// nb[val] = true;
-	// tout = true;
-	// for (int i = 0; i < nb.length; i++) {
-	// if (!nb[i]) {
-	// tout = false;
-	// break;
-	// }
-	// }
-	// if (tout) {
-	// x = list.size();
-	// if (cpt < suite) {
-	// tout = false;
-	// }
-	// cpt++;
-	// }
-	// }
-	// int[] a=new int[list.size()];
-	// for(int i = 0; i<list.size(); i++){
-	// a[i] = list.get(i) + 1;
-	// }
-	// assertEquals(x, frogRiverOne.solution(nb.length, a));
-	//
-	//
-	//
-	// }
+	@Test
+	public void smallRandom() {
+		int suite = (int) (Math.random() * 10);
+		int cpt = 0;
+		int x = -1;
+		boolean[] nb = new boolean[3];
+		ArrayList<Integer> list = new ArrayList<Integer>();
+		boolean tout = false;
+		while (!tout) {
+			int val = (int) (Math.random() * nb.length);
+			list.add(val);
+			nb[val] = true;
+			tout = true;
+			for (int i = 0; i < nb.length; i++) {
+				if (!nb[i]) {
+					tout = false;
+					break;
+				}
+			}
+			if (tout) {
+				x = list.size();
+				if (cpt < suite) {
+					tout = false;
+				}
+				cpt++;
+			}
+		}
+		int[] a = new int[list.size()];
+		for (int i = 0; i < list.size(); i++) {
+			a[i] = list.get(i) + 1;
+		}
+		assertEquals(x, frogRiverOne.solution(nb.length, a));
+
+	}
 
 	@Test
 	public void permutation() {
