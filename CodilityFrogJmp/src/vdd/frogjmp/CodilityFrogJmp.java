@@ -8,7 +8,17 @@ public class CodilityFrogJmp {
 	}
 
 	int solution(int X, int Y, int D) {
-		int nb = 0;
-		return nb;
+		int nbSaut = 0;
+		int d = Y - X;
+
+		if (D > 0 && X <= Y && X > 0 && Y > 0 && D < d) {
+			nbSaut = (int) Math.ceil(((double) (Y - X) / (double) D));
+		} else if (X == Y) {
+			nbSaut = 0;
+		} else if (D > (d)) {
+			nbSaut = 1;
+		}
+
+		return nbSaut;
 	}
 }
