@@ -15,8 +15,8 @@ public class PassingCard {
 	}
 
 	public int solution(int[] A) {
-		long nb = 0;
-		long n=0;
+		int nb = 0;
+		int n=0;
 		for (int i = A.length-1; i >= 0; i--) {
 			if (A[i] == 1) {
 				n++;
