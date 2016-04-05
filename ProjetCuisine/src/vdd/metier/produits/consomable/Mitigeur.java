@@ -1,4 +1,4 @@
-package vdd.metier.produits;
+package vdd.metier.produits.consomable;
 
 public class Mitigeur extends Consomable {
 

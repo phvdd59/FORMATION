@@ -1,4 +1,7 @@
-package vdd.metier.produits;
+package vdd.metier.produits.aliments;
+
+import vdd.metier.produits.Produit;
+import vdd.metier.produits.consomable.Consomable;
 
 public class Alimentaire extends Produit implements Comparable<Produit> {
 	public static int ETAT_CRU = 0;

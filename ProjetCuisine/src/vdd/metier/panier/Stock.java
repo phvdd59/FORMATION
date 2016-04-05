@@ -2,9 +2,9 @@ package vdd.metier.panier;
 
 import java.util.ArrayList;
 
-import vdd.metier.produits.Alimentaire;
-import vdd.metier.produits.Consomable;
 import vdd.metier.produits.Produit;
+import vdd.metier.produits.aliments.Alimentaire;
+import vdd.metier.produits.consomable.Consomable;
 
 public class Stock extends ArrayList<Produit> {
 	public static int NUM_STOCK = 0;
@@ -127,7 +127,7 @@ public class Stock extends ArrayList<Produit> {
 
 	@Override
 	public Produit remove(int index) {
-		// TODO Auto-generated method stub
+		
 
 		Produit e = super.get(index);
 		this.mtTotalStock -= e.getPrix();
@@ -137,7 +137,7 @@ public class Stock extends ArrayList<Produit> {
 
 	@Override
 	public boolean remove(Object o) {
-		// TODO Auto-generated method stub
+		
 		Produit e = (Produit) o;
 		this.setMtTotalStock(this.getMtTotalStock() - e.getPrix());
 		return super.remove(o);

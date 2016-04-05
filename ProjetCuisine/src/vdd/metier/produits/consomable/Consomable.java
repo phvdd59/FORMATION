@@ -1,4 +1,7 @@
-package vdd.metier.produits;
+package vdd.metier.produits.consomable;
+
+import vdd.metier.produits.Produit;
+import vdd.metier.produits.aliments.Alimentaire;
 
 public class Consomable extends Produit implements Comparable<Produit> {
 
