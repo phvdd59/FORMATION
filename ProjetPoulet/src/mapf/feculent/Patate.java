@@ -1,5 +1,7 @@
 package mapf.feculent;
 
+import java.util.ArrayList;
+
 public class Patate extends vdd.metier.Alimentaire implements Preparer {
 
 	private String etatCuisson;
@@ -12,7 +14,19 @@ public class Patate extends vdd.metier.Alimentaire implements Preparer {
 		this.etatProprete = "sale";
 	}
 
+	
+	public ArrayList<Patate> filetDePatate (int n) {
+		Patate patate = new Patate();
+		ArrayList <Patate> filetDePatate = new ArrayList <Patate>();
+		int i = 0;
+		while (i != n) {
+			filetDePatate.add(patate);
+			i++;
+		}
+		return filetDePatate;
+	}
 
+	
 	@Override
 	public void nettoyer() {
 		etatProprete = "sale";
