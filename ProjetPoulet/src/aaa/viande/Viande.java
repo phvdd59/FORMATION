@@ -1,6 +1,6 @@
 package aaa.viande;
 
-public class Viande extends vdd.metier.Alimentaire implements Volaille {
+public class Viande extends vdd.metier.Alimentaire implements ViandeGenerale {
 
 	private String etatAliment = "non préparé";
 
