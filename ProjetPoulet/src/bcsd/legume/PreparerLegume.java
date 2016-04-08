@@ -1,7 +1,5 @@
 package bcsd.legume;
 
-import vdd.metier.Alimentaire;
-
 public interface PreparerLegume {
 
 	public void laver(float poids);

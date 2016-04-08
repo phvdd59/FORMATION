@@ -30,7 +30,7 @@ public class Legume extends Alimentaire implements PreparerLegume {
 	@Override
 	public void laver(float poids) {
 		try {
-			Thread.sleep(1000);
+			Thread.sleep(1000 * ((long) poids));
 		} catch (InterruptedException e) {
 			e.printStackTrace();
 		}
@@ -40,7 +40,7 @@ public class Legume extends Alimentaire implements PreparerLegume {
 	@Override
 	public void decouper(float poids) {
 		try {
-			Thread.sleep(1000);
+			Thread.sleep((long) (1000 * poids));
 		} catch (InterruptedException e) {
 			e.printStackTrace();
 		}
@@ -50,7 +50,7 @@ public class Legume extends Alimentaire implements PreparerLegume {
 	@Override
 	public void eplucher(float poids) {
 		try {
-			Thread.sleep(1000);
+			Thread.sleep((long) (1000 * poids));
 		} catch (InterruptedException e) {
 			e.printStackTrace();
 		}
