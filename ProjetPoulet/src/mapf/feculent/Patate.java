@@ -4,16 +4,14 @@ public class Patate extends vdd.metier.Alimentaire implements Preparer {
 
 	private String etatCuisson;
 	private String etatPreparation;
-	private String etatProprete = "sale";
+	private String etatProprete;;
 
 	public Patate() {
 		super();
+		this.etatPreparation = "habillee";
+		this.etatProprete = "sale";
 	}
 
-	public Patate(String etatCuisson, String etatPreparation) {
-		this.etatCuisson = etatCuisson;
-		this.etatPreparation = etatPreparation;
-	}
 
 	@Override
 	public void nettoyer() {
