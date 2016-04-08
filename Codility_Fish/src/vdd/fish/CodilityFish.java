@@ -12,7 +12,7 @@ public class CodilityFish {
 	public void init() {
 		int[] A = { 8, 7, 3, 4, 5 };
 		int[] B = { 0, 1, 1, 0, 0 };
-		System.out.println(solution(A, B));
+		System.out.println(solution1(A, B));
 	}
 
 	public int solution(int[] A, int[] B) { // 100%
