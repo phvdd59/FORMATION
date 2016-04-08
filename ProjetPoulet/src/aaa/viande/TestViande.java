@@ -12,7 +12,7 @@ public class TestViande {
 
 	@Before
 	public void before() {
-		volaille = new Volaille();
+		volaille = new Volaille("Poulet",3.5f);
 		four=new Four();
 	}
 
@@ -50,6 +50,12 @@ public class TestViande {
 		four.prechauffer();
 		String etat=four.getEtatDuFour();
 		assertEquals("Prechauffe",etat);
+	}
+	@Test
+	public void testCuire(){
+		four.cuire(volaille);
+		String etat=four.getEtatAliment();
+		assertEquals("est cuit",etat);
 	}
 
 }
