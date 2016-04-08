@@ -57,4 +57,20 @@ public class Four extends Consommable implements Chaleur {
 		return cuit;
 	}
 
+	public String getEtatDuFour() {
+		return etatDuFour;
+	}
+
+	public void setEtatDuFour(String etatDuFour) {
+		this.etatDuFour = etatDuFour;
+	}
+
+	public String getEtatAliment() {
+		return etatAliment;
+	}
+
+	public void setEtatAliment(String etatAliment) {
+		this.etatAliment = etatAliment;
+	}
+
 }

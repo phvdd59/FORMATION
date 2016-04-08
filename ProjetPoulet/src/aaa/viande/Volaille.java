@@ -81,4 +81,12 @@ public class Volaille extends Viande implements ViandeGenerale {
 		return decoupe;
 	}
 
+	public String getEtatVolaille() {
+		return etatVolaille;
+	}
+
+	public void setEtatVolaille(String etatVolaille) {
+		this.etatVolaille = etatVolaille;
+	}
+
 }
