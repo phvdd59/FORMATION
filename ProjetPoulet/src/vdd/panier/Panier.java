@@ -19,26 +19,8 @@ public class Panier extends ArrayList<Produit> {
 		NUM_PANIER++;
 	}
 
-	public Panier(String nomDuStock, float limitePrix) {
-		this.nomDuPanier = nomDuStock;
-		NUM_PANIER++;
-	}
-
 	@Override
 	public String toString() {
 		return this.nomDuPanier;
-	}
-
-	public void setLimitePrix(float limitePrix) {
-		if (limitePrix < 0) {
-		}
-	}
-
-	public float calculSomme() {
-		float somme = 0;
-		for (int i = 0; i < size(); i++) {
-			somme += this.get(i).getPrix();
-		}
-		return somme;
 	}
 }

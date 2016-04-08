@@ -1,6 +1,6 @@
 package vdd.main;
 
-import aaa.viande.Viande;
+import vdd.personne.Personne;
 
 public class MainPoulet {
 
@@ -11,9 +11,16 @@ public class MainPoulet {
 
 	public void init() {
 
-		Viande poulet = new Viande();
-		
+		Personne philippe=new Personne("Philippe");
+		philippe.cuisine();
 
 	}
 
+	
+	public void attente(long duree) {
+		try {
+			Thread.sleep(duree);
+		} catch (InterruptedException e) {
+		}
+	}
 }
