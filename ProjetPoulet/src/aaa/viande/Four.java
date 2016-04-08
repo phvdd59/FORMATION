@@ -29,12 +29,13 @@ public class Four extends Consommable implements Chaleur {
 	public void cuire(Alimentaire aliment) {
 		if (etatAliment == "cru") {
 			etatAliment = "en cuisson";
+			float p = aliment.getPoids();
 			try {
-				Thread.sleep(10000);
+				float time = 10000 * p;
+				Thread.sleep(((long) time));
 			} catch (InterruptedException e) {
 				e.printStackTrace();
 			}
-			etatAliment = "cuit";
 		}
 	}
 

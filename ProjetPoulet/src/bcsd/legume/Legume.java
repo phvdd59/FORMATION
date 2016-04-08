@@ -19,6 +19,14 @@ public class Legume extends Alimentaire implements PreparerLegume {
 		this.estCuit = "pas cuit";
 	}
 
+	public Legume(String nom) {
+		super(nom);
+		this.estLave = "pas lavé";
+		this.estEpluche = "pas epluché";
+		this.estDecoupe = "pas decoupé";
+		this.estCuit = "pas cuit";
+	}
+
 	public Legume(String nom, float poids, String estLave, String estEpluche, String estDecoupe, String estCuit) {
 		super(nom, poids);
 		this.estLave = estLave;
@@ -30,7 +38,7 @@ public class Legume extends Alimentaire implements PreparerLegume {
 	@Override
 	public void laver(float poids) {
 		try {
-			Thread.sleep(1000 * ((long) poids));
+			Thread.sleep(1000 * ((long) getPoids()));
 		} catch (InterruptedException e) {
 			e.printStackTrace();
 		}
@@ -40,7 +48,7 @@ public class Legume extends Alimentaire implements PreparerLegume {
 	@Override
 	public void decouper(float poids) {
 		try {
-			Thread.sleep((long) (1000 * poids));
+			Thread.sleep((long) (1000 * getPoids()));
 		} catch (InterruptedException e) {
 			e.printStackTrace();
 		}
@@ -50,7 +58,7 @@ public class Legume extends Alimentaire implements PreparerLegume {
 	@Override
 	public void eplucher(float poids) {
 		try {
-			Thread.sleep((long) (1000 * poids));
+			Thread.sleep((long) (1000 * getPoids()));
 		} catch (InterruptedException e) {
 			e.printStackTrace();
 		}
