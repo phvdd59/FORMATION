@@ -2,7 +2,7 @@ package aaa.viande;
 
 public class Viande extends vdd.metier.Alimentaire implements Volaille {
 
-	private String etat = "frigo";
+	private String etatAliment = "non préparé";
 
 	public Viande() {
 		super();
@@ -10,32 +10,32 @@ public class Viande extends vdd.metier.Alimentaire implements Volaille {
 
 	@Override
 	public void deplumage() {
-		etat = "deplumage";
+		etatAliment = "deplumage";
 		try {
 			Thread.sleep(5000);
 		} catch (InterruptedException e) {
 			e.printStackTrace();
 		}
-		etat = "deplumer";
+		etatAliment = "deplumer";
 
 	}
 
 	@Override
 	public void lavage() {
-		etat = "sale";
+		etatAliment = "sale";
 		try {
 			Thread.sleep(5000);
 		} catch (InterruptedException e) {
 			e.printStackTrace();
 		}
-		etat = "propre";
+		etatAliment = "propre";
 
 	}
 
 	@Override
 	public boolean estDeplume() {
 		boolean plume = false;
-		if (etat == "deplumé") {
+		if (etatAliment == "deplumé") {
 			plume = true;
 		}
 		return plume;
@@ -44,7 +44,7 @@ public class Viande extends vdd.metier.Alimentaire implements Volaille {
 	@Override
 	public boolean estLave() {
 		boolean lave = false;
-		if (etat == "propre") {
+		if (etatAliment == "propre") {
 			lave = true;
 		}
 		return lave;
