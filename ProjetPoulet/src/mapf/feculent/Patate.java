@@ -4,6 +4,7 @@ public class Patate extends Feculent implements Preparer {
 	
 	private String etatCuisson;
 	private String etatPreparation;
+	private String etatPropete = "sale";
 	
 	public Patate() {
 		super();
