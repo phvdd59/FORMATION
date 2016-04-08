@@ -1,10 +1,6 @@
 package vdd.main;
 
-import aaa.viande.Four;
-import aaa.viande.Viande;
-import mapf.feculent.Feculent;
-import mapf.feculent.Patate;
-import mapf.feculent.PlaquesCuissonsInuduction;
+import vdd.personne.Personne;
 
 public class MainPoulet {
 
