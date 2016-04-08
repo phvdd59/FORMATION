@@ -17,9 +17,13 @@ public class Conso extends Produit implements Comparable<Produit>{
 		return qte;
 	}
 
-	public void setQte(int qte) {
-		this.qte = qte;
-	}
+    public void setQte(int qte) {
+        if (qte > 0) {
+            this.qte = qte;
+        } else {
+            this.qte = 0;
+        }
+    }
 
 	@Override
 	public float getPrix() {

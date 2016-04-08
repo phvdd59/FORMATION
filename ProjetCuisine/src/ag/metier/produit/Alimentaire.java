@@ -18,7 +18,11 @@ public class Alimentaire extends Produit implements Comparable<Produit> {
 	}
 
 	public void setPoids(float poids) {
-		this.poids = poids;
+		if (poids >= 0) {
+			this.poids = poids;
+		} else {
+			this.poids = 0;
+		}
 	}
 
 	@Override
