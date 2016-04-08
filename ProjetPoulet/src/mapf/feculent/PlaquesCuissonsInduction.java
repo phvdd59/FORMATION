@@ -51,6 +51,22 @@ public class PlaquesCuissonsInduction extends Consommable  implements aaa.viande
 		}
 		return estCuit;
 	}
+
+	public String getChaleurPlaque() {
+		return chaleurPlaque;
+	}
+
+	public void setChaleurPlaque(String chaleurPlaque) {
+		this.chaleurPlaque = chaleurPlaque;
+	}
+
+	public String getEtatAliment() {
+		return etatAliment;
+	}
+
+	public void setEtatAliment(String etatAliment) {
+		this.etatAliment = etatAliment;
+	}
 	
 	
 
