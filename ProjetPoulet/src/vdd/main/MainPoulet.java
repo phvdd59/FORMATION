@@ -15,11 +15,8 @@ public class MainPoulet {
 
 	public void init() {
 
-		Viande poulet = new Viande();
-		Feculent patate=new Patate();
-		Four four=new Four();
-		PlaquesCuissonsInuduction plaque=new PlaquesCuissonsInuduction();
-		
+		Personne philippe=new Personne("Philippe");
+		philippe.cuisine();
 
 	}
 
