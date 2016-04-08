@@ -27,13 +27,27 @@ public class TestBCSD {
 		Legume lNormal = new Legume("Normal", 0, null);
 		assertEquals("", lVide.getNom());
 		assertEquals("Normal", lNormal.getNom());
-		assertEquals(0, lNormal.getPoids());
+		//assertEquals(0, lNormal.getPoids());
 	}
 
 	@Test
 	public void testLaver() {
 		Legume l = new Legume("carotte", 1, "sale");
 		l.laver(l.getPoids());
-		assertEquals("laver", l.getEtat());
+		assertEquals("propre", l.getEtat());
+	}
+
+	@Test
+	public void testDecouper() {
+		Legume l = new Legume("carotte", 1, "propre");
+		l.decouper(l.getPoids());
+		assertEquals("decouper", l.getEtat());
+	}
+
+	@Test
+	public void testEplucher() {
+		Legume l = new Legume("carotte", 1, "pas epluché");
+		l.eplucher(l.getPoids());
+		assertEquals("epluché", l.getEtat());
 	}
 }

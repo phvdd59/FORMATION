@@ -57,7 +57,7 @@ public class Legume extends Alimentaire implements PreparerLegume {
 		} catch (InterruptedException e) {
 			e.printStackTrace();
 		}
-		System.out.println("epluché");
+		this.etat = "epluché";
 	}
 
 	public String getEtat() {
