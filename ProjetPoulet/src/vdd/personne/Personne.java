@@ -4,7 +4,7 @@ import aaa.viande.Four;
 import aaa.viande.Viande;
 import mapf.feculent.Feculent;
 import mapf.feculent.Patate;
-import mapf.feculent.PlaquesCuissonsInuduction;
+import mapf.feculent.PlaquesCuissonsInduction;
 import vdd.panier.Panier;
 
 public class Personne {
@@ -27,7 +27,7 @@ public class Personne {
 		Viande poulet = new Viande();
 		Feculent patate=new Patate();
 		Four four=new Four();
-		PlaquesCuissonsInuduction plaque=new PlaquesCuissonsInuduction();
+		PlaquesCuissonsInduction plaque=new PlaquesCuissonsInduction();
 	}
 
 	public String getNom() {
