@@ -12,8 +12,14 @@ public class MainPoulet {
 	public void init() {
 
 		Viande poulet = new Viande();
-		
 
 	}
 
+	
+	public void attente(long duree) {
+		try {
+			Thread.sleep(duree);
+		} catch (InterruptedException e) {
+		}
+	}
 }
