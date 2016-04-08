@@ -26,8 +26,8 @@ public class Personne {
 
 	public void cuisine() {
 		Viande poulet = new Viande();
-		Four four = new Four();
 		Patate patate = new Patate();
+		Four four = new Four();
 		PlaquesCuissonsInduction plaque = new PlaquesCuissonsInduction();
 		Feu feu = new Feu();
 		Legume carotte = new Legume();
