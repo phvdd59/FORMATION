@@ -2,39 +2,44 @@ package aaa.viande;
 
 public class Volaille extends Viande implements ViandeGenerale {
 
-	private String etatAliment = "non préparé";
-	
+	private String etatVolaille = "non préparé";
+
 	public Volaille() {
 		super();
 	}
+
 	@Override
 	public void deplumage() {
-		etatAliment = "deplumage";
+		etatVolaille = "deplumage";
+		float p = this.getPoids();
 		try {
-			Thread.sleep(5000);
+			float time = 1000 * p;
+			Thread.sleep(((long) time));
 		} catch (InterruptedException e) {
 			e.printStackTrace();
 		}
-		etatAliment = "deplumer";
+		etatVolaille = "deplumer";
 
 	}
 
 	@Override
 	public void lavage() {
-		etatAliment = "sale";
+		etatVolaille = "sale";
+		float p = this.getPoids();
 		try {
-			Thread.sleep(5000);
+			float time = 1000 * p;
+			Thread.sleep(((long) time));
 		} catch (InterruptedException e) {
 			e.printStackTrace();
 		}
-		etatAliment = "propre";
+		etatVolaille = "propre";
 
 	}
 
 	@Override
 	public boolean estDeplume() {
 		boolean plume = false;
-		if (etatAliment == "deplumé") {
+		if (etatVolaille == "deplumé") {
 			plume = true;
 		}
 		return plume;
@@ -43,10 +48,30 @@ public class Volaille extends Viande implements ViandeGenerale {
 	@Override
 	public boolean estLave() {
 		boolean lave = false;
-		if (etatAliment == "propre") {
+		if (etatVolaille == "propre") {
 			lave = true;
 		}
 		return lave;
+	}
+
+	@Override
+	public void decoupe() {
+		etatVolaille = "non decoupé";
+		float p = this.getPoids();
+		try {
+			float time = 1000 * p;
+			Thread.sleep(((long) time));
+		} catch (InterruptedException e) {
+			e.printStackTrace();
+		}
+		etatVolaille = "decoupé";
+
+	}
+
+	@Override
+	public boolean estDecoupe() {
+		// TODO Auto-generated method stub
+		return false;
 	}
 
 }
