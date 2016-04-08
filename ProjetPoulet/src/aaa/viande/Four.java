@@ -1,6 +1,6 @@
 package aaa.viande;
 
-import metier.produits.Consommable;
+import vdd.metier.Consommable;
 
 public class Four extends Consommable {
 
