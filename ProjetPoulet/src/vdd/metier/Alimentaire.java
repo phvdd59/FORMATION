@@ -15,6 +15,10 @@ public class Alimentaire extends Produit implements Serializable, Comparable<Pro
 		super();
 	}
 
+	public Alimentaire(String nom) {
+		super(nom);
+	}
+
 	public Alimentaire(String nom, float poids) {
 		super(nom);
 		this.poids = poids;
