@@ -1,5 +1,7 @@
 package aaa.viande;
 
-public class Viande {
+import metier.produits.Alimentaire;
+
+public class Viande extends Alimentaire {
 
 }

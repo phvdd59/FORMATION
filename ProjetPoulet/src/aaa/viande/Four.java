@@ -1,5 +1,7 @@
 package aaa.viande;
 
-public class Four {
+import metier.produits.Consommable;
+
+public class Four extends Consommable {
 
 }
