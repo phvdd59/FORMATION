@@ -8,7 +8,6 @@ public class Pile {
 
 	public Pile() {
 		int[] p = new int[NB_MAX];
-		
 	}
 
 	// public Pile(int[] p, int sp){
