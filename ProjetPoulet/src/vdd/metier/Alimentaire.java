@@ -15,20 +15,14 @@ public class Alimentaire extends Produit implements Serializable, Comparable<Pro
 		super();
 	}
 
-	public Alimentaire(String nom, float poids, float prixUnitaire) {
-		super(nom, prixUnitaire);
+	public Alimentaire(String nom, float poids) {
+		super(nom);
 		this.poids = poids;
 	}
 
-	public Alimentaire(String nomSaisi, String poidsOuQteSaisi, String prixUnitaireSaisi) {
-
-		super(nomSaisi, prixUnitaireSaisi);
+	public Alimentaire(String nomSaisi, String poidsOuQteSaisi) {
+		super(nomSaisi);
 		this.poids = Float.valueOf(poidsOuQteSaisi).floatValue();
-	}
-
-	@Override
-	public float getPrix() {
-		return getPrixUnitaire() * getPoids();
 	}
 
 	public float getPoids() {
@@ -41,17 +35,6 @@ public class Alimentaire extends Produit implements Serializable, Comparable<Pro
 		} else {
 			this.poids = 0;
 		}
-	}
-
-	@Override
-	public boolean rajoute(Produit e) {
-		boolean ok = false;
-		if (e instanceof Alimentaire && e.getNom().equals(this.getNom())) {
-			Alimentaire a = (Alimentaire) e;
-			this.setPrixUnitaire((this.getPrix() + a.getPrix()) / (this.getPoids() + a.getPoids()));
-			ok = true;
-		}
-		return ok;
 	}
 
 	@Override
@@ -81,5 +64,4 @@ public class Alimentaire extends Produit implements Serializable, Comparable<Pro
 		}
 		return retour;
 	}
-
 }

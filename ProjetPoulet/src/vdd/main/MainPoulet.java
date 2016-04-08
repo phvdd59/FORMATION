@@ -1,6 +1,11 @@
 package vdd.main;
 
+import aaa.viande.Four;
 import aaa.viande.Viande;
+import mapf.feculent.Feculent;
+import mapf.feculent.Patate;
+import mapf.feculent.PlaquesCuissonsInuduction;
+import vdd.personne.Personne;
 
 public class MainPoulet {
 
@@ -12,8 +17,18 @@ public class MainPoulet {
 	public void init() {
 
 		Viande poulet = new Viande();
+		Feculent patate=new Patate();
+		Four four=new Four();
+		PlaquesCuissonsInuduction plaque=new PlaquesCuissonsInuduction();
 		
 
 	}
 
+	
+	public void attente(long duree) {
+		try {
+			Thread.sleep(duree);
+		} catch (InterruptedException e) {
+		}
+	}
 }

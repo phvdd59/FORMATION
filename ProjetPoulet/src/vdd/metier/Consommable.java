@@ -15,23 +15,6 @@ public class Consommable extends Produit implements Serializable, Comparable<Pro
 		super();
 	}
 
-	public Consommable(String nom, int qte, float prixUnitaire) {
-		super(nom, prixUnitaire);
-		this.qte = qte;
-	}
-
-	public Consommable(String nomSaisi, String poidsOuQteSaisi, String prixUnitaireSaisi) {
-		super(nomSaisi, prixUnitaireSaisi);
-		this.qte= Integer.valueOf(poidsOuQteSaisi).intValue(); 
-
-	}
-
-	@Override
-	public float getPrix() {
-		return getPrixUnitaire() * getQte();
-
-	}
-
 	public int getQte() {
 		return qte;
 	}
@@ -43,17 +26,6 @@ public class Consommable extends Produit implements Serializable, Comparable<Pro
 			this.qte = 0;
 		}
 
-	}
-
-	@Override
-	public boolean rajoute(Produit e) {
-		boolean ok = false;
-		if (e instanceof Consommable && e.getNom().equals(this.getNom())) {
-			Consommable a = (Consommable) e;
-			this.setPrixUnitaire((this.getPrix() + a.getPrix()) / (this.getQte() + a.getQte()));
-			ok = true;
-		}
-		return ok;
 	}
 
 	@Override
@@ -83,5 +55,4 @@ public class Consommable extends Produit implements Serializable, Comparable<Pro
 		}
 		return retour;
 	}
-
 }
