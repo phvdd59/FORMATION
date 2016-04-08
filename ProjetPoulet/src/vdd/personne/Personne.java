@@ -4,7 +4,6 @@ import aaa.viande.Four;
 import aaa.viande.Viande;
 import bcsd.legume.Feu;
 import bcsd.legume.Legume;
-import mapf.feculent.Feculent;
 import mapf.feculent.Patate;
 import mapf.feculent.PlaquesCuissonsInduction;
 import vdd.panier.Panier;
@@ -27,7 +26,7 @@ public class Personne {
 
 	public void cuisine() {
 		Viande poulet = new Viande();
-		Feculent patate = new Patate();
+		Patate patate = new Patate();
 		Four four = new Four();
 		PlaquesCuissonsInduction plaque = new PlaquesCuissonsInduction();
 		Feu feu = new Feu();
