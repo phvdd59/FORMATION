@@ -37,6 +37,7 @@ public class Four extends Consommable implements Chaleur {
 				e.printStackTrace();
 			}
 		}
+		etatAliment = "est cuit";
 	}
 
 	@Override
