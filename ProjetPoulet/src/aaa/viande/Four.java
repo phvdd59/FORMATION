@@ -24,6 +24,8 @@ public class Four extends Consommable implements Chaleur {
 
 	}
 
+	@Override
+
 	public void cuire(Alimentaire aliment) {
 		if (etatAliment == "cru") {
 			etatAliment = "en cuisson";
