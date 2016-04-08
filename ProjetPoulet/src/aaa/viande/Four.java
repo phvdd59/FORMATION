@@ -1,5 +1,6 @@
 package aaa.viande;
 
+import vdd.metier.Alimentaire;
 import vdd.metier.Consommable;
 
 public class Four extends Consommable implements Chaleur {
@@ -23,14 +24,16 @@ public class Four extends Consommable implements Chaleur {
 
 	}
 
-	public void cuire() {
-		etatAliment = "en cuisson";
-		try {
-			Thread.sleep(10000);
-		} catch (InterruptedException e) {
-			e.printStackTrace();
+	public void cuire(Alimentaire aliment) {
+		if (etatAliment == "cru") {
+			etatAliment = "en cuisson";
+			try {
+				Thread.sleep(10000);
+			} catch (InterruptedException e) {
+				e.printStackTrace();
+			}
+			etatAliment = "cuit";
 		}
-		etatAliment = "cuit";
 	}
 
 	@Override
@@ -43,7 +46,7 @@ public class Four extends Consommable implements Chaleur {
 	}
 
 	@Override
-	public boolean estCuit() {
+	public boolean estCuit(Alimentaire aliment) {
 		boolean cuit = false;
 		if (etatAliment == "cuit") {
 			cuit = true;
