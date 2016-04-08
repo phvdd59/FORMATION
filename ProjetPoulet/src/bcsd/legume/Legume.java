@@ -6,95 +6,66 @@ public class Legume extends Alimentaire implements PreparerLegume {
 
 	private static final long serialVersionUID = 1L;
 
-	private String estLave;
-	private String estEpluche;
-	private String estDecoupe;
-	private String estCuit;
+	private String etat;
 
 	public Legume() {
 		super();
-		this.estLave = "pas lavé";
-		this.estEpluche = "pas epluché";
-		this.estDecoupe = "pas decoupé";
-		this.estCuit = "pas cuit";
+		this.etat = "";
 	}
 
-	public Legume(String nom) {
-		super(nom);
-		this.estLave = "pas lavé";
-		this.estEpluche = "pas epluché";
-		this.estDecoupe = "pas decoupé";
-		this.estCuit = "pas cuit";
-	}
-
-	public Legume(String nom, float poids, String estLave, String estEpluche, String estDecoupe, String estCuit) {
+	public Legume(String nom, float poids, String etat) {
 		super(nom, poids);
-		this.estLave = estLave;
-		this.estEpluche = estEpluche;
-		this.estDecoupe = estDecoupe;
-		this.estCuit = estCuit;
+		this.etat = etat;
 	}
 
 	@Override
 	public void laver(float poids) {
+		System.out.println("sale");
 		try {
+			System.out.println("en cours de lavage");
 			Thread.sleep(1000 * ((long) getPoids()));
 		} catch (InterruptedException e) {
 			e.printStackTrace();
 		}
-		System.out.println("C'est lavé");
+		System.out.println("propre");
+		this.etat = "propre";
 	}
 
 	@Override
 	public void decouper(float poids) {
-		try {
-			Thread.sleep((long) (1000 * getPoids()));
-		} catch (InterruptedException e) {
-			e.printStackTrace();
+		if (this.getEtat().equals("propre")) {
+			System.out.println("entier");
+			try {
+				System.out.println("En cours de découpage");
+				Thread.sleep((long) (1000 * getPoids()));
+			} catch (InterruptedException e) {
+				e.printStackTrace();
+			}
+			System.out.println("C'est decoupé");
+			this.etat = "decouper";
+		} else {
+			System.out.println("Laver le produit avant de découper !");
 		}
-		System.out.println("C'est decoupé");
 	}
 
 	@Override
 	public void eplucher(float poids) {
+		System.out.println("pas epluché");
 		try {
+			System.out.println("en cours d'épluchage");
 			Thread.sleep((long) (1000 * getPoids()));
 		} catch (InterruptedException e) {
 			e.printStackTrace();
 		}
-		System.out.println("C'est epluché");
+		System.out.println("epluché");
 	}
 
-	public String getEstLave() {
-		return estLave;
+	public String getEtat() {
+		return etat;
 	}
 
-	public void setEstLave(String estLave) {
-		this.estLave = estLave;
-	}
-
-	public String getEstEpluche() {
-		return estEpluche;
-	}
-
-	public void setEstEpluche(String estEpluche) {
-		this.estEpluche = estEpluche;
-	}
-
-	public String getEstDecoupe() {
-		return estDecoupe;
-	}
-
-	public void setEstDecoupe(String estDecoupe) {
-		this.estDecoupe = estDecoupe;
-	}
-
-	public String getEstCuit() {
-		return estCuit;
-	}
-
-	public void setEstCuit(String estCuit) {
-		this.estCuit = estCuit;
+	public void setEtat(String etat) {
+		this.etat = etat;
 	}
 
 }
