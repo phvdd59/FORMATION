@@ -1,6 +1,8 @@
 package aaa.viande;
 
-public class Volaille extends Viande implements ViandeGenerale {
+import mapf.feculent.Preparer;
+
+public class Volaille extends Viande implements ViandeGenerale, Preparer {
 
 	private String etatVolaille = "non préparé";
 
@@ -23,20 +25,6 @@ public class Volaille extends Viande implements ViandeGenerale {
 			e.printStackTrace();
 		}
 		etatVolaille = "deplumer";
-
-	}
-
-	@Override
-	public void lavage() {
-		etatVolaille = "sale";
-		float p = this.getPoids();
-		try {
-			float time = 1000 * p;
-			Thread.sleep(((long) time));
-		} catch (InterruptedException e) {
-			e.printStackTrace();
-		}
-		etatVolaille = "propre";
 
 	}
 
@@ -87,6 +75,32 @@ public class Volaille extends Viande implements ViandeGenerale {
 
 	public void setEtatVolaille(String etatVolaille) {
 		this.etatVolaille = etatVolaille;
+	}
+
+	@Override
+	public void nettoyer() {
+
+		etatVolaille = "sale";
+		float p = this.getPoids();
+		try {
+			float time = 1000 * p;
+			Thread.sleep(((long) time));
+		} catch (InterruptedException e) {
+			e.printStackTrace();
+		}
+		etatVolaille = "nettoye";
+	}
+
+	@Override
+	public void eplucher() {
+		System.out.println("on epluche pas un poulet");
+
+	}
+
+	@Override
+	public void lavage() {
+		System.out.println("lavage c'est pas assez bien, il faut nettoyer...");
+
 	}
 
 }

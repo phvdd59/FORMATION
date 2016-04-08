@@ -12,13 +12,14 @@ public class TestViande {
 
 	@Before
 	public void before() {
-		volaille = new Volaille("Poulet",3.5f);
+		volaille = new Volaille("Poulet",0.5f);
 		four=new Four();
 	}
 
 	@Test
 	public void testDeplumer() {
 		// fail("Not yet implemented");
+		volaille.setEtatVolaille("non préparé");
 		volaille.deplumage();
 		String etat = volaille.getEtatVolaille();
 		assertEquals("deplumer", etat);
@@ -26,13 +27,15 @@ public class TestViande {
 
 	@Test
 	public void testLavage() {
-		volaille.lavage();
+		volaille.setEtatVolaille("non préparé");
+		volaille.nettoyer();
 		String etat = volaille.getEtatVolaille();
-		assertEquals("propre", etat);
+		assertEquals("nettoye", etat);
 	}
 
 	@Test
 	public void testDecoupe() {
+		volaille.setEtatVolaille("non préparé");
 		volaille.decoupe();
 		String etat = volaille.getEtatVolaille();
 		assertEquals("decoupé", etat);
@@ -47,12 +50,15 @@ public class TestViande {
 	}
 	@Test 
 	public void testPrechauffer(){
+		four.setEtatDuFour("froid");
 		four.prechauffer();
 		String etat=four.getEtatDuFour();
 		assertEquals("Prechauffe",etat);
 	}
 	@Test
 	public void testCuire(){
+		four.setEtatDuFour("froid");
+		four.setEtatAliment("cru");
 		four.cuire(volaille);
 		String etat=four.getEtatAliment();
 		assertEquals("est cuit",etat);
