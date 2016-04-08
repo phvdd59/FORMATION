@@ -6,4 +6,8 @@ public class Viande extends vdd.metier.Alimentaire {
 		super();
 	}
 
+	public Viande(String nom, float poids) {
+		super(nom, poids);
+	}
+
 }

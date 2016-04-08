@@ -8,6 +8,10 @@ public class Volaille extends Viande implements ViandeGenerale {
 		super();
 	}
 
+	public Volaille(String nom, float poids) {
+		super(nom, poids);
+	}
+
 	@Override
 	public void deplumage() {
 		etatVolaille = "deplumage";
