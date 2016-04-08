@@ -74,8 +74,11 @@ public class Volaille extends Viande implements ViandeGenerale {
 
 	@Override
 	public boolean estDecoupe() {
-		// TODO Auto-generated method stub
-		return false;
+		boolean decoupe = false;
+		if (etatVolaille == "decoupé") {
+			decoupe = true;
+		}
+		return decoupe;
 	}
 
 }
