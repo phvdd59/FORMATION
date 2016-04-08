@@ -2,12 +2,13 @@ package vdd.metier.produits.aliments;
 
 public class Viande extends Alimentaire implements Volaille {
 	
-	private boolean bDeplume;
-	private boolean bVide;
+	private boolean encours;
+	private String etat;
 
 	public Viande() {
 		super();
-		bDeplume=false;
+		etat = "INIT";
+		encours=false;
 	}
 
 	public Viande(String nom, float poids, float prixUnitaire) {
@@ -15,30 +16,48 @@ public class Viande extends Alimentaire implements Volaille {
 	}
 
 	@Override
-	public void deplumer() {
+	public void seFaireDeplumer() {
+		etat="Perd ses plumes";
 		try {
 			Thread.sleep((long) (super.getPoids() * 1000));
 		} catch (InterruptedException e) {
 		}
-		bDeplume=true;
+		etat="deplumé";
 	}
 
 	@Override
-	public void vider() {
+	public void seFaireVider() {
+		etat="se vide";
 		try {
 			Thread.sleep((long) (super.getPoids() * 500));
 		} catch (InterruptedException e) {
 		}
-		bVide=true;
+		etat="vidé";
 	}
 
 	@Override
 	public boolean estDeplume() {
-		return bDeplume;
+		return etat.equals("deplumé");
 	}
 
 	@Override
 	public boolean estVider() {
-		return bVide;
+		return etat.equals("vidé");
+	}
+
+	public boolean isEncours() {
+		return encours;
+	}
+
+	public void setEncours(boolean encours) {
+		this.encours = encours;
+	}
+
+	public String getEtat() {
+		return etat;
+	}
+
+	public void setEtat(String etat) {
+		this.etat = etat;
 	}
 }

@@ -1,11 +1,11 @@
 package vdd.main;
 
-import java.security.Permissions;
-
 import vdd.metier.Personne;
+import vdd.metier.panier.Stock;
 import vdd.metier.produits.aliments.Feculent;
 import vdd.metier.produits.aliments.Legume;
 import vdd.metier.produits.aliments.Viande;
+import vdd.metier.produits.aliments.Volaille;
 import vdd.metier.produits.consomable.Casserole;
 import vdd.metier.produits.consomable.Four;
 import vdd.metier.produits.consomable.Plaque;
@@ -28,11 +28,17 @@ public class MainCuisine {
 		Plaque plaque1 = new Plaque("Plaque1", 1, 35f);
 		Plaque plaque2 = new Plaque("Plaque2", 1, 35f);
 		PlatInox platInox = new PlatInox("PlaInox", 1, 23f);
-		Personne p1=new Personne();
-		Personne p2=new Personne();
-		p1.start();
-		poulet.deplumer();
-		poulet.vider();
+		Stock panier=new Stock();
+		panier.add(poulet);
+		
+		Personne p1 = new Personne(panier);
+		Personne p2 = new Personne(panier);
+		
+		if (poulet.getEtat().equals("INIT")) {
+			
+		}
+		p1.deplumer(poulet);
+		p1.vider(poulet);
 		platInox.ajouter(poulet);
 		patate.eplucher();
 		patate.netoyer();

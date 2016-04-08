@@ -2,8 +2,8 @@ package vdd.metier.produits.aliments;
 
 public interface Volaille {
 
-	public void deplumer();
-	public void vider();
+	public void seFaireDeplumer();
+	public void seFaireVider();
 	public boolean estDeplume();
 	public boolean estVider();
 }
