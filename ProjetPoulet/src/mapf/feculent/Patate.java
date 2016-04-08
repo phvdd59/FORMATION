@@ -1,6 +1,6 @@
 package mapf.feculent;
 
-public class Patate extends Feculent implements Preparer {
+public class Patate extends vdd.metier.Alimentaire implements Preparer {
 
 	private String etatCuisson;
 	private String etatPreparation;
