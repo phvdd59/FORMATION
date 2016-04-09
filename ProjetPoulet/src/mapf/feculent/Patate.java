@@ -1,10 +1,12 @@
 package mapf.feculent;
 
+import java.util.ArrayList;
+
 public class Patate extends vdd.metier.Alimentaire implements Preparer {
 
 	private String etatCuisson;
 	private String etatPreparation;
-	private String etatProprete;;
+	private String etatProprete;
 
 	public Patate() {
 		super();
@@ -12,27 +14,40 @@ public class Patate extends vdd.metier.Alimentaire implements Preparer {
 		this.etatProprete = "sale";
 	}
 
+	public ArrayList<Patate> filetDePatate(int n) {
+		Patate patate = new Patate();
+		ArrayList<Patate> filetDePatate = new ArrayList<Patate>();
+		int i = 0;
+		while (i != n) {
+			filetDePatate.add(patate);
+			i++;
+		}
+		return filetDePatate;
+	}
 
 	@Override
 	public void nettoyer() {
-		etatProprete = "sale";
-		try {
-			Thread.sleep(500);
-		} catch (InterruptedException e) {
-			e.printStackTrace();
+		if (etatProprete.equals("sale")) {
+
+			try {
+				Thread.sleep(500);
+			} catch (InterruptedException e) {
+				e.printStackTrace();
+			}
+			etatProprete = "propre";
 		}
-		etatProprete = "propre";
 	}
 
 	@Override
 	public void eplucher() {
-		etatPreparation = "habillee";
-		try {
-			Thread.sleep(1000);
-		} catch (InterruptedException e) {
-			e.printStackTrace();
+		if (etatPreparation.equals("habillee")) {
+			try {
+				Thread.sleep(1000);
+			} catch (InterruptedException e) {
+				e.printStackTrace();
+			}
+			etatPreparation = "epluchee";
 		}
-		etatPreparation = "epluchee";
 	}
 
 	public String getEtatCuisson() {

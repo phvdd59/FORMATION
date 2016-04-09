@@ -10,6 +10,7 @@ public class PlaquesCuissonsInduction extends Consommable  implements aaa.viande
 	
 	public PlaquesCuissonsInduction () {
 		super();
+		this.chaleurPlaque = "froid";
 	}
 
 	@Override

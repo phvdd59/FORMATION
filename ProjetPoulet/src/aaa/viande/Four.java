@@ -27,15 +27,22 @@ public class Four extends Consommable implements Chaleur {
 	@Override
 
 	public void cuire(Alimentaire aliment) {
-		if (etatAliment == "cru") {
-			etatAliment = "en cuisson";
-			float p = aliment.getPoids();
-			try {
-				float time = 10000 * p;
-				Thread.sleep(((long) time));
-			} catch (InterruptedException e) {
-				e.printStackTrace();
+
+		if (etatDuFour == "Prechauffe") {
+
+			if (etatAliment == "cru") {
+				etatAliment = "en cuisson";
+				float p = aliment.getPoids();
+				try {
+					float time = 10000 * p;
+					Thread.sleep(((long) time));
+				} catch (InterruptedException e) {
+					e.printStackTrace();
+				}
 			}
+		} else {
+			this.prechauffer();
+			this.cuire(aliment);
 		}
 		etatAliment = "est cuit";
 	}
