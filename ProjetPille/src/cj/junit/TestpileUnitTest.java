@@ -5,7 +5,7 @@ import static org.junit.Assert.fail;
 import org.junit.Before;
 import org.junit.Test;
 
-import ad.metier.Pile;
+import dd.metier.Pile;
 
 public class TestpileUnitTest {
 
@@ -16,7 +16,7 @@ public class TestpileUnitTest {
 	
 	@Before
 	public void before() {
-		Pile p = new Pile();
+		Pile p = new pile();
 	}
 
 }
