@@ -15,6 +15,10 @@ public class Consommable extends Produit implements Serializable, Comparable<Pro
 		super();
 	}
 
+	public Consommable(String nom) {
+		super(nom);
+	}
+
 	public int getQte() {
 		return qte;
 	}

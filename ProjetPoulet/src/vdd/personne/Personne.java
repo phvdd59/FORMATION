@@ -1,11 +1,8 @@
 package vdd.personne;
 
-import aaa.viande.Four;
-import aaa.viande.Viande;
-import bcsd.legume.Feu;
-import bcsd.legume.Legume;
-import mapf.feculent.Patate;
-import mapf.feculent.PlaquesCuissonsInduction;
+import vdd.metier.Produit;
+import vdd.metier.chaud.Plaque;
+import vdd.metier.dessert.Fruit;
 import vdd.panier.Panier;
 
 public class Personne {
@@ -24,14 +21,13 @@ public class Personne {
 		NUM_PERSONNE++;
 	}
 
-	public void cuisine() {
-		Viande poulet = new Viande();
-		Patate patate = new Patate();
-		Four four = new Four();
-		PlaquesCuissonsInduction plaque = new PlaquesCuissonsInduction();
-		Feu feu = new Feu();
-		Legume carotte = new Legume();
-
+	public void init() {
+		Plaque plaque = new Plaque("Plaque1");
+		Fruit banane = new Fruit("Banane", 0.5f);
+		banane.nettoyer();
+		banane.eplucher();
+		banane.decoupe();
+		banane.griller(plaque);
 	}
 
 	public String getNom() {
@@ -48,5 +44,9 @@ public class Personne {
 
 	public void setPanier(Panier panier) {
 		this.panier = panier;
+	}
+
+	public void add(Produit p) {
+		panier.add(p);
 	}
 }
