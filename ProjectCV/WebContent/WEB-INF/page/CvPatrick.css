@@ -1,0 +1,61 @@
+@CHARSET "ISO-8859-1";
+
+.CV{
+	padding-top:20px;
+	position: relative;
+				left: 5px;
+				top:0px;
+				width: 700px;
+				height: 600px;
+				
+}
+.identite {
+	
+	border-style:double;
+	width : 400px;
+	height : 70px;
+    display: block;
+  margin-left: 125px;
+  
+}
+.mailEtPhoto{
+	height:50px;
+	
+	
+}
+.mail{
+	float : left;
+	margin-left: 65px;
+	margin-top:10px;
+	
+}
+
+.texteMail{
+	display: block;
+	padding-top :30px;
+	margin-bottom: 0px;
+	
+}	
+.photo{
+	padding-top :20px;
+	float: right;
+}
+.listeCompetence{
+	margin-left: 65px;
+}
+h2{
+	
+	font-size:24px;
+	font-face:georgia;
+	border-style:outset;
+	
+}
+.experience{
+	margin-left: 65px;
+	font-size : 14px;
+	
+}
+.formation{
+	margin-left: 65px;
+	font-size : 14px
+}
