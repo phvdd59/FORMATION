@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CV nom="RAYMOND" prenom="Mathias" e-mail="mathias.raymond@sfr.fr">
+	<ListeCompetences>
+		<Competences type="Programmation" precision="JAVA/JEE" />
+		<Competences type="Biologie"
+			precision="Analyse moléculaire, culture cellulaire,
+						biologie moléculaire, microscopie, normes qualité en biomédical" />
+	</ListeCompetences>
+
+	<ListeExperience>
+		<Experience date=" Janvier-Juin 2014" Poste="Stage Recherche - Virologie"
+			Lieu="Laboratoire de Virologie - EA4843 ; Faculté de Médecine ; 63000 CLERMONT-FERRAND"
+			Description="Franchissement d'un modèle in vitro de barrière endothéliale
+					microvasculaire cérébrale par l'entérovirus 71,en conditions
+					normales et inflammatoires" />
+
+		<Experience date="Juin-Juillet 2013" Poste="Stage au service de Virologie"
+			Lieu="Laboratoire de Virologie
+					Hospitalo-universitaire ; CHU Clermont-Ferrand &amp; Faculté de
+					Médecine (EA4843); 63000 CLERMONT-FERRAND"
+			Description="Analyse
+					moléculaire des souches VIH-1 à partir d'une cohorte de patients
+					suivis au CHU de Clermont-Ferrand" />
+
+		<Experience date="Avril 2010" Poste="Stage d'observation"
+			Lieu="Faculté de
+					Médecine/Pharmacie ; 63000 CLERMONT-FERRAND"
+			Description="Stage d'observation au laboratoire de pharmacologie pharmacie
+					INSERM U766 (Unité de recherche mixte)" />
+	</ListeExperience>
+
+	<ListeFormation>
+		<Formation date="2016" Ecole=""
+			Diplome="Formation en programmation JAVA/JEE" />
+		<Formation date="2014"
+			Ecole="Université d'Auvergne - Institut Universitaire de Technologie ;
+					63172 Aubière"
+			Diplome="Master Technologie Biomédicale - spécialité
+					Diagnostic Biomédical" />
+		<Formation date="2012"
+			Ecole="Université d'Auvergne - U.F.R Pharmacie ; 63000 CLERMONT-FERRAND"
+			Diplome="Licence Sciences-Technologies-Santé Mention Biologie Parcours
+					Pharmacologie" />
+		<Formation date="2012"
+			Ecole="Université d'Auvergne - U.F.R Pharmacie ; 63000 CLERMONT-FERRAND"
+			Diplome="Attestation de formation à l'expérimentation animale, niveau 1" />
+		<Formation date="2006-2008"
+			Ecole="Université d'Auvergne - U.F.R Medecine; 63000 CLERMONT-FERRAND"
+			Diplome="Première Année du Premier Cycle des Etudes Médicales (PCEM1)" />
+	</ListeFormation>
+</CV>

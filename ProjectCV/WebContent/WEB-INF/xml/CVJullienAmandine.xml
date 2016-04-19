@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CV nom="JULLIEN" prenom="Amandine" email="jullien.amandine@hotmail.fr">
+	<listeCompetences>
+		<Competences type="anglais" niveau="courant" />
+		<Competences type="J2EE" niveau="debutant" />
+		<Competences type="culture cellulaire" niveau="confirme" />
+		<Competences type="RT-qPCR" niveau="confirme" />
+		<Competences type="Analyse en spectrometrie de masse"
+			niveau="confirme" />
+		<Competences type="Biostatistiques" niveau="confirme" />
+
+	</listeCompetences>
+	<listeFormation>
+		<Formation date="2013" ecole="Universite Joseph Fourier"
+			diplome="Master 2 MRESTE Methodologie en Recherche Environnement Sante Toxicologie et Ecotoxicologie" />
+		<Formation date="2012" ecole="Universite Joseph Fourier"
+			diplome="Master 1 ISM Ingenierie pour la sante et le medicament" />
+		<Formation date="2011" ecole="Universite Joseph Fourier"
+			diplome="Licence Chimie" />
+	</listeFormation>
+	<listeExperiences>
+		<Experience date="juin 2014 a juin 2015" entreprise="CARSO a Venissieux"
+			poste="Technicien en chimie analytique">
+			Preparer les echantillons, controle de la conformite
+			d'etalonnage et de
+			fonctionnement, analyser et retranscrire les
+			resultats
+			obtenus par GC-MS, controle de l'application des normes
+			COFRAC et BPL,
+			effectuer l'entretien des équipements de laboratoire
+		</Experience>
+		<Experience date="janvier 2013 a juin 2013" entreprise="CEA de Grenoble"
+			poste="Ingenieur d'etudes toxicologue">
+			Superviser et controler le deroulement et l'avancement des
+			experiences, rediger
+			les protocoles d'experiences, realiser les
+			experiences: culture cellulaire et RT-qPCR, etudier et analyser les
+			données
+			obtenues, valider les resultats avec les
+			biostatistiques,
+			rediger les rapports, publication: presentation du travail en langue
+			anglaise, veille documentaire: suivre et mettre
+			à jour l'actualité
+			scientifique, communication: article en cours de
+			parution au journal
+			Toxicology in Vitro
+		</Experience>
+		<Experience date="avril 2012 a juin 2012" entreprise="CEA de Grenoble"
+			poste="Assistant ingénieur d'etudes toxicologue">
+			Communication: publication au journal PLOS One, realiser les
+			experiences: culture
+			cellulaire, RT-qPCR,extraction d'ADN et d'ARN
+		</Experience>
+		<Experience date="novembre 2013 a janvier 2015" entreprise="Completude"
+			poste="Professeur a domicile">
+			Soutien en physique-chimie et mathématiques, d'élèves de 3ème à
+			la
+			terminale. Animation de groupe de soutien en physique-chimie et
+			mathématiques
+		</Experience>
+		<Experience date="septembre 2010 a juin 2011" entreprise="Universite Joseph Fourier"
+			poste="Tuteur de Chimie">
+			Tutorat de chimie à l'université, pour les L1 et les eleves de
+			DAEU
+		</Experience>
+	</listeExperiences>
+	<CentreInteret> Equitation, Tir à l'arc, Lecture
+	</CentreInteret>
+	<ActivitesAssociatives>BioDocs Lyon (membre organisateur 2015 et 2016
+		du Forum Biotechno),Telethon et Virades de l'Espoir
+	</ActivitesAssociatives>
+</CV>
