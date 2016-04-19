@@ -1,0 +1,54 @@
+@CHARSET "ISO-8859-1";
+
+#page {
+	width: 780px;
+	margin: auto;
+	font-size: 16px;
+	font-family: "Times New Roman";
+}
+
+#infophoto {
+	height : 250px;
+}
+
+#info {
+	float : left;
+}
+
+#photo {
+	float : right;
+}
+
+#section {
+	margin-bottom : 70px;
+	text-align : justify;
+}
+
+#sec-gauche {
+	float : left;
+	font-weight : bold;
+}
+
+#sec-droite {
+
+	margin-left : 150px;
+	margin-top : 37px;
+}
+h2{
+	font-size : 28px;
+	color : darkgreen;
+	border-bottom : 3px solid;
+}
+
+.titre {
+	font-weight : bold;
+}
+
+.forma-gauche p{
+	margin-bottom : 37px;
+}
+
+.expe-gauche p{
+	margin-bottom : 40px;
+}
+
