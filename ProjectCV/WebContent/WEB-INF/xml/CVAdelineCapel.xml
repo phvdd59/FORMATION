@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CV nom="Capel" prenom="Adeline" Email="adelinecapel@gmail.com">
+	<ListeCompetences>
+		<Competence type="Matlab, Maple" niveau="intermediaire" />
+		<Competence type="Equations aux derivees partielles"
+			niveau="avance" />
+		<Competence type="Anglais" niveau="B2" />
+		<Competence type="Calcul integral" niveau="avance" />
+		<Competence type="Analyse complexe" niveau="avance" />
+
+
+	</ListeCompetences>
+	<Formation>
+		<Form date="2014-2015" ecole="Universite Blaise Pascal Clermont-Ferrand"
+			diplome="Preparation agregation externe de Mathematiques" />
+		<Form date="2013-2014" ecole="Universite Blaise Pascal Clermont-Ferrand"
+			diplome="Master recherche Mathematiques" />
+		<Form date="2011-2012" ecole="Universite Blaise Pascal Clermont-Ferrand"
+			diplome="Licence Mathematiques" />
+	</Formation>
+	<Experiences>
+		<Exp date="Janvier a Juin 2014" entreprise="Laboratoire Mathematiques Clermont-Ferrand"
+			poste="Chargé de recherche en Mathématiques appliquées stagiaire" />
+		<Exp date="Janvier a Juin 2013" entreprise="Laboratoire Mathematiques Clermont-Ferrand"
+			poste="Chargé de recherche en Mathématiques fondamentales stagiaire" />
+	</Experiences>
+</CV>
