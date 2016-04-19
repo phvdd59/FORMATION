@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CV nom="Leroy" prenom="Floriane" Email="leroy.floriane.63@gmail.com">
+	<ListeCompetence>
+		<Competences type="Polymère et Composite, Adhésion, Mise en oeuvre, Acier, Traitement des surfaces, Endurance des matériaux" niveau="Bien connu"/>
+		<Competences type="Résistance des matériaux,Système discret, Milieux continus, Eléments finis" niveau="Connu"/>
+		<Competences type="Conduite de projet, Sureté des installations" niveau="Connu"/>
+		<Competences type="Modélisation moléculaire :Gauss-view,Material Studio" niveau="Très bien connu"/>
+		<Compétences type="Mécaniques : Hypermesh, Samcef, RDM" niveau="Notion"/>
+		<Competences type="Plasturgie : Cadmould" niveau="Connu"/>
+		<Competences type="Anglais" niveau="Toeic 785 points"/>
+		<Competences type="Japonais" niveau="Notion"/>
+	</ListeCompetence>
+	
+	<Experiences>
+		<Exp date="2016" entreprise="Mc Donald's" poste="Equipière polyvalente"/>
+		<Exp date="2015" entreprise="LECLERC" poste="Vendeuse"/>
+		<Exp date="2015" entreprise="MICHELIN" poste="Stagiaire">Modélisation de thermoplastique-élastomères</Exp>
+		<Exp date="2014-2015" entreprise="SOURIAU" poste="Stagiaire">Amélioration de productivité par optimisation de l'interface lopin-outil</Exp>
+		<Exp date="2014" entreprise="AMIPI" poste="Stagiaire">Audit qualité</Exp>
+		<Exp date="2014" entreprise="AIA" poste="Stagiaire">Elaboration de procédure de contrôle par ultrasons pour les pieds de perches Transall et les nervures des Mirages 2000</Exp>
+	</Experiences>
+	
+	<Formation>
+		<Form date="2015" ecole="ISMANS" diplome="Ingénieur génie des matériaux"/>
+		<Form date="2010-2012" ecole="Lycée Godefroy de Bouillon" diplome="Classes préparatoires aux grandes écoles MP/MPSI"/>
+		<Form date="2010" ecole="Lycée Blaise-Pascal" diplome="Baccalauréat série scientifique"/>
+	</Formation>
+</CV>
