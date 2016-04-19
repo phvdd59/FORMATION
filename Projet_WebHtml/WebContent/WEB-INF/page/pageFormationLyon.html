@@ -1,5 +1,5 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html>
+<html>
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 		<title>Identification Administrateur</title>
@@ -11,7 +11,9 @@
 				top:0px;
 				width: 700px;
 				height: 600px;
-				background-color: yellow;
+			}
+			table, td, th {
+			    border: 1px solid black;
 			}
 		</style>
 	</head>
@@ -35,6 +37,20 @@
 		<div id="tlogo">CENTRE DE FORMATION</div>
 		<div id="info2">
 			<div id="formationLyon">
+				<div style="width: 400px;left: 161px;position: relative;">
+					<form action="http://localhost:8080/Projet_WebHtml/AffPage" methode="get">
+						<fieldset>
+							<legend>Saisie Données</legend>
+						<p>Date : <input type="text" name="date"/></p>
+						<p>Lieu  : <input type="text" name="lieu"/></p>
+						<p>tri par date<input type="radio" name="tri" value="tridate" checked/>
+						tri par lieu<input type="radio" name="tri" value="trilieu"/>
+						JEE<input type="radio" name="tri" value="jee"/>
+						DotNet<input type="radio" name="tri" value="dotnet"/></p>
+						</fieldset>
+						<p><input type="submit" name="envoyer" value="envoyer"/>
+					</form>
+				</div>
 			</div>
 		</div>
 		<div id="fpage2"><img src="http://www.activconsult-ing.com/img/Article_fond_blanc_double_copie.png"/>
