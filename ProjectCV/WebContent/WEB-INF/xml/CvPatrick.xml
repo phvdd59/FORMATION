@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CV>
+	<identite Prenom="Patrick" Nom="Walentek"/>  
+		<mailEtPhoto>
+			<mail alt="mail" src= "http://wp-cluster.fr.cloud.datalp.com/wp_altimet/wp-content/uploads/2015/03/mail.png"/>
+			<texteMail mail="patrick.walentek.bio@gmail.com"/>
+			<photo alt="photo" src= "http://www.doyoubuzz.com/var/users/_/2013/7/25/16/534625/avatar/461588/avatar_cp_big.jpg?t=1458848091"/>
+		</mailEtPhoto>
+	<listeCompetence>
+		<Competence nom="Compétence">
+			<Competence type="Sciences de la Vie" niveau = "12"/>
+			<Competence type="Marketing/Communication" niveau = "8"/>
+			<Competence type="Gestion de Projet" niveau = "9"/>
+			<Competence type="Langues - Anglais" niveau = "6"/>
+			<Competence type="Langues - Polonais" niveau = "11"/>
+			<Competence type="Informatique - JEE" niveau = "2"/>
+		</Competence>
+	</listeCompetence>
+	<experience Nom="Expériences Professionnelles">
+		<Experience Date="Date" Entreprise ="Entreprise" PosteOccupé = "Poste Occupé" Missions = "Missions"/>
+		<Experience Date="10/14 - 11/15" Entreprise="BioDocs-Lyon" PosteOccupé ="Chargé de communication adjoint" Missions="Développement de la communication inbound/outbond de l'association"/>
+		<Experience Date="04/15 - 06/15" Entreprise="Forum BIOTechno Rhône-Alpes" PosteOccupé ="Coordinateur logistique" Missions="Organisation et supervision logistique événementielle"/>
+		<Experience Date="04/14 - 09/14" Entreprise="COM-Line" PosteOccupé ="Concepteur-Rédacteur Junior" Missions="Conception et rédacteur de documents et d'outils de formation destinés aux visiteurs médicaux "/>
+		<Experience Date="07/13 - 09/13" Entreprise="INSERM CIRI-U1111" PosteOccupé ="Ingénieur d'études" Missions="Projet de recherche, équipe 'Immunologie de l'Allergie cutanée et Vaccination'"/>
+		<Experience Date="10/12 - 06/13" Entreprise="INSERM CIRI-U1111" PosteOccupé ="Assistant Ingénieur" Missions="Projet de recherche, équipe 'Immunologie de l'Allergie cutanée et Vaccination'"/>
+		<Experience Date="01/12 - 03/13" Entreprise="INSERM U851" PosteOccupé ="Assistant Ingénieur" Missions="Projet de recherche, équipe 'Immunité Innée et les Oncovirus'"/>
+	
+	</experience>
+	<formation Nom="Formations">
+		<Formation Date="Date" Ecole="Ecole" Diplome="Diplôme"/>
+		<Formation Date="10/13 - 01/15" Ecole="IMIS (Institut de Management des Industries de la Santé)" Diplome="Mastère spécialisé professionel Management et Marketing des Industries de la Santé"/>
+		<Formation Date="09/10 - 06/13" Ecole="Université Claude Bernard Lyon 1" Diplome="Master Recherche Génétique et Biologie de la Cellule spé. Infectiologie Fondamentale"/>
+
+	</formation>
+</CV>

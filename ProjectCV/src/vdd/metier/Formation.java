@@ -6,11 +6,13 @@ public class Formation {
 	private String lieuFormation;
 	private String domaineFormation;
 
+	private ListeEtudiant listeEtudiant;
+
 	public Formation(String dateFormation, String lieuFormation, String domaineFormation) {
-		super();
 		this.dateFormation = dateFormation;
 		this.lieuFormation = lieuFormation;
 		this.domaineFormation = domaineFormation;
+		listeEtudiant = new ListeEtudiant();
 	}
 
 	public String getDateFormation() {
@@ -35,5 +37,13 @@ public class Formation {
 
 	public void setDomaineFormation(String domaineFormation) {
 		this.domaineFormation = domaineFormation;
+	}
+
+	public ListeEtudiant getListeEtudiant() {
+		return listeEtudiant;
+	}
+
+	public void setListeEtudiant(ListeEtudiant listeEtudiant) {
+		this.listeEtudiant = listeEtudiant;
 	}
 }
