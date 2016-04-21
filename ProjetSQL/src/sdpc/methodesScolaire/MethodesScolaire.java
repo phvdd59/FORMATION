@@ -26,13 +26,26 @@ public class MethodesScolaire {
 	public static void main(String[] args) {
 		MethodesScolaire m = new MethodesScolaire();
 		m.init();
-
 	}
 
 	private void init() {
 
-		File fLecture = new File("../ProjectCV/WebContent/WEB-INF/xml/cvAllan.xml");
-		ListeFormationScolaire listeFormation = lireFormationDom(fLecture);
+		File rep = new File("../ProjectCV/WebContent/WEB-INF/xml");
+		File[] lf = rep.listFiles();
+		creTable();
+		for (int i = 0; i < lf.length; i++) {
+			if (lf[i].isFile()) {
+				if (lf[i].getName().toLowerCase().endsWith(".xml")) {
+					File fLecture = new File(rep.getAbsolutePath()+lf[i].getName());
+					ListeFormationScolaire listeFormation = lireFormationDom(fLecture);
+					
+					for (FormationScolaire formationScolaire : listeFormation) {
+						insertTable(formationScolaire);
+					}
+				}
+			}
+
+		}
 
 	}
 
@@ -142,11 +155,7 @@ public class MethodesScolaire {
 
 		String login = "Active";
 		String password = "VDDMichel";
-		// String login = "root";
-		// String password = "dLYZmjHnLR9Q";
-
 		// connection a la base de données
-
 		affiche("connection a la base de données");
 		try {
 			String DBurl = "jdbc:mysql://www.psyeval.fr/bddCV";
