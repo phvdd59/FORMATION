@@ -5,6 +5,9 @@
 		<Competences type="Biologie"
 			precision="Analyse moléculaire, culture cellulaire,
 						biologie moléculaire, microscopie, normes qualité en biomédical" />
+		<Competences type="Anglais" precision="TOEIC 865/990" />
+		<Competences type="Informatique" precision="Word, Excel, PowerPoint - Certificat Informatique et Internet - Logiciels dédiés à la biologie : BioEdit, MEGA" />
+		<Competences type="Humaine" precision="Outils de base de management, gestion de projet" />				
 	</ListeCompetences>
 
 	<ListeExperience>
