@@ -85,7 +85,12 @@ public class ServletListeFormation extends HttpServlet {
 		}
 	}
 
-	private ListeFormation chargerListeFormation() {
+	private ListeFormation chargerListeFormationSQL() {
+		ListeFormation listeFormation = new ListeFormation();
+		return listeFormation;
+	}
+	
+	private ListeFormation chargerListeFormationXml() {
 		ListeFormation listeFormation = new ListeFormation();
 		File fXmlFormation = new File("../GIT/FORMATION/ProjectCV/WebContent/WEB-INF/xml/listeFormation.xml");
 
@@ -124,7 +129,7 @@ public class ServletListeFormation extends HttpServlet {
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		HttpSession session = request.getSession();
-		ListeFormation listeFormation = chargerListeFormation();
+		ListeFormation listeFormation = chargerListeFormationXml();
 		chargerListeEtudiants(listeFormation);
 		session.setAttribute("listeForm", listeFormation);
 		PrintWriter out = response.getWriter();

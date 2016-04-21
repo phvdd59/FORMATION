@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+
 <CV>
 	<identite Prenom="Patrick" Nom="Walentek"/>  
 		<mailEtPhoto>
@@ -30,6 +31,6 @@
 		<Formation Date="Date" Ecole="Ecole" Diplome="Diplôme"/>
 		<Formation Date="10/13 - 01/15" Ecole="IMIS (Institut de Management des Industries de la Santé)" Diplome="Mastère spécialisé professionel Management et Marketing des Industries de la Santé"/>
 		<Formation Date="09/10 - 06/13" Ecole="Université Claude Bernard Lyon 1" Diplome="Master Recherche Génétique et Biologie de la Cellule spé. Infectiologie Fondamentale"/>
-
+		
 	</formation>
 </CV>
