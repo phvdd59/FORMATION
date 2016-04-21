@@ -13,8 +13,8 @@
 			<Competence type="Biologie" precision="Biologie moleculaire" niveau = "confirme"/>
 			<Competence type="Biologie" precision="Virologie" niveau = "confirme"/>
 			<Competence type="Biologie" precision="Immunologie" niveau = "confirme"/>
-			<Competence type="Gestion" precision="Marketing" niveau = "intermediaire"/>
-			<Competence type="Gestion" precision="Communication" niveau = "intermediaire"/>
+			<Competence type="Gestion" precision="Marketing" niveau = "confirme"/>
+			<Competence type="Gestion" precision="Communication" niveau = "confirme"/>
 			<Competence type="Gestion" precision="Gestion de Projet" niveau = "intermediaire"/>
 			<Competence type="Langue"  precision="Anglais" niveau = "intermediaire"/>
 			<Competence type="Langue"  precision="Polonais" niveau = "confirme"/>
