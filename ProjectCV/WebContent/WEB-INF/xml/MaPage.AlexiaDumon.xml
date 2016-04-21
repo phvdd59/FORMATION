@@ -10,7 +10,8 @@
 <competence type="Piloter un projet d'optimisation de la production" niveau="debutant"/>
 <competence type="Travailler en equipe et nimer une	reunion de suivi du projet" niveau="debutant"/>
 </listeCompetences>
-	<ListeExperience>
+
+<ListeExperience>
 		<Experience date=" Avril-Septembre 2015" Poste="Ingenieur process"
 			Lieu="Florette France GMS, Mâcon"
 			Description="Elaborer et deployer un plan d’actions visant a reduire les
@@ -30,5 +31,22 @@
 			Lieu="DeliTiv SA, Wavre (Belgique)"
 			Description="Concevoir les nouveaux etiquetages en conformite avec le
 				reglement europeen INCO ; Assurer une veille reglementaire" />
-	</ListeExperience>
+</ListeExperience>
+<ListeFormation>
+		<Formation date="2016" Ecole=""
+			Diplome="Formation en programmation JAVA/JEE" />
+		<Formation date="2015"
+			Ecole="VetAgro Sup Clermont-Ferrand"
+			Diplome="Ingenieur agronome, specialise en amelioration et
+				optimisation des industries agroalimentaires" />
+		<Formation date="2012"
+			Ecole="LEGTA Toulouse Auzeville"
+			Diplome="Ecole preparatoire post BTS-DUT, concours C Agro/Veto" />
+		<Formation date="2011"
+			Ecole="LEGTA Pau Montardon"
+			Diplome="BTSA Productions Animales" />
+		<Formation date="2008"
+			Ecole="Lycee polyvalent Georges Leygues"
+			Diplome="Baccalaureat Scientifique, option Sciences de la vie et de la Terre" />
+</ListeFormation>	
 </CV>
