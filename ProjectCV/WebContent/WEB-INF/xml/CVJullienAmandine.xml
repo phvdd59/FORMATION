@@ -22,14 +22,7 @@
 		<Competences type="Logiciel" precision="Microsoft office"
 			niveau="confirme" />
 	</listeCompetences>
-	<listeFormation>
-		<Formation date="2013" ecole="Universite Joseph Fourier"
-			diplome="Master 2 MRESTE Methodologie en Recherche Environnement Sante Toxicologie et Ecotoxicologie" />
-		<Formation date="2012" ecole="Universite Joseph Fourier"
-			diplome="Master 1 ISM Ingenierie pour la sante et le medicament" />
-		<Formation date="2011" ecole="Universite Joseph Fourier"
-			diplome="Licence Chimie" />
-	</listeFormation>
+	
 	<ListeExperiences>
 		<Experience date="juin 2014 a juin 2015" entreprise="CARSO a Venissieux"
 			poste="Technicien en chimie analytique">
@@ -76,9 +69,19 @@
 			DAEU
 		</Experience>
 	</ListeExperiences>
+	
+	<listeFormation>
+		<Formation date="2013" ecole="Universite Joseph Fourier"
+			diplome="Master 2 MRESTE Methodologie en Recherche Environnement Sante Toxicologie et Ecotoxicologie" />
+		<Formation date="2012" ecole="Universite Joseph Fourier"
+			diplome="Master 1 ISM Ingenierie pour la sante et le medicament" />
+		<Formation date="2011" ecole="Universite Joseph Fourier"
+			diplome="Licence Chimie" />
+	</listeFormation>
+	
 	<CentreInteret> Equitation, Tir à l'arc, Lecture
 	</CentreInteret>
 	<ActivitesAssociatives>BioDocs Lyon (membre organisateur 2015 et 2016
-		du Forum Biotechno);Telethon; Virades de l'Espoir
+		du Forum Biotechno);Telethon et Virades de l'Espoir
 	</ActivitesAssociatives>
 </CV>
