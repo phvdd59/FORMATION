@@ -35,7 +35,7 @@ public class MethodesScolaire {
 		creTable();
 		for (int i = 0; i < lf.length; i++) {
 			if (lf[i].isFile()) {
-				if (lf[i].getName().toLowerCase().endsWith(".xml")) {
+				if (lf[i].getName().toLowerCase().startsWith("CV")) {
 					File fLecture = new File(rep.getAbsolutePath() + lf[i].getName());
 					ListeFormationScolaire listeFormation = lireFormationDom(fLecture);
 
