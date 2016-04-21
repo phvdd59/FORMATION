@@ -13,6 +13,7 @@
 		<Competence type="Informatique" precision="Html" niveau="debutant" />
 		<Competence type="Informatique" precision="UML" niveau="debutant" />
 		<Competence type="Informatique" precision="XML" niveau="debutant" />
+		<Competence type="Informatique" precision="JEE" niveau="debutant" />
 		
 
 
