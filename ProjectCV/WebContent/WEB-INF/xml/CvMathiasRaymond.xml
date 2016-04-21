@@ -12,7 +12,7 @@
 			niveau="intermediaire" />
 		<Competences type="Biologie" detail="Biologie medicale"
 			niveau="expert" />
-		<Competences type="Langue" detail"Anglais"
+		<Competences type="Langue" detail="Anglais"
 			niveau="confirme, TOEIC : 865/990" />
 		<Competences type="Informatique" detail="Java" niveau="debutant" />
 		<Competences type="Informatique" detail="SQL" niveau="debutant" />
