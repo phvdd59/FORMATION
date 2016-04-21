@@ -1,10 +1,25 @@
 package aaa.sql;
 
+import java.io.File;
+import java.io.IOException;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
+
+import javax.xml.parsers.DocumentBuilder;
+import javax.xml.parsers.DocumentBuilderFactory;
+import javax.xml.parsers.ParserConfigurationException;
+
+import org.w3c.dom.Document;
+import org.w3c.dom.Element;
+import org.w3c.dom.Node;
+import org.w3c.dom.NodeList;
+import org.xml.sax.SAXException;
+
+import aaa.metier.Competence;
+import aaa.metier.ListeCompetence;
 
 public class AAAMain {
 
@@ -15,6 +30,8 @@ public class AAAMain {
 
 	private void init() {
 		createComp();
+		File fLecture = new File("../ProjectCV/WebContent/WEB-INF/xml/cvAllan.xml");
+		ListeCompetence listeCompetence = lireListe(fLecture);
 	}
 
 	private void createComp() {
@@ -63,5 +80,39 @@ public class AAAMain {
 			}
 		}
 	}
-	
+
+	public ListeCompetence lireListe(File fLecture) {
+		ListeCompetence listeCompetence = new ListeCompetence();
+		final DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
+		DocumentBuilder documentBuilder;
+		try {
+			documentBuilder = factory.newDocumentBuilder();
+			Document document = documentBuilder.parse(fLecture);
+
+			Element racine = document.getDocumentElement();
+
+			NodeList liste = racine.getChildNodes();
+			int nbList = liste.getLength();
+			for (int i = 0; i < nbList; i++) {
+				if (liste.item(i).getNodeType() == Node.ELEMENT_NODE) {
+					Element eCompetence = (Element) liste.item(i);
+
+					String type = eCompetence.getAttribute("type");
+					String detail = eCompetence.getAttribute("detail");
+					String niveau = eCompetence.getAttribute("niveau");
+
+					Competence comp = new Competence(type, detail, niveau);
+					listeCompetence.add(comp);
+				}
+			}
+
+		} catch (ParserConfigurationException e) {
+			e.printStackTrace();
+		} catch (SAXException e) {
+			e.printStackTrace();
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+		return listeCompetence;
+	}
 }
