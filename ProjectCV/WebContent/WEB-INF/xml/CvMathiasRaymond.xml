@@ -2,10 +2,11 @@
 <CV nom="RAYMOND" prenom="Mathias" e-mail="mathias.raymond@sfr.fr">
 	<ListeCompetences>
 		<Competences type="Programmation" precision="JAVA/JEE" />
-		<Competences type="Biologie"
+		<Competences type="Biologie" precision="Analyse moléculaire"
+		
 			precision="Analyse moléculaire, culture cellulaire,
 						biologie moléculaire, microscopie, normes qualité en biomédical" />
-		<Competences type="Anglais" precision="TOEIC 865/990" />
+		<Competences type="Langue" precision="Anglais" niveau="confirme, TOEIC : 865/990" />
 		<Competences type="Informatique" precision="Word, Excel, PowerPoint - Certificat Informatique et Internet - Logiciels dédiés à la biologie : BioEdit, MEGA" />
 		<Competences type="Humaine" precision="Outils de base de management, gestion de projet" />				
 	</ListeCompetences>
