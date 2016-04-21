@@ -32,6 +32,7 @@ public class AAAMain {
 		createComp();
 		File fLecture = new File("../ProjectCV/WebContent/WEB-INF/xml/cvAllan.xml");
 		ListeCompetence listeCompetence = lireListe(fLecture);
+		insertCompetence(listeCompetence);
 	}
 
 	private void createComp() {
@@ -114,5 +115,46 @@ public class AAAMain {
 			e.printStackTrace();
 		}
 		return listeCompetence;
+	}
+
+	private void insertCompetence(ListeCompetence listeCompetence) {
+		Connection connection = null;
+		ResultSet res = null;
+		Statement stat = null;
+		String requete = "";
+
+		String login = "root";
+		String password = "";
+
+		try {
+			Class.forName("com.mysql.jdbc.Driver");
+		} catch (ClassNotFoundException e) {
+			e.printStackTrace();
+		}
+		String urlBDD = "jdbc:mysql://localhost/bddcv";
+		try {
+			connection = DriverManager.getConnection(urlBDD, login, password);
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+		for (int i = 0; i < listeCompetence.size(); i++) {
+			Competence competence = listeCompetence.get(i);
+			requete = "INSERT INTO competence" + "(type,detail,niveau)" + "VALUES(" + "'" + competence.getType() + "',"
+					+ "'" + competence.getDetail() + "'," + "'" + competence.getNiveau() + "'" + ");";
+
+			try {
+				stat = connection.createStatement();
+				stat.executeUpdate(requete);
+			} catch (SQLException e) {
+				e.printStackTrace();
+			} finally {
+				try {
+					stat.close();
+				} catch (SQLException e2) {
+					e2.printStackTrace();
+				}
+			}
+		}
+
 	}
 }
