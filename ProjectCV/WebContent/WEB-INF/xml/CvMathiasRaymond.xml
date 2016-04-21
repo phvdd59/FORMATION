@@ -33,7 +33,7 @@
 	</ListeCompetences>
 
 	<ListeExperience>
-		<Experience date=" Janvier-Juin 2014"
+		<Experience dateExp=" Janvier-Juin 2014"
 			entreprise="Laboratoire de Virologie - EA4843 ; Faculté de Médecine ; 63000 CLERMONT-FERRAND"
 			poste="Stage Recherche - Virologie">
 			Franchissement d'un modèle in vitro de barrière endothéliale
@@ -41,7 +41,7 @@
 			normales et inflammatoires
 		</Experience>
 
-		<Experience date="Juin-Juillet 2013"
+		<Experience dateExp="Juin-Juillet 2013"
 			entreprise="Laboratoire de Virologie
 					Hospitalo-universitaire ; CHU Clermont-Ferrand &amp; Faculté de
 					Médecine (EA4843); 63000 CLERMONT-FERRAND"
@@ -50,7 +50,7 @@
 			suivis au CHU de Clermont-Ferrand"
 		</Experience>
 
-		<Experience date="Avril 2010"
+		<Experience dateExp="Avril 2010"
 			entreprise="Faculté de
 					Médecine/Pharmacie ; 63000 CLERMONT-FERRAND"
 			poste="Stage d'observation">
