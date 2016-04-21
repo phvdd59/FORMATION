@@ -27,17 +27,17 @@
 			<Competence type="Informatique" precision="JEE" niveau="debutant" />
 	</listeCompetence>
 	<ListeExperiences>
-		<Experience date="10/14 - 11/15" entreprise="BioDocs-Lyon" poste ="Chargé de communication adjoint">Développement de la communication inbound/outbond de l'association</Experience>
-		<Experience date="04/15 - 06/15" entreprise="Forum BIOTechno Rhône-Alpes" poste ="Coordinateur logistique">Organisation et supervision logistique événementielle</Experience>
-		<Experience date="04/14 - 09/14" entreprise="COM-Line" poste ="Concepteur-Rédacteur Junior">Conception et rédacteur de documents et d'outils de formation destinés aux visiteurs médicaux</Experience>
-		<Experience date="07/13 - 09/13" entreprise="INSERM CIRI-U1111" poste ="Ingénieur d'études">Projet de recherche, équipe 'Immunologie de l'Allergie cutanée et Vaccination'</Experience>
-		<Experience date="10/12 - 06/13" entreprise="INSERM CIRI-U1111" poste ="Assistant Ingénieur">Projet de recherche, équipe 'Immunologie de l'Allergie cutanée et Vaccination'</Experience>
-		<Experience date="01/12 - 03/13" entreprise="INSERM U851" poste ="Assistant Ingénieur">Projet de recherche, équipe 'Immunité Innée et les Oncovirus'</Experience>
+		<Experience dateExp="10/14 - 11/15" entreprise="BioDocs-Lyon" poste ="Chargé de communication adjoint">Développement de la communication inbound/outbond de l'association</Experience>
+		<Experience dateExp="04/15 - 06/15" entreprise="Forum BIOTechno Rhône-Alpes" poste ="Coordinateur logistique">Organisation et supervision logistique événementielle</Experience>
+		<Experience dateExp="04/14 - 09/14" entreprise="COM-Line" poste ="Concepteur-Rédacteur Junior">Conception et rédacteur de documents et d'outils de formation destinés aux visiteurs médicaux</Experience>
+		<Experience dateExp="07/13 - 09/13" entreprise="INSERM CIRI-U1111" poste ="Ingénieur d'études">Projet de recherche, équipe 'Immunologie de l'Allergie cutanée et Vaccination'</Experience>
+		<Experience dateExp="10/12 - 06/13" entreprise="INSERM CIRI-U1111" poste ="Assistant Ingénieur">Projet de recherche, équipe 'Immunologie de l'Allergie cutanée et Vaccination'</Experience>
+		<Experience dateExp="01/12 - 03/13" entreprise="INSERM U851" poste ="Assistant Ingénieur">Projet de recherche, équipe 'Immunité Innée et les Oncovirus'</Experience>
 	</ListeExperiences>
 	<formation Nom="Formations">
-		<Formation Date="Date" Ecole="Ecole" Diplome="Diplôme"/>
-		<Formation Date="10/13 - 01/15" Ecole="IMIS (Institut de Management des Industries de la Santé)" Diplome="Mastère spécialisé professionel Management et Marketing des Industries de la Santé"/>
-		<Formation Date="09/10 - 06/13" Ecole="Université Claude Bernard Lyon 1" Diplome="Master Recherche Génétique et Biologie de la Cellule spé. Infectiologie Fondamentale"/>
+		<Formation Date="Date" Diplome="Diplôme" Ecole="Ecole"/>
+		<Formation Date="10/13 - 01/15" Diplome="Mastère spécialisé professionel Management et Marketing des Industries de la Santé" Ecole="IMIS (Institut de Management des Industries de la Santé)" />
+		<Formation Date="09/10 - 06/13" Diplome="Master Recherche Génétique et Biologie de la Cellule spé. Infectiologie Fondamentale" Ecole="Université Claude Bernard Lyon 1" />
 		
 	</formation>
 </CV>
