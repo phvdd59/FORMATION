@@ -19,7 +19,8 @@
 		<Competences type="Informatique" precision="BioEdit" niveau="intermediaire" />
 		<Competences type="Informatique" precision="MEGA" niveau="intermediaire" />
 		<Competences type="Gestion" precision="Management" niveau="intermediaire" />
-		<Competences type="Gestion" precision="Gestion de projet" niveau="intermediaire" />			
+		<Competences type="Gestion" precision="Gestion de projet" niveau="intermediaire" />	
+				
 	</ListeCompetences>
 
 	<ListeExperience>
