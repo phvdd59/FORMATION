@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CV>
+<identite nom="DUMON" prenom="Alexia" mail="alexia47@hotmail.fr">
+</identite>
+<listeCompetences>
+<competence type="Anglais" niveau="bon niveau oral et ecrit : 800/995 au TOEIC"/>
+<competence type="Logiciels"/>
+<competence type="ERP Floris - Rstat - GanttProject - Eclipse - language JAVA JEE" niveau="debutante"/>
+<competence type="pack office" niveau="maitrise"/>
+</listeCompetences>
+</CV>
