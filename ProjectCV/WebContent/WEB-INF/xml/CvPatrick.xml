@@ -8,14 +8,23 @@
 			<photo alt="photo" src= "http://www.doyoubuzz.com/var/users/_/2013/7/25/16/534625/avatar/461588/avatar_cp_big.jpg?t=1458848091"/>
 		</mailEtPhoto>
 	<listeCompetence>
-		<Competence nom="Compétence">
-			<Competence type="Sciences de la Vie" niveau = "12"/>
-			<Competence type="Marketing/Communication" niveau = "8"/>
-			<Competence type="Gestion de Projet" niveau = "9"/>
-			<Competence type="Langues - Anglais" niveau = "6"/>
-			<Competence type="Langues - Polonais" niveau = "11"/>
-			<Competence type="Informatique - JEE" niveau = "2"/>
-		</Competence>
+		
+			<Competence type="Biologie" precision="Culture cellulaire" niveau = "confirme"/>
+			<Competence type="Biologie" precision="Biologie moleculaire" niveau = "confirme"/>
+			<Competence type="Biologie" precision="Virologie" niveau = "confirme"/>
+			<Competence type="Biologie" precision="Immunologie" niveau = "confirme"/>
+			<Competence type="Gestion" precision="Marketing" niveau = "intermediaire"/>
+			<Competence type="Gestion" precision="Communication" niveau = "intermediaire"/>
+			<Competence type="Gestion" precision="Gestion de Projet" niveau = "intermediaire"/>
+			<Competence type="Langue"  precision="Anglais" niveau = "intermediaire"/>
+			<Competence type="Langue"  precision="Polonais" niveau = "confirme"/>
+			<Competence type="Informatique" precision="Java" niveau="debutant" />
+			<Competence type="Informatique" precision="SQL" niveau="debutant" />
+			<Competence type="Informatique" precision="Junit" niveau="debutant" />
+			<Competence type="Informatique" precision="Html" niveau="debutant" />
+			<Competence type="Informatique" precision="UML" niveau="debutant" />
+			<Competence type="Informatique" precision="XML" niveau="debutant" />
+			<Competence type="Informatique" precision="JEE" niveau="debutant" />
 	</listeCompetence>
 	<experience Nom="Expériences Professionnelles">
 		<Experience Date="Date" Entreprise ="Entreprise" PosteOccupé = "Poste Occupé" Missions = "Missions"/>
