@@ -11,6 +11,13 @@
 <competence type="Logiciel" precision="Pack office" niveau="confirme"/>
 <competence type="Gestion" precision="Piloter un projet d'optimisation de la production" niveau="debutant"/>
 <competence type="Gestion" precision="Travailler en equipe et animer une reunion de suivi du projet" niveau="debutant"/>
+<Competence type="Informatique" precision="Java" niveau="debutant" />
+<Competence type="Informatique" precision="SQL" niveau="debutant" />
+<Competence type="Informatique" precision="Junit" niveau="debutant" />
+<Competence type="Informatique" precision="Html" niveau="debutant" />
+<Competence type="Informatique" precision="UML" niveau="debutant" />
+<Competence type="Informatique" precision="XML" niveau="debutant" />
+<Competence type="Informatique" precision="JEE" niveau="debutant" />
 </listeCompetences>
 <ListeExperience>
 		<Experience date=" Avril-Septembre 2015" entreprise="Florette France GMS, Mâcon" poste="Ingenieur process">Elaborer et deployer un plan d’actions visant a reduire les
