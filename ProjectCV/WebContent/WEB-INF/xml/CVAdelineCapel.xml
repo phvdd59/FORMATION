@@ -3,11 +3,17 @@
 	<ListeCompetences>
 		<Competence type="Logiciel" precision="Matlab" niveau="intermediaire" />
 		<Competence type="Logiciel" precision="Maple" niveau="intermediaire" />
-		<Competence type="Mathematiques" precision="Equations aux derivees partielles"
-			niveau="confirme" />
+		<Competence type="Mathematiques" precision="Equations aux derivees partielles" niveau="confirme" />		
 		<Competence type="Langue" precision="Anglais" niveau="intermediaire" />
 		<Competence type="Mathematiques" precision="Calcul integral" niveau="confirme" />
 		<Competence type="Mathematiques" precision="Analyse complexe" niveau="confirme" />
+		<Competence type="Informatique" precision="Java" niveau="debutant" />
+		<Competence type="Informatique" precision="SQL" niveau="debutant" />
+		<Competence type="Informatique" precision="Junit" niveau="debutant" />
+		<Competence type="Informatique" precision="Html" niveau="debutant" />
+		<Competence type="Informatique" precision="UML" niveau="debutant" />
+		<Competence type="Informatique" precision="XML" niveau="debutant" />
+		
 
 
 	</ListeCompetences>
