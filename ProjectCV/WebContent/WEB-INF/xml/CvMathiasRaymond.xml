@@ -2,13 +2,24 @@
 <CV nom="RAYMOND" prenom="Mathias" e-mail="mathias.raymond@sfr.fr">
 	<ListeCompetences>
 		<Competences type="Programmation" precision="JAVA/JEE" />
-		<Competences type="Biologie" precision="Analyse moléculaire"
-		
-			precision="Analyse moléculaire, culture cellulaire,
-						biologie moléculaire, microscopie, normes qualité en biomédical" />
+		<Competences type="Biologie" precision="Analyse moléculaire" niveau="intermediaire"/>
+		<Competences type="Biologie" precision="Culture cellulaire" niveau="confirme"/>
+		<Competences type="Biologie" precision="Biologie moleculaire" niveau="confirme"/>
+		<Competences type="Biologie" precision="Microscopie" niveau="intermediaire"/>
+		<Competences type="Biologie" precision="Biologie medicale" niveau="expert"/>
 		<Competences type="Langue" precision="Anglais" niveau="confirme, TOEIC : 865/990" />
-		<Competences type="Informatique" precision="Word, Excel, PowerPoint - Certificat Informatique et Internet - Logiciels dédiés à la biologie : BioEdit, MEGA" />
-		<Competences type="Humaine" precision="Outils de base de management, gestion de projet" />				
+		<Competences type="Informatique" precision="Java" niveau="debutant" />
+		<Competences type="Informatique" precision="SQL" niveau="debutant" />
+		<Competences type="Informatique" precision="JUnit" niveau="debutant" />
+		<Competences type="Informatique" precision="XML" niveau="debutant" />
+		<Competences type="Informatique" precision="HTML" niveau="debutant" />
+		<Competences type="Informatique" precision="UML" niveau="debutant" />
+		<Competences type="Informatique" precision="JEE" niveau="debutant" />
+		<Competences type="Informatique" precision="Microsoft office" niveau="confirme" />
+		<Competences type="Informatique" precision="BioEdit" niveau="intermediaire" />
+		<Competences type="Informatique" precision="MEGA" niveau="intermediaire" />
+		<Competences type="Gestion" precision="Management" niveau="intermediaire" />
+		<Competences type="Gestion" precision="Gestion de projet" niveau="intermediaire" />			
 	</ListeCompetences>
 
 	<ListeExperience>
