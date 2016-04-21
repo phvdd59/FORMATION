@@ -36,9 +36,9 @@ public class MethodesScolaire {
 		for (int i = 0; i < lf.length; i++) {
 			if (lf[i].isFile()) {
 				if (lf[i].getName().toLowerCase().endsWith(".xml")) {
-					File fLecture = new File(rep.getAbsolutePath()+lf[i].getName());
+					File fLecture = new File(rep.getAbsolutePath() + lf[i].getName());
 					ListeFormationScolaire listeFormation = lireFormationDom(fLecture);
-					
+
 					for (FormationScolaire formationScolaire : listeFormation) {
 						insertTable(formationScolaire);
 					}
