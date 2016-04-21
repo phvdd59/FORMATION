@@ -1,19 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <CV nom="KADRI" prenom="Souad" email="souad.kadri1@gmail.com">
-	<ListeCompetence>
-		<Competence type="Anglais" niveau="Intermediaire"></Competence>
-		<Competence type="Arabe" niveau="Courant"></Competence>
-		<Competence type="Espagnol" niveau="Intermediaire"></Competence>
-		<Competence type="Pack Microsoft Office" niveau="Bon">
-		</Competence>
-		<Competence type="Logiciel de simulation : Aspen HYSYS"
-			niveau="Bon">></Competence>
-	</ListeCompetence>
+	<ListeCompetences>
+		<Competences type="Langue" precision="Anglais" niveau="Intermediaire"/>
+		<Competences type="Langue" precision="Arabe" niveau="Courant"/>
+		<Competences type="Langue" precision="Espagnol" niveau="Intermediaire"/>
+		<Competences type="Informatique" precision="Java" niveau="debutant" />
+		<Competences type="Informatique" precision="Pack Microsoft Office" niveau="Bon"/>
+		<Competences type="Informatique" precision="Logiciel de simulation : Aspen HYSYS" niveau="Bon"/>
+	</ListeCompetences>
 	<Experience>
-		<Exp date="Mai-Novembre 2015"
-			entreprise="Direction Technique et Performance Veolia Environnement"
-			poste="Stagiaire Ingénieur"></Exp>
+		<Exp date="Mai-Novembre 2015" entreprise="Direction Technique et Performance Veolia Environnement" poste="Stagiaire Ingénieur"></Exp>
 		Essais de valorisation de boues par mousse de flottation
 		Etude de
 		récupération/d’extraction du carbone issu de boues provenant de
@@ -34,8 +31,7 @@
 		expérimentaux
 		Brainstorming sur la conception à l’échelle pilote du
 		procédé
-		<Exp date="Janvier 2013" entreprise="Laboratoire de Reactivité de Surface"
-			poste="Stagiaire"></Exp>
+		<Exp date="Janvier 2013" entreprise="Laboratoire de Reactivité de Surface" poste="Stagiaire"></Exp>
 		Préparation à l’aide d’un robot de synthèse
 		(Zinsser-Analytic) de
 		l’étape d’imprégnation de catalyseurs
@@ -46,14 +42,9 @@
 		catalyseurs
 	</Experience>
 	<Formation>
-		<Form date="2014/2015"
-			ecole="Université Pierre et Marie Curie (Paris VI) en partenariat avec Chimie Paris, l’ENS et l’ESPCI "
-			diplôme="Master 2 mention Chimie spécialité Ingénierie Chimique "></Form>
-		<Form date="2013/2014" ecole="Université Pierre et Marie Curie (Paris VI)"
-			diplôme="Master 1 Sciences et Technologies mention Chimie "></Form>
-		<Form date="2012/2013" ecole="Université Pierre et Marie Curie (Paris VI)"
-			diplôme="Licence 3 Sciences et Technologies mention Chimie "></Form>
-		<Form date="2010" ecole="Lycée Emmanuel Mounier, Grenoble"
-			diplôme=" Baccalauréat Scientifique spécialité Physique-Chimie"></Form>
+		<Form date="2014/2015" ecole="Université Pierre et Marie Curie (Paris VI) en partenariat avec Chimie Paris, l’ENS et l’ESPCI " diplome="Master 2 mention Chimie spécialité Ingénierie Chimique "></Form>
+		<Form date="2013/2014" ecole="Université Pierre et Marie Curie (Paris VI)" diplome="Master 1 Sciences et Technologies mention Chimie "></Form>
+		<Form date="2012/2013" ecole="Université Pierre et Marie Curie (Paris VI)" diplome="Licence 3 Sciences et Technologies mention Chimie "></Form>
+		<Form date="2010" ecole="Lycée Emmanuel Mounier, Grenoble" diplome=" Baccalauréat Scientifique spécialité Physique-Chimie"></Form>
 	</Formation>
 </CV>
