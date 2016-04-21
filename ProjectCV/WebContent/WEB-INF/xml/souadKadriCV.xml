@@ -9,8 +9,8 @@
 		<Competences type="Informatique" precision="Pack Microsoft Office" niveau="Bon"/>
 		<Competences type="Informatique" precision="Logiciel de simulation : Aspen HYSYS" niveau="Bon"/>
 	</ListeCompetences>
-	<Experience>
-		<Exp date="Mai-Novembre 2015" entreprise="Direction Technique et Performance Veolia Environnement" poste="Stagiaire Ingénieur"></Exp>
+	<ListeExperiences>
+		<Experience date="Mai-Novembre 2015" entreprise="Direction Technique et Performance Veolia Environnement" poste="Stagiaire Ingénieur">
 		Essais de valorisation de boues par mousse de flottation
 		Etude de
 		récupération/d’extraction du carbone issu de boues provenant de
@@ -21,7 +21,8 @@
 		installations sur pilote
 		Collaboration avec différents acteurs
 		industriels
-		<Exp date="Avril-Aout 2014" entreprise="ERAMET Research" poste="Stagiaire"></Exp>
+		</Experience>
+		<Experience date="Avril-Aout 2014" entreprise="ERAMET Research" poste="Stagiaire">
 		Etude d’une alternative au procédé d’extraction pour la
 		valorisation
 		d’un gisement polymétallique situé au Gabon riche
@@ -31,7 +32,8 @@
 		expérimentaux
 		Brainstorming sur la conception à l’échelle pilote du
 		procédé
-		<Exp date="Janvier 2013" entreprise="Laboratoire de Reactivité de Surface" poste="Stagiaire"></Exp>
+		</Experience>
+		<Experience date="Janvier 2013" entreprise="Laboratoire de Reactivité de Surface" poste="Stagiaire">
 		Préparation à l’aide d’un robot de synthèse
 		(Zinsser-Analytic) de
 		l’étape d’imprégnation de catalyseurs
@@ -41,6 +43,7 @@
 		des différents
 		catalyseurs
 	</Experience>
+	</ListeExperiences>
 	<Formation>
 		<Form date="2014/2015" ecole="Université Pierre et Marie Curie (Paris VI) en partenariat avec Chimie Paris, l’ENS et l’ESPCI " diplome="Master 2 mention Chimie spécialité Ingénierie Chimique "></Form>
 		<Form date="2013/2014" ecole="Université Pierre et Marie Curie (Paris VI)" diplome="Master 1 Sciences et Technologies mention Chimie "></Form>
