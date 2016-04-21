@@ -1,31 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <CV nom="JULLIEN" prenom="Amandine" email="jullien.amandine@hotmail.fr">
-	<listeCompetences>
-		<Competences type="Langue" precision="Anglais" niveau="confirme" />
-		<Competences type="Biologie" precision="Culture cellulaire"
-			niveau="confirme" />
-		<Competences type="Biologie" precision="Biologie moleculaire"
-			niveau="confirme" />
-		<Competences type="Chimie analytique" precision="Spectrometrie de masse"
-			niveau="confirme" />
-		<Competences type="Mathematiques" precision="Biostatistiques"
-			niveau="confirme" />
-		<Competences type="Informatique" precision="Java" niveau="debutant" />
-		<Competences type="Informatique" precision="SQL" niveau="debutant" />
-		<Competences type="Informatique" precision="JUnit" niveau="debutant" />
-		<Competences type="Informatique" precision="XML" niveau="debutant" />
-		<Competences type="Informatique" precision="HTML" niveau="debutant" />
-		<Competences type="Informatique" precision="UML" niveau="debutant" />
-		<Competences type="Informatique" precision="JEE" niveau="debutant" />
-		<Competences type="Logiciel" precision="R" niveau="intermediaire" />
-		<Competences type="Logiciel" precision="Microsoft office"
-			niveau="confirme" />
-	</listeCompetences>
+	<ListeCompetence>
+		<Competence type="Langue" precision="Anglais" niveau="confirme" />
+		<Competence type="Biologie" precision="Culture cellulaire" niveau="confirme" />
+		<Competence type="Biologie" precision="Biologie moleculaire" niveau="confirme" />
+		<Competence type="Chimie analytique" precision="Spectrometrie de masse" niveau="confirme" />
+		<Competence type="Mathematiques" precision="Biostatistiques" niveau="confirme" />
+		<Competence type="Informatique" precision="Java" niveau="debutant" />
+		<Competence type="Informatique" precision="SQL" niveau="debutant" />
+		<Competence type="Informatique" precision="JUnit" niveau="debutant" />
+		<Competence type="Informatique" precision="XML" niveau="debutant" />
+		<Competence type="Informatique" precision="HTML" niveau="debutant" />
+		<Competence type="Informatique" precision="UML" niveau="debutant" />
+		<Competence type="Informatique" precision="JEE" niveau="debutant" />
+		<Competence type="Logiciel" precision="R" niveau="intermediaire" />
+		<Competence type="Logiciel" precision="Microsoft office" niveau="confirme" />
+	</ListeCompetence>
 	
 	<ListeExperiences>
-		<Experience date="juin 2014 a juin 2015" entreprise="CARSO a Venissieux"
-			poste="Technicien en chimie analytique">
+		<Experience dateExp="juin 2014 a juin 2015" entreprise="CARSO a Venissieux" poste="Technicien en chimie analytique">
 			Preparer les echantillons ; controle de la conformite
 			d'etalonnage et de
 			fonctionnement ; analyser et retranscrire les
@@ -34,8 +28,7 @@
 			COFRAC et BPL ;
 			effectuer l'entretien des équipements de laboratoire
 		</Experience>
-		<Experience date="janvier 2013 a juin 2013" entreprise="CEA de Grenoble"
-			poste="Ingenieur d'etudes toxicologue">
+		<Experience dateExp="janvier 2013 a juin 2013" entreprise="CEA de Grenoble" poste="Ingenieur d'etudes toxicologue">
 			Superviser et controler le deroulement et l'avancement des
 			experiences; rediger
 			les protocoles d'experiences; realiser les
@@ -50,33 +43,27 @@
 			parution au journal
 			Toxicology in Vitro
 		</Experience>
-		<Experience date="avril 2012 a juin 2012" entreprise="CEA de Grenoble"
-			poste="Assistant ingénieur d'etudes toxicologue">
+		<Experience dateExp="avril 2012 a juin 2012" entreprise="CEA de Grenoble" poste="Assistant ingénieur d'etudes toxicologue">
 			Communication: publication au journal PLOS One; realiser les
 			experiences: culture
 			cellulaire, RT-qPCR,extraction d'ADN et d'ARN
 		</Experience>
-		<Experience date="novembre 2013 a janvier 2015" entreprise="Completude"
-			poste="Professeur a domicile">
+		<Experience dateExp="novembre 2013 a janvier 2015" entreprise="Completude" poste="Professeur a domicile">
 			Soutien en physique-chimie et mathématiques d'élèves de 3ème à
 			la
 			terminale; Animation de groupe de soutien en physique-chimie et
 			mathématiques
 		</Experience>
-		<Experience date="septembre 2010 a juin 2011" entreprise="Universite Joseph Fourier"
-			poste="Tuteur de Chimie">
+		<Experience dateExp="septembre 2010 a juin 2011" entreprise="Universite Joseph Fourier" poste="Tuteur de Chimie">
 			Tutorat de chimie à l'université pour les L1 et les eleves de
 			DAEU
 		</Experience>
 	</ListeExperiences>
 	
 	<listeFormation>
-		<Formation date="2013" ecole="Universite Joseph Fourier"
-			diplome="Master 2 MRESTE Methodologie en Recherche Environnement Sante Toxicologie et Ecotoxicologie" />
-		<Formation date="2012" ecole="Universite Joseph Fourier"
-			diplome="Master 1 ISM Ingenierie pour la sante et le medicament" />
-		<Formation date="2011" ecole="Universite Joseph Fourier"
-			diplome="Licence Chimie" />
+		<Formation date="2013"  diplome="Master 2 MRESTE Methodologie en Recherche Environnement Sante Toxicologie et Ecotoxicologie" ecole="Universite Joseph Fourier" />
+		<Formation date="2012"  diplome="Master 1 ISM Ingenierie pour la sante et le medicament" ecole="Universite Joseph Fourier"/>
+		<Formation date="2011"  diplome="Licence Chimie" ecole="Universite Joseph Fourier"/>
 	</listeFormation>
 	
 	<CentreInteret> Equitation, Tir à l'arc, Lecture
