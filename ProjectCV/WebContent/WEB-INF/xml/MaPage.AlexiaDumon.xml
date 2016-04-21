@@ -14,25 +14,25 @@
 <competence type="Travailler en equipe et nimer une	reunion de suivi du projet" niveau="debutant"/>
 </listeCompetences>
 <ListeExperience>
-		<Experience date=" Avril-Septembre 2015" Poste="Ingenieur process"
-			Lieu="Florette France GMS, Mâcon"
-			Description="Elaborer et deployer un plan d’actions visant a reduire les
-				pertes de matières ; Optimiser les flux ; Accompagner les
+		<Experience date=" Avril-Septembre 2015" entreprise="Florette France GMS, Mâcon" poste="Ingenieur process">Elaborer et deployer un plan d’actions visant a reduire les
+				Elaborer et deployer un plan d’actions visant a reduire les pertes de matières ; Optimiser les flux ; Accompagner les
 				conducteurs de ligne dans la démarche d’amelioration continue ; Suivre
 				et analyser les KPI ; Gestion d'un budget et de prestataires pour
 				l'amelioration de l'outil industriel ; Reduction des pertes de
-				29% pour un objectif fixe à 25%" />
+				29% pour un objectif fixe à 25%</Experience>
+			
+			
 
-		<Experience date="Novembre 2014-Mars 2015" Poste="Technicienne methodes"
-			Lieu="Brioche Pasquier, Andrézieux-Bouthéon"
-			Description="Identifier et quantifier les pertes de matieres ; Guider
+		<Experience date="Novembre 2014-Mars 2015" entreprise="Brioche Pasquier, Andrézieux-Bouthéon" poste="Technicienne methodes">
+			
+			Identifier et quantifier les pertes de matieres ; Guider
 				l’encadrement vers une nouvelle organisation sur ligne et l’essai de
-				nouvelles formulations recette" />
+				nouvelles formulations recette</Experience>
 
-		<Experience date="Juin-Aout 2014" Poste="Assistante qualite"
-			Lieu="DeliTiv SA, Wavre (Belgique)"
-			Description="Concevoir les nouveaux etiquetages en conformite avec le
-				reglement europeen INCO ; Assurer une veille reglementaire" />
+		<Experience date="Juin-Aout 2014" entreprise="DeliTiv SA, Wavre (Belgique)" poste="Assistante qualite">Concevoir les nouveaux etiquetages en conformite avec le
+				reglement europeen INCO ; Assurer une veille reglementaire</Experience>
+			
+			
 </ListeExperience>
 <ListeFormation>
 		<Formation date="2016" Ecole=""
