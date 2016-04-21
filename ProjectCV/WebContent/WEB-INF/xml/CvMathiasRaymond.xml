@@ -1,33 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CV nom="RAYMOND" prenom="Mathias" e-mail="mathias.raymond@sfr.fr">
 	<ListeCompetences>
-		<Competences type="Programmation" precision="JAVA/JEE" />
-		<Competences type="Biologie" precision="Analyse moléculaire"
+		<Competences type="Programmation" detail="JAVA/JEE" />
+		<Competences type="Biologie" detail="Analyse moléculaire"
 			niveau="intermediaire" />
-		<Competences type="Biologie" precision="Culture cellulaire"
+		<Competences type="Biologie" detail="Culture cellulaire"
 			niveau="confirme" />
-		<Competences type="Biologie" precision="Biologie moleculaire"
+		<Competences type="Biologie" detail="Biologie moleculaire"
 			niveau="confirme" />
-		<Competences type="Biologie" precision="Microscopie"
+		<Competences type="Biologie" detail="Microscopie"
 			niveau="intermediaire" />
-		<Competences type="Biologie" precision="Biologie medicale"
+		<Competences type="Biologie" detail="Biologie medicale"
 			niveau="expert" />
-		<Competences type="Langue" precision="Anglais"
+		<Competences type="Langue" detail"Anglais"
 			niveau="confirme, TOEIC : 865/990" />
-		<Competences type="Informatique" precision="Java" niveau="debutant" />
-		<Competences type="Informatique" precision="SQL" niveau="debutant" />
-		<Competences type="Informatique" precision="JUnit" niveau="debutant" />
-		<Competences type="Informatique" precision="XML" niveau="debutant" />
-		<Competences type="Informatique" precision="HTML" niveau="debutant" />
-		<Competences type="Informatique" precision="UML" niveau="debutant" />
-		<Competences type="Informatique" precision="JEE" niveau="debutant" />
-		<Competences type="Informatique" precision="Microsoft office"
+		<Competences type="Informatique" detail="Java" niveau="debutant" />
+		<Competences type="Informatique" detail="SQL" niveau="debutant" />
+		<Competences type="Informatique" detail="JUnit" niveau="debutant" />
+		<Competences type="Informatique" detail="XML" niveau="debutant" />
+		<Competences type="Informatique" detail="HTML" niveau="debutant" />
+		<Competences type="Informatique" detail="UML" niveau="debutant" />
+		<Competences type="Informatique" detail="JEE" niveau="debutant" />
+		<Competences type="Informatique" detail="Microsoft office"
 			niveau="confirme" />
-		<Competences type="Informatique" precision="BioEdit"
+		<Competences type="Informatique" detail="BioEdit"
 			niveau="intermediaire" />
-		<Competences type="Informatique" precision="MEGA" niveau="intermediaire" />
-		<Competences type="Gestion" precision="Management" niveau="intermediaire" />
-		<Competences type="Gestion" precision="Gestion de projet"
+		<Competences type="Informatique" detail="MEGA" niveau="intermediaire" />
+		<Competences type="Gestion" detail="Management" niveau="intermediaire" />
+		<Competences type="Gestion" detail="Gestion de projet"
 			niveau="intermediaire" />
 
 	</ListeCompetences>
