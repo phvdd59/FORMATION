@@ -10,7 +10,7 @@
 <Competence type="Logiciel" detail="Eclipse" niveau="intermediaire"/>
 <Competence type="Logiciel" detail="Pack office" niveau="confirme"/>
 <Competence type="Gestion" detail="Piloter un projet d'optimisation de la production" niveau="debutant"/>
-<Competence type="Gestion" detail"Travailler en equipe et animer une reunion de suivi du projet" niveau="debutant"/>
+<Competence type="Gestion" detail="Travailler en equipe et animer une reunion de suivi du projet" niveau="debutant"/>
 <Competence type="Informatique" detail="Java" niveau="debutant" />
 <Competence type="Informatique" detail="SQL" niveau="debutant" />
 <Competence type="Informatique" detail="Junit" niveau="debutant" />
