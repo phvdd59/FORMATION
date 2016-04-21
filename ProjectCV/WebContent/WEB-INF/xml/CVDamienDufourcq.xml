@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CV nom="Dufourcq" prenom="Damien" Email="damien.concept@gmail.com">
+	<ListeCompetences>
+		<Competence type="SAS,R" niveau="intermediaire" />
+		<Competence type="JAVA JEE, C, C++" niveau="intermediaire" />
+		<Competence type="Anglais" niveau="B2" />
+		<Competence type="Data Mining" niveau="novice" />
+		<Competence type="Analyse Statistique,modélisation,prédiction"
+			niveau="avancé" />
+
+
+	</ListeCompetences>
+	<Formation>
+		<Form date="2008-2013" ecole="INSA Toulouse"
+			diplome="Ingenieur Mathematique et Modelisation, Biostatistique" />
+		<Form date="2007-2008" ecole="Deodat de Severac" diplome="Classe Préparatoire PCSI" />
+		<Form date="2011-2012" ecole="Lycée Deodat de Severac" diplome="Baccalauréat série scientiﬁque" />
+	</Formation>
+	<Experiences>
+		<Exp date="Avril a Septembre 2013" entreprise="IPPON Innovation"
+			poste="CDD prestataire Ingénieur Statisticien au pole R&amp;D Sanofi Toulouse" />
+		<Exp date="Juin a Septembre 2012" entreprise="EATON LEONARD"
+			poste="Stage développement d'un simulateur 3D aux Etas-Unis" />
+		<Exp date="Juin a Juin 2011" entreprise="Laboratoire IGC"
+			poste="Developpement d'un programme de simulation de donnees genetiques au Portugal" />
+	</Experiences>
+</CV>
