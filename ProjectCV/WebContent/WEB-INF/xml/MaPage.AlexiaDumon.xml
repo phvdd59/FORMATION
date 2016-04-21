@@ -3,14 +3,16 @@
 <identite nom="DUMON" prenom="Alexia" mail="alexia47@hotmail.fr">
 </identite>
 <listeCompetences>
-<competence type="Anglais" niveau="bon niveau oral et ecrit : 800/995 au TOEIC"/>
-<competence type="Logiciels"/>
-<competence type="ERP Floris - Rstat - GanttProject - Eclipse - language JAVA JEE" niveau="debutante"/>
-<competence type="pack office" niveau="maitrise"/>
+<competence type="Langue" precision="Anglais" niveau="confirme, TOEIC : 800/995"/>
+<competence type="Logiciels" precision="ERP Floris" niveau="debutant"/>
+<competence type="Logiciels" precision="Rstat" niveau="intermediaire"/>
+<competence type="Logiciels" precision="GanttProject" niveau="intermediaire"/>
+<competence type="Logiciels" precision="Eclipse" niveau="intermediaire"/>
+<competence type="Logiciels" precision="pack office" niveau="confirme"/>
+<competence type="Logiciels" precision="language JAVA JEE" niveau="debutant"/>
 <competence type="Piloter un projet d'optimisation de la production" niveau="debutant"/>
 <competence type="Travailler en equipe et nimer une	reunion de suivi du projet" niveau="debutant"/>
 </listeCompetences>
-
 <ListeExperience>
 		<Experience date=" Avril-Septembre 2015" Poste="Ingenieur process"
 			Lieu="Florette France GMS, Mâcon"
