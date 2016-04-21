@@ -34,14 +34,14 @@
 		
 	</ListeCompetence>
 	
-	<Experiences>
-		<Exp date="2016" entreprise="Mc Donald's" poste="Equipière polyvalente"/>
-		<Exp date="2015" entreprise="LECLERC" poste="Vendeuse"/>
-		<Exp date="2015" entreprise="MICHELIN" poste="Stagiaire">Modélisation de thermoplastique-élastomères</Exp>
-		<Exp date="2014-2015" entreprise="SOURIAU" poste="Stagiaire">Amélioration de productivité par optimisation de l'interface lopin-outil</Exp>
-		<Exp date="2014" entreprise="AMIPI" poste="Stagiaire">Audit qualité</Exp>
-		<Exp date="2014" entreprise="AIA" poste="Stagiaire">Elaboration de procédure de contrôle par ultrasons pour les pieds de perches Transall et les nervures des Mirages 2000</Exp>
-	</Experiences>
+	<ListeExperiences>
+		<Experience date="2016" entreprise="Mc Donald's" poste="Equipière polyvalente"/>
+		<Experience date="2015" entreprise="LECLERC" poste="Vendeuse"/>
+		<Experience date="2015" entreprise="MICHELIN" poste="Stagiaire">Modélisation de thermoplastique-élastomères</Experience>
+		<Experience date="2014-2015" entreprise="SOURIAU" poste="Stagiaire">Amélioration de productivité par optimisation de l'interface lopin-outil</Experience>
+		<Experience date="2014" entreprise="AMIPI" poste="Stagiaire">Audit qualité</Experience>
+		<Experience date="2014" entreprise="AIA" poste="Stagiaire">Elaboration de procédure de contrôle par ultrasons pour les pieds de perches Transall et les nervures des Mirages 2000</Experience>
+	</ListeExperiences>
 	
 	<Formation>
 		<Form date="2015" ecole="ISMANS" diplome="Ingénieur génie des matériaux"/>
