@@ -2,20 +2,20 @@
 
 <CV nom="JULLIEN" prenom="Amandine" email="jullien.amandine@hotmail.fr">
 	<ListeCompetence>
-		<Competence type="Langue" precision="Anglais" niveau="confirme" />
-		<Competence type="Biologie" precision="Culture cellulaire" niveau="confirme" />
-		<Competence type="Biologie" precision="Biologie moleculaire" niveau="confirme" />
-		<Competence type="Chimie analytique" precision="Spectrometrie de masse" niveau="confirme" />
-		<Competence type="Mathematiques" precision="Biostatistiques" niveau="confirme" />
-		<Competence type="Informatique" precision="Java" niveau="debutant" />
-		<Competence type="Informatique" precision="SQL" niveau="debutant" />
-		<Competence type="Informatique" precision="JUnit" niveau="debutant" />
-		<Competence type="Informatique" precision="XML" niveau="debutant" />
-		<Competence type="Informatique" precision="HTML" niveau="debutant" />
-		<Competence type="Informatique" precision="UML" niveau="debutant" />
-		<Competence type="Informatique" precision="JEE" niveau="debutant" />
-		<Competence type="Logiciel" precision="R" niveau="intermediaire" />
-		<Competence type="Logiciel" precision="Microsoft office" niveau="confirme" />
+		<Competence type="Langue" detail="Anglais" niveau="confirme" />
+		<Competence type="Biologie" detail="Culture cellulaire" niveau="confirme" />
+		<Competence type="Biologie" detail="Biologie moleculaire" niveau="confirme" />
+		<Competence type="Chimie analytique" detail="Spectrometrie de masse" niveau="confirme" />
+		<Competence type="Mathematiques" detail="Biostatistiques" niveau="confirme" />
+		<Competence type="Informatique" detail="Java" niveau="debutant" />
+		<Competence type="Informatique" detail="SQL" niveau="debutant" />
+		<Competence type="Informatique" detail="JUnit" niveau="debutant" />
+		<Competence type="Informatique" detail="XML" niveau="debutant" />
+		<Competence type="Informatique" detail="HTML" niveau="debutant" />
+		<Competence type="Informatique" detail="UML" niveau="debutant" />
+		<Competence type="Informatique" detail="JEE" niveau="debutant" />
+		<Competence type="Logiciel" detail="R" niveau="intermediaire" />
+		<Competence type="Logiciel" detail="Microsoft office" niveau="confirme" />
 	</ListeCompetence>
 	
 	<ListeExperiences>

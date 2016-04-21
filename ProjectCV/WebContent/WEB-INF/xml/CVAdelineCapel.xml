@@ -1,25 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CV nom="Capel" prenom="Adeline" Email="adelinecapel@gmail.com">
 	<ListeCompetence>
-		<Competence type="Logiciel" precision="Matlab" niveau="intermediaire" />
-		<Competence type="Logiciel" precision="Maple" niveau="intermediaire" />
-		<Competence type="Mathematiques" precision="Equations aux derivees partielles" niveau="confirme" />		
-		<Competence type="Langue" precision="Anglais" niveau="intermediaire" />
-		<Competence type="Mathematiques" precision="Calcul integral" niveau="confirme" />
-		<Competence type="Mathematiques" precision="Analyse complexe" niveau="confirme" />
-		<Competence type="Informatique" precision="Java" niveau="debutant" />
-		<Competence type="Informatique" precision="SQL" niveau="debutant" />
-		<Competence type="Informatique" precision="Junit" niveau="debutant" />
-		<Competence type="Informatique" precision="Html" niveau="debutant" />
-		<Competence type="Informatique" precision="UML" niveau="debutant" />
-		<Competence type="Informatique" precision="XML" niveau="debutant" />
-		<Competence type="Informatique" precision="JEE" niveau="debutant" />		
+		<Competence type="Logiciel" detail="Matlab" niveau="intermediaire" />
+		<Competence type="Logiciel" detail="Maple" niveau="intermediaire" />
+		<Competence type="Mathematiques" detail="Equations aux derivees partielles" niveau="confirme" />		
+		<Competence type="Langue" detail="Anglais" niveau="intermediaire" />
+		<Competence type="Mathematiques" detail="Calcul integral" niveau="confirme" />
+		<Competence type="Mathematiques" detail="Analyse complexe" niveau="confirme" />
+		<Competence type="Informatique" detail="Java" niveau="debutant" />
+		<Competence type="Informatique" detail="SQL" niveau="debutant" />
+		<Competence type="Informatique" detail="Junit" niveau="debutant" />
+		<Competence type="Informatique" detail="Html" niveau="debutant" />
+		<Competence type="Informatique" detail="UML" niveau="debutant" />
+		<Competence type="Informatique" detail="XML" niveau="debutant" />
+		<Competence type="Informatique" detail="JEE" niveau="debutant" />		
 	</ListeCompetence>
 	<ListeExperiences>
 		<Experience dateExp="Janvier a Juin 2014" entreprise="Laboratoire Mathematiques Clermont-Ferrand"
-			poste="Chargé de recherche en Mathématiques appliquées stagiaire" />Etude d'articles dans le domaine des probabilites ainsi que conception d'un memoire complete d'une soutenance orale
+			poste="Chargé de recherche en Mathématiques appliquées stagiaire">Etude d'articles dans le domaine des probabilites ainsi que conception d'un memoire complete d'une soutenance orale</Experience>
 		<Experience dateExp="Janvier a Juin 2013" entreprise="Laboratoire Mathematiques Clermont-Ferrand"
-			poste="Chargé de recherche en Mathématiques fondamentales stagiaire" />Etude d'articles de recherche en analyse complexe ainsi que redaction d'un article scientifique et soutenance
+			poste="Chargé de recherche en Mathématiques fondamentales stagiaire">Etude d'articles de recherche en analyse complexe ainsi que redaction d'un article scientifique et soutenance</Experience>
 								
 	</ListeExperiences>
 	
