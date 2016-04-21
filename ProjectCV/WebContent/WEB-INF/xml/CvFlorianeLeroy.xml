@@ -1,14 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CV nom="Leroy" prenom="Floriane" Email="leroy.floriane.63@gmail.com">
 	<ListeCompetence>
-		<Competences type="Polymère et Composite, Adhésion, Mise en oeuvre, Acier, Traitement des surfaces, Endurance des matériaux" niveau="Bien connu"/>
-		<Competences type="Résistance des matériaux,Système discret, Milieux continus, Eléments finis" niveau="Connu"/>
-		<Competences type="Conduite de projet, Sureté des installations" niveau="Connu"/>
-		<Competences type="Modélisation moléculaire :Gauss-view,Material Studio" niveau="Très bien connu"/>
-		<Compétences type="Mécaniques : Hypermesh, Samcef, RDM" niveau="Notion"/>
-		<Competences type="Plasturgie : Cadmould" niveau="Connu"/>
-		<Competences type="Anglais" niveau="Toeic 785 points"/>
-		<Competences type="Japonais" niveau="Notion"/>
+	
+		<Competences type="Materiaux" precision="Polymère et Composite" niveau="confirme"/>
+		<Competences type="Materiaux" precision="Adhésion" niveau="confirme"/>
+		<Competences type="Materiaux" precision="Mise en oeuvre" niveau="confirme"/>
+		<Competences type="Materiaux" precision="Acier" niveau="confirme"/>
+		<Competences type="Materiaux" precision="Traitement des surfaces" niveau="confirme"/>
+		<Competences type="Materiaux" precision="Endurance des materiaux" niveau="confirme"/>
+		<Competences type="Materiaux" precision="Résistance des matériaux" niveau="intermediaire"/>
+		<Competences type="Materiaux" precision="Eléments finis" niveau="intermediaire"/>
+		<Competences type="Materiaux" precision="Milieux continus" niveau="intermediaire"/>
+		<Competences type="Materiaux" precision="Système discret" niveau="intermediaire"/>
+		<Competences type="Materiaux" precision="Conduite de projet" niveau="intermediaire"/>
+		<Competences type="Materiaux" precision="Sureté des installations" niveau="intermediaire"/>
+		<Competences type="Logiciel" precision="Material Studio" niveau="confirme"/>
+		<Competences type="Logiciel" precision="Gauss-view" niveau="confirme"/>		
+		<Compétences type="Materiaux" precision="Mécaniques" niveau="debutant"/>
+		<Compétences type="Logiciel" precision="Hypermesh" niveau="debutant"/>
+		<Compétences type="Logiciel" precision="Samcef" niveau="debutant"/>
+		<Compétences type="Logiciel" precision="RDM" niveau="debutant"/>
+		<Competences type="Materiaux" precision="Plasturgie" niveau="intermediaire"/>
+		<Competences type="Logiciel" precision="Cadmould" niveau="intermediaire"/>
+		<Competences type="Langue" precision="Anglais" niveau="intermediaire, Toeic: 785 points"/>
+		<Competences type="Langue" precision="Japonais" niveau="debutant"/>
+		<Competences type="Informatique" precision="Java" niveau="debutant" />
+		<Competences type="Informatique" precision="SQL" niveau="debutant" />
+		<Competences type="Informatique" precision="JUnit" niveau="debutant" />
+		<Competences type="Informatique" precision="XML" niveau="debutant" />
+		<Competences type="Informatique" precision="HTML" niveau="debutant" />
+		<Competences type="Informatique" precision="UML" niveau="debutant" />
+		<Competences type="Informatique" precision="JEE" niveau="debutant" />
+		
 	</ListeCompetence>
 	
 	<Experiences>
