@@ -3,21 +3,21 @@
 <identite nom="DUMON" prenom="Alexia" mail="alexia47@hotmail.fr">
 </identite>
 <ListeCompetence>
-<Competence type="Langue" precision="Anglais" niveau="confirme, TOEIC : 800/995"/>
-<Competence type="Logiciel" precision="ERP Floris" niveau="debutant"/>
-<Competence type="Logiciel" precision="Rstat" niveau="intermediaire"/>
-<Competence type="Logiciel" precision="GanttProject" niveau="intermediaire"/>
-<Competence type="Logiciel" precision="Eclipse" niveau="intermediaire"/>
-<Competence type="Logiciel" precision="Pack office" niveau="confirme"/>
-<Competence type="Gestion" precision="Piloter un projet d'optimisation de la production" niveau="debutant"/>
-<Competence type="Gestion" precision="Travailler en equipe et animer une reunion de suivi du projet" niveau="debutant"/>
-<Competence type="Informatique" precision="Java" niveau="debutant" />
-<Competence type="Informatique" precision="SQL" niveau="debutant" />
-<Competence type="Informatique" precision="Junit" niveau="debutant" />
-<Competence type="Informatique" precision="Html" niveau="debutant" />
-<Competence type="Informatique" precision="UML" niveau="debutant" />
-<Competence type="Informatique" precision="XML" niveau="debutant" />
-<Competence type="Informatique" precision="JEE" niveau="debutant" />
+<Competence type="Langue" detail="Anglais" niveau="confirme, TOEIC : 800/995"/>
+<Competence type="Logiciel" detail="ERP Floris" niveau="debutant"/>
+<Competence type="Logiciel" detail="Rstat" niveau="intermediaire"/>
+<Competence type="Logiciel" detail="GanttProject" niveau="intermediaire"/>
+<Competence type="Logiciel" detail="Eclipse" niveau="intermediaire"/>
+<Competence type="Logiciel" detail="Pack office" niveau="confirme"/>
+<Competence type="Gestion" detail="Piloter un projet d'optimisation de la production" niveau="debutant"/>
+<Competence type="Gestion" detail="Travailler en equipe et animer une reunion de suivi du projet" niveau="debutant"/>
+<Competence type="Informatique" detail="Java" niveau="debutant" />
+<Competence type="Informatique" detail="SQL" niveau="debutant" />
+<Competence type="Informatique" detail="Junit" niveau="debutant" />
+<Competence type="Informatique" detail="Html" niveau="debutant" />
+<Competence type="Informatique" detail="UML" niveau="debutant" />
+<Competence type="Informatique" detail="XML" niveau="debutant" />
+<Competence type="Informatique" detail="JEE" niveau="debutant" />
 </ListeCompetence>
 <ListeExperiences>
 		<Experience dateExp=" Avril-Septembre 2015" entreprise="Florette France GMS, Mâcon" poste="Ingenieur process">Elaborer et deployer un plan d’actions visant a reduire les
