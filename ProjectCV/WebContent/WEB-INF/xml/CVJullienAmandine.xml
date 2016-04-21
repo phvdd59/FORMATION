@@ -2,14 +2,20 @@
 
 <CV nom="JULLIEN" prenom="Amandine" email="jullien.amandine@hotmail.fr">
 	<listeCompetences>
-		<Competences type="anglais" niveau="courant" />
-		<Competences type="J2EE" niveau="debutant" />
-		<Competences type="culture cellulaire" niveau="confirme" />
-		<Competences type="RT-qPCR" niveau="confirme" />
-		<Competences type="Analyse en spectrometrie de masse"
-			niveau="confirme" />
-		<Competences type="Biostatistiques" niveau="confirme" />
-
+		<Competences type="Langue" precision="Anglais" niveau="confirme" />
+		<Competences type="Biologie" precision="Culture cellulaire" niveau="confirme" />
+		<Competences type="Biologie" precision="Biologie moleculaire" niveau="confirme" />
+		<Competences type="Chimie analytique" precision="Spectrometrie de masse" niveau="confirme" />
+		<Competences type="Mathematiques" precision="Biostatistiques" niveau="confirme" />
+		<Competences type="Informatique" precision="Java" niveau="debutant" />
+		<Competences type="Informatique" precision="SQL" niveau="debutant" />
+		<Competences type="Informatique" precision="JUnit" niveau="debutant" />
+		<Competences type="Informatique" precision="XML" niveau="debutant" />
+		<Competences type="Informatique" precision="HTML" niveau="debutant" />
+		<Competences type="Informatique" precision="UML" niveau="debutant" />
+		<Competences type="Informatique" precision="JEE" niveau="debutant" />
+		<Competences type="Logiciel" precision="R" niveau="intermediaire" />
+		<Competences type="Logiciel" precision="Microsoft office" niveau="confirme" />
 	</listeCompetences>
 	<listeFormation>
 		<Formation date="2013" ecole="Universite Joseph Fourier"
