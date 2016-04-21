@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CV nom="Capel" prenom="Adeline" Email="adelinecapel@gmail.com">
-	<ListeCompetences>
+	<ListeCompetence>
 		<Competence type="Logiciel" precision="Matlab" niveau="intermediaire" />
 		<Competence type="Logiciel" precision="Maple" niveau="intermediaire" />
 		<Competence type="Mathematiques" precision="Equations aux derivees partielles" niveau="confirme" />		
@@ -13,25 +13,20 @@
 		<Competence type="Informatique" precision="Html" niveau="debutant" />
 		<Competence type="Informatique" precision="UML" niveau="debutant" />
 		<Competence type="Informatique" precision="XML" niveau="debutant" />
-		<Competence type="Informatique" precision="JEE" niveau="debutant" />
-		
-
-
-	</ListeCompetences>
+		<Competence type="Informatique" precision="JEE" niveau="debutant" />		
+	</ListeCompetence>
 	<ListeExperiences>
-		<Experience date="Janvier a Juin 2014" entreprise="Laboratoire Mathematiques Clermont-Ferrand"
-			poste="Chargé de recherche en Mathématiques appliquées stagiaire" />
-		<Experience date="Janvier a Juin 2013" entreprise="Laboratoire Mathematiques Clermont-Ferrand"
-			poste="Chargé de recherche en Mathématiques fondamentales stagiaire" />
+		<Experience dateExp="Janvier a Juin 2014" entreprise="Laboratoire Mathematiques Clermont-Ferrand"
+			poste="Chargé de recherche en Mathématiques appliquées stagiaire" />Etude d'articles dans le domaine des probabilites ainsi que conception d'un memoire completed'une soutenance orale
+		<Experience dateExp="Janvier a Juin 2013" entreprise="Laboratoire Mathematiques Clermont-Ferrand"
+			poste="Chargé de recherche en Mathématiques fondamentales stagiaire" />Etude d'articles de recherche en analyse complexe ainsi que redaction d'un article scientifique et soutenance
+								
 	</ListeExperiences>
 	
-	<Formation>
-		<Form date="2014-2015" ecole="Universite Blaise Pascal Clermont-Ferrand"
-			diplome="Preparation agregation externe de Mathematiques" />
-		<Form date="2013-2014" ecole="Universite Blaise Pascal Clermont-Ferrand"
-			diplome="Master recherche Mathematiques" />
-		<Form date="2011-2012" ecole="Universite Blaise Pascal Clermont-Ferrand"
-			diplome="Licence Mathematiques" />
-	</Formation>
+	<ListeFormationScolaire>
+		<FormationScolaire date="2014-2015" diplome="Preparation agregation externe de Mathematiques"  ecole="Universite Blaise Pascal Clermont-Ferrand"/>			
+		<FormationScolaire date="2013-2014" diplome="Master recherche Mathematiques" ecole="Universite Blaise Pascal Clermont-Ferrand"/>	
+		<FormationScolaire date="2011-2012" diplome="Licence Mathematiques" ecole="Universite Blaise Pascal Clermont-Ferrand"/>			
+	</ListeFormationScolaire>
 	
 </CV>
