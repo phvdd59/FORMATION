@@ -4,14 +4,13 @@
 </identite>
 <listeCompetences>
 <competence type="Langue" precision="Anglais" niveau="confirme, TOEIC : 800/995"/>
-<competence type="Logiciels" precision="ERP Floris" niveau="debutant"/>
-<competence type="Logiciels" precision="Rstat" niveau="intermediaire"/>
-<competence type="Logiciels" precision="GanttProject" niveau="intermediaire"/>
-<competence type="Logiciels" precision="Eclipse" niveau="intermediaire"/>
-<competence type="Logiciels" precision="pack office" niveau="confirme"/>
-<competence type="Logiciels" precision="language JAVA JEE" niveau="debutant"/>
-<competence type="Piloter un projet d'optimisation de la production" niveau="debutant"/>
-<competence type="Travailler en equipe et nimer une	reunion de suivi du projet" niveau="debutant"/>
+<competence type="Logiciel" precision="ERP Floris" niveau="debutant"/>
+<competence type="Logiciel" precision="Rstat" niveau="intermediaire"/>
+<competence type="Logiciel" precision="GanttProject" niveau="intermediaire"/>
+<competence type="Logiciel" precision="Eclipse" niveau="intermediaire"/>
+<competence type="Logiciel" precision="Pack office" niveau="confirme"/>
+<competence type="Gestion" precision="Piloter un projet d'optimisation de la production" niveau="debutant"/>
+<competence type="Gestion" precision="Travailler en equipe et animer une reunion de suivi du projet" niveau="debutant"/>
 </listeCompetences>
 <ListeExperience>
 		<Experience date=" Avril-Septembre 2015" entreprise="Florette France GMS, Mâcon" poste="Ingenieur process">Elaborer et deployer un plan d’actions visant a reduire les
