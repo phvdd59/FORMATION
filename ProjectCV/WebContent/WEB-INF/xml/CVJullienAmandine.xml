@@ -60,11 +60,11 @@
 		</Experience>
 	</ListeExperiences>
 	
-	<listeFormation>
-		<Formation date="2013"  diplome="Master 2 MRESTE Methodologie en Recherche Environnement Sante Toxicologie et Ecotoxicologie" ecole="Universite Joseph Fourier" />
-		<Formation date="2012"  diplome="Master 1 ISM Ingenierie pour la sante et le medicament" ecole="Universite Joseph Fourier"/>
-		<Formation date="2011"  diplome="Licence Chimie" ecole="Universite Joseph Fourier"/>
-	</listeFormation>
+	<ListeFormationScolaire>
+		<FormationScolaire date="2013"  diplome="Master 2 MRESTE Methodologie en Recherche Environnement Sante Toxicologie et Ecotoxicologie" ecole="Universite Joseph Fourier" />
+		<FormationScolaire date="2012"  diplome="Master 1 ISM Ingenierie pour la sante et le medicament" ecole="Universite Joseph Fourier"/>
+		<FormationScolaire date="2011"  diplome="Licence Chimie" ecole="Universite Joseph Fourier"/>
+	</ListeFormationScolaire>
 	
 	<CentreInteret> Equitation, Tir à l'arc, Lecture
 	</CentreInteret>
