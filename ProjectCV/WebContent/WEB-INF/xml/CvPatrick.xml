@@ -8,29 +8,36 @@
 			<photo alt="photo" src= "http://www.doyoubuzz.com/var/users/_/2013/7/25/16/534625/avatar/461588/avatar_cp_big.jpg?t=1458848091"/>
 		</mailEtPhoto>
 	<listeCompetence>
-		<Competence nom="Compétence">
-			<Competence type="Sciences de la Vie" niveau = "12"/>
-			<Competence type="Marketing/Communication" niveau = "8"/>
-			<Competence type="Gestion de Projet" niveau = "9"/>
-			<Competence type="Langues - Anglais" niveau = "6"/>
-			<Competence type="Langues - Polonais" niveau = "11"/>
-			<Competence type="Informatique - JEE" niveau = "2"/>
-		</Competence>
+		
+			<Competence type="Biologie" detail="Culture cellulaire" niveau = "confirme"/>
+			<Competence type="Biologie" detail="Biologie moleculaire" niveau = "confirme"/>
+			<Competence type="Biologie" detail="Virologie" niveau = "confirme"/>
+			<Competence type="Biologie" detail="Immunologie" niveau = "confirme"/>
+			<Competence type="Gestion" detail="Marketing" niveau = "confirme"/>
+			<Competence type="Gestion" detail="Communication" niveau = "confirme"/>
+			<Competence type="Gestion" detail="Gestion de Projet" niveau = "intermediaire"/>
+			<Competence type="Langue"  detail="Anglais" niveau = "intermediaire"/>
+			<Competence type="Langue"  detail="Polonais" niveau = "confirme"/>
+			<Competence type="Informatique" detail="Java" niveau="debutant" />
+			<Competence type="Informatique" detail="SQL" niveau="debutant" />
+			<Competence type="Informatique" detail="Junit" niveau="debutant" />
+			<Competence type="Informatique" detail="Html" niveau="debutant" />
+			<Competence type="Informatique" detail="UML" niveau="debutant" />
+			<Competence type="Informatique" detail="XML" niveau="debutant" />
+			<Competence type="Informatique" detail="JEE" niveau="debutant" />
 	</listeCompetence>
-	<experience Nom="Expériences Professionnelles">
-		<Experience Date="Date" Entreprise ="Entreprise" PosteOccupé = "Poste Occupé" Missions = "Missions"/>
-		<Experience Date="10/14 - 11/15" Entreprise="BioDocs-Lyon" PosteOccupé ="Chargé de communication adjoint" Missions="Développement de la communication inbound/outbond de l'association"/>
-		<Experience Date="04/15 - 06/15" Entreprise="Forum BIOTechno Rhône-Alpes" PosteOccupé ="Coordinateur logistique" Missions="Organisation et supervision logistique événementielle"/>
-		<Experience Date="04/14 - 09/14" Entreprise="COM-Line" PosteOccupé ="Concepteur-Rédacteur Junior" Missions="Conception et rédacteur de documents et d'outils de formation destinés aux visiteurs médicaux "/>
-		<Experience Date="07/13 - 09/13" Entreprise="INSERM CIRI-U1111" PosteOccupé ="Ingénieur d'études" Missions="Projet de recherche, équipe 'Immunologie de l'Allergie cutanée et Vaccination'"/>
-		<Experience Date="10/12 - 06/13" Entreprise="INSERM CIRI-U1111" PosteOccupé ="Assistant Ingénieur" Missions="Projet de recherche, équipe 'Immunologie de l'Allergie cutanée et Vaccination'"/>
-		<Experience Date="01/12 - 03/13" Entreprise="INSERM U851" PosteOccupé ="Assistant Ingénieur" Missions="Projet de recherche, équipe 'Immunité Innée et les Oncovirus'"/>
-	
-	</experience>
+	<ListeExperiences>
+		<Experience dateExp="10/14 - 11/15" entreprise="BioDocs-Lyon" poste ="Chargé de communication adjoint">Développement de la communication inbound/outbond de l'association</Experience>
+		<Experience dateExp="04/15 - 06/15" entreprise="Forum BIOTechno Rhône-Alpes" poste ="Coordinateur logistique">Organisation et supervision logistique événementielle</Experience>
+		<Experience dateExp="04/14 - 09/14" entreprise="COM-Line" poste ="Concepteur-Rédacteur Junior">Conception et rédacteur de documents et d'outils de formation destinés aux visiteurs médicaux</Experience>
+		<Experience dateExp="07/13 - 09/13" entreprise="INSERM CIRI-U1111" poste ="Ingénieur d'études">Projet de recherche, équipe 'Immunologie de l'Allergie cutanée et Vaccination'</Experience>
+		<Experience dateExp="10/12 - 06/13" entreprise="INSERM CIRI-U1111" poste ="Assistant Ingénieur">Projet de recherche, équipe 'Immunologie de l'Allergie cutanée et Vaccination'</Experience>
+		<Experience dateExp="01/12 - 03/13" entreprise="INSERM U851" poste ="Assistant Ingénieur">Projet de recherche, équipe 'Immunité Innée et les Oncovirus'</Experience>
+	</ListeExperiences>
 	<formation Nom="Formations">
-		<Formation Date="Date" Ecole="Ecole" Diplome="Diplôme"/>
-		<Formation Date="10/13 - 01/15" Ecole="IMIS (Institut de Management des Industries de la Santé)" Diplome="Mastère spécialisé professionel Management et Marketing des Industries de la Santé"/>
-		<Formation Date="09/10 - 06/13" Ecole="Université Claude Bernard Lyon 1" Diplome="Master Recherche Génétique et Biologie de la Cellule spé. Infectiologie Fondamentale"/>
+		<Formation Date="Date" Diplome="Diplôme" Ecole="Ecole"/>
+		<Formation Date="10/13 - 01/15" Diplome="Mastère spécialisé professionel Management et Marketing des Industries de la Santé" Ecole="IMIS (Institut de Management des Industries de la Santé)" />
+		<Formation Date="09/10 - 06/13" Diplome="Master Recherche Génétique et Biologie de la Cellule spé. Infectiologie Fondamentale" Ecole="Université Claude Bernard Lyon 1" />
 		
 	</formation>
 </CV>
