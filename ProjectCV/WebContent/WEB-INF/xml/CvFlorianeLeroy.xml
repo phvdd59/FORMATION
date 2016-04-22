@@ -2,24 +2,24 @@
 <CV nom="Leroy" prenom="Floriane" Email="leroy.floriane.63@gmail.com">
 	<ListeCompetence>
 	
-		<Competences type="Materiaux" precision="Polymère et Composite" niveau="confirme"/>
-		<Competences type="Materiaux" precision="Adhésion" niveau="confirme"/>
-		<Competences type="Materiaux" precision="Mise en oeuvre" niveau="confirme"/>
-		<Competences type="Materiaux" precision="Acier" niveau="confirme"/>
-		<Competences type="Materiaux" precision="Traitement des surfaces" niveau="confirme"/>
-		<Competences type="Materiaux" precision="Endurance des materiaux" niveau="confirme"/>
-		<Competences type="Materiaux" precision="Résistance des matériaux" niveau="intermediaire"/>
-		<Competences type="Materiaux" precision="Eléments finis" niveau="intermediaire"/>
-		<Competences type="Materiaux" precision="Milieux continus" niveau="intermediaire"/>
-		<Competences type="Materiaux" precision="Système discret" niveau="intermediaire"/>
-		<Competences type="Materiaux" precision="Conduite de projet" niveau="intermediaire"/>
-		<Competences type="Materiaux" precision="Sureté des installations" niveau="intermediaire"/>
-		<Competences type="Logiciel" precision="Material Studio" niveau="confirme"/>
-		<Competences type="Logiciel" precision="Gauss-view" niveau="confirme"/>		
-		<Compétences type="Materiaux" precision="Mécaniques" niveau="debutant"/>
-		<Compétences type="Logiciel" precision="Hypermesh" niveau="debutant"/>
-		<Compétences type="Logiciel" precision="Samcef" niveau="debutant"/>
-		<Compétences type="Logiciel" precision="RDM" niveau="debutant"/>
+		<Competences type="Materiaux" detail="Polymère et Composite" niveau="confirme"/>
+		<Competences type="Materiaux"  detail="Adhésion" niveau="confirme"/>
+		<Competences type="Materiaux"  detail="Mise en oeuvre" niveau="confirme"/>
+		<Competences type="Materiaux"  detail="Acier" niveau="confirme"/>
+		<Competences type="Materiaux"  detail="Traitement des surfaces" niveau="confirme"/>
+		<Competences type="Materiaux"  detail="Endurance des materiaux" niveau="confirme"/>
+		<Competences type="Materiaux"  detail="Résistance des matériaux" niveau="intermediaire"/>
+		<Competences type="Materiaux"  detail="Eléments finis" niveau="intermediaire"/>
+		<Competences type="Materiaux"  detail="Milieux continus" niveau="intermediaire"/>
+		<Competences type="Materiaux"  detail="Système discret" niveau="intermediaire"/>
+		<Competences type="Materiaux"  detail="Conduite de projet" niveau="intermediaire"/>
+		<Competences type="Materiaux"  detail="Sureté des installations" niveau="intermediaire"/>
+		<Competences type="Logiciel"  detail="Material Studio" niveau="confirme"/>
+		<Competences type="Logiciel"  detail="Gauss-view" niveau="confirme"/>		
+		<Compétences type="Materiaux"  detail="Mécaniques" niveau="debutant"/>
+		<Compétences type="Logiciel"  detail="Hypermesh" niveau="debutant"/>
+		<Compétences type="Logiciel"  detail="Samcef" niveau="debutant"/>
+		<Compétences type="Logiciel"  detail="RDM" niveau="debutant"/>
 		<Competences type="Materiaux" precision="Plasturgie" niveau="intermediaire"/>
 		<Competences type="Logiciel" precision="Cadmould" niveau="intermediaire"/>
 		<Competences type="Langue" precision="Anglais" niveau="intermediaire, Toeic: 785 points"/>
@@ -35,17 +35,17 @@
 	</ListeCompetence>
 	
 	<ListeExperiences>
-		<Experience date="2016" entreprise="Mc Donald's" poste="Equipière polyvalente"/>
-		<Experience date="2015" entreprise="LECLERC" poste="Vendeuse"/>
-		<Experience date="2015" entreprise="MICHELIN" poste="Stagiaire">Modélisation de thermoplastique-élastomères</Experience>
-		<Experience date="2014-2015" entreprise="SOURIAU" poste="Stagiaire">Amélioration de productivité par optimisation de l'interface lopin-outil</Experience>
-		<Experience date="2014" entreprise="AMIPI" poste="Stagiaire">Audit qualité</Experience>
-		<Experience date="2014" entreprise="AIA" poste="Stagiaire">Elaboration de procédure de contrôle par ultrasons pour les pieds de perches Transall et les nervures des Mirages 2000</Experience>
+		<Experience dateExp="2016" entreprise="Mc Donald's" poste="Equipière polyvalente"/>
+		<Experience dateExp="2015" entreprise="LECLERC" poste="Vendeuse"/>
+		<Experience dateExp="2015" entreprise="MICHELIN" poste="Stagiaire">Modélisation de thermoplastique-élastomères</Experience>
+		<Experience dateExp="2014-2015" entreprise="SOURIAU" poste="Stagiaire">Amélioration de productivité par optimisation de l'interface lopin-outil</Experience>
+		<Experience dateExp="2014" entreprise="AMIPI" poste="Stagiaire">Audit qualité</Experience>
+		<Experience dateExp="2014" entreprise="AIA" poste="Stagiaire">Elaboration de procédure de contrôle par ultrasons pour les pieds de perches Transall et les nervures des Mirages 2000</Experience>
 	</ListeExperiences>
 	
-	<Formation>
-		<Form date="2015" ecole="ISMANS" diplome="Ingénieur génie des matériaux"/>
-		<Form date="2010-2012" ecole="Lycée Godefroy de Bouillon" diplome="Classes préparatoires aux grandes écoles MP/MPSI"/>
-		<Form date="2010" ecole="Lycée Blaise-Pascal" diplome="Baccalauréat série scientifique"/>
-	</Formation>
+	<ListeFormationScolaire>
+		<FormationScolaire date="2015" ecole="ISMANS" diplome="Ingénieur génie des matériaux"/>
+		<FormationScolaire date="2010-2012" ecole="Lycée Godefroy de Bouillon" diplome="Classes préparatoires aux grandes écoles MP/MPSI"/>
+		<FormationScolaire date="2010" ecole="Lycée Blaise-Pascal" diplome="Baccalauréat série scientifique"/>
+	</ListeFormationScolaire>
 </CV>

@@ -7,7 +7,7 @@
 	<!ELEMENT ListeCompetence (Competence*)>
 		<!ELEMENT Competence EMPTY>
 			<!ATTLIST Competence type CDATA #REQUIRED>
-			<!ATTLIST Competence precision CDATA #REQUIRED>
+			<!ATTLIST Competence detail CDATA #REQUIRED>
 			<!ATTLIST Competence niveau CDATA #REQUIRED>
 	
 	 <!ELEMENT ListeFormation (Formation*)>
@@ -24,13 +24,13 @@
 
 <CV nom='Jourdain' prenom='Cédric' email='mailcedric@gmail.com'>
 	<ListeCompetence>
-		<Competence type='informatiques' precision='C' niveau='debutant' />
-		<Competence type='informatiques' precision='C++' niveau='debutant' />
-		<Competence type='informatiques' precision='Python' niveau='debutant' />
-		<Competence type='informatiques' precision='Java' niveau='debutant' />
-		<Competence type='informatiques' precision='Matlab' niveau='intermediaire' />
-		<Competence type='langues' precision='Anglais' niveau='confirme' />
-		<Competence type='langues' precision='Espagnol' niveau='debutant' />
+		<Competence type='informatiques' detail='C' niveau='debutant' />
+		<Competence type='informatiques' detail='C++' niveau='debutant' />
+		<Competence type='informatiques' detail='Python' niveau='debutant' />
+		<Competence type='informatiques' detail='Java' niveau='debutant' />
+		<Competence type='informatiques' detail='Matlab' niveau='intermediaire' />
+		<Competence type='langues' detail='Anglais' niveau='confirme' />
+		<Competence type='langues' detail='Espagnol' niveau='debutant' />
 	</ListeCompetence>
 	<ListeFormation>
 		<Formation date='2013-2015' diplome='Master, Modélisation, Spécialité calcul scientifique et applications' ecole='Université de Rennes I'/> 

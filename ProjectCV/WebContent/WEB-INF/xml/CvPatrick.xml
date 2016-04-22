@@ -9,22 +9,22 @@
 		</mailEtPhoto>
 	<listeCompetence>
 		
-			<Competence type="Biologie" precision="Culture cellulaire" niveau = "confirme"/>
-			<Competence type="Biologie" precision="Biologie moleculaire" niveau = "confirme"/>
-			<Competence type="Biologie" precision="Virologie" niveau = "confirme"/>
-			<Competence type="Biologie" precision="Immunologie" niveau = "confirme"/>
-			<Competence type="Gestion" precision="Marketing" niveau = "confirme"/>
-			<Competence type="Gestion" precision="Communication" niveau = "confirme"/>
-			<Competence type="Gestion" precision="Gestion de Projet" niveau = "intermediaire"/>
-			<Competence type="Langue"  precision="Anglais" niveau = "intermediaire"/>
-			<Competence type="Langue"  precision="Polonais" niveau = "confirme"/>
-			<Competence type="Informatique" precision="Java" niveau="debutant" />
-			<Competence type="Informatique" precision="SQL" niveau="debutant" />
-			<Competence type="Informatique" precision="Junit" niveau="debutant" />
-			<Competence type="Informatique" precision="Html" niveau="debutant" />
-			<Competence type="Informatique" precision="UML" niveau="debutant" />
-			<Competence type="Informatique" precision="XML" niveau="debutant" />
-			<Competence type="Informatique" precision="JEE" niveau="debutant" />
+			<Competence type="Biologie" detail="Culture cellulaire" niveau = "confirme"/>
+			<Competence type="Biologie" detail="Biologie moleculaire" niveau = "confirme"/>
+			<Competence type="Biologie" detail="Virologie" niveau = "confirme"/>
+			<Competence type="Biologie" detail="Immunologie" niveau = "confirme"/>
+			<Competence type="Gestion" detail="Marketing" niveau = "confirme"/>
+			<Competence type="Gestion" detail="Communication" niveau = "confirme"/>
+			<Competence type="Gestion" detail="Gestion de Projet" niveau = "intermediaire"/>
+			<Competence type="Langue"  detail="Anglais" niveau = "intermediaire"/>
+			<Competence type="Langue"  detail="Polonais" niveau = "confirme"/>
+			<Competence type="Informatique" detail="Java" niveau="debutant" />
+			<Competence type="Informatique" detail="SQL" niveau="debutant" />
+			<Competence type="Informatique" detail="Junit" niveau="debutant" />
+			<Competence type="Informatique" detail="Html" niveau="debutant" />
+			<Competence type="Informatique" detail="UML" niveau="debutant" />
+			<Competence type="Informatique" detail="XML" niveau="debutant" />
+			<Competence type="Informatique" detail="JEE" niveau="debutant" />
 	</listeCompetence>
 	<ListeExperiences>
 		<Experience dateExp="10/14 - 11/15" entreprise="BioDocs-Lyon" poste ="Chargé de communication adjoint">Développement de la communication inbound/outbond de l'association</Experience>

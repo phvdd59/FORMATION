@@ -2,6 +2,11 @@ package mfa.sql;
 
 import java.io.File;
 import java.io.IOException;
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Statement;
 
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
@@ -21,14 +26,15 @@ public class MfaMain {
 	}
 
 	private void init() {
-		lectureDom();
-
+		//createExperience();
+		ListeExperience listeExperience = lectureDom();
 	}
 
-	private void lectureDom() {
-		File fLecture = new File("C:/DevFormation/GIT/FORMATION/ProjectCV/WebContent/WEB-INF/xml/CVAdelineCapel.xml");
+	private ListeExperience lectureDom() {
+		File fLecture = new File("C:/DevFormation/GIT/FORMATION/ProjectCV/WebContent/WEB-INF/xml/CvMathiasRaymond.xml");
 		final DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
 		DocumentBuilder documentBuilder;
+		ListeExperience listeExperience = new ListeExperience();
 		try {
 			documentBuilder = factory.newDocumentBuilder();
 			Document document = documentBuilder.parse(fLecture);
@@ -46,6 +52,8 @@ public class MfaMain {
 					String poste = eExp.getAttribute("poste");
 					String description = eExp.getTextContent();
 					System.out.println(dateExp + " " + entreprise + " " + poste + " " + description);
+					Experience exp = new Experience(dateExp, entreprise, poste);
+					listeExperience.add(exp);
 				}
 			}
 		} catch (ParserConfigurationException e) {
@@ -54,6 +62,47 @@ public class MfaMain {
 			e.printStackTrace();
 		} catch (IOException e) {
 			e.printStackTrace();
+		}
+		return listeExperience;
+	}
+	private void createExperience() {
+		System.out.println("qsdfqdfqsdf");
+		Connection con = null;
+		ResultSet res = null;
+		Statement statement = null;
+		String requete = "";
+		String login = "root";
+		String password = "";
+		try {
+			Class.forName("com.mysql.jdbc.Driver");
+		} catch (ClassNotFoundException e) {
+			e.printStackTrace();
+		}
+		String urlBDD = "jdbc:mysql://localhost/bddcv";
+		try {
+			con = DriverManager.getConnection(urlBDD, login, password);
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+		requete = "CREATE TABLE experience " + //
+				"(id INT AUTO_INCREMENT NOT NULL PRIMARY KEY," + //
+				"dateExp VARCHAR(50)," + //
+				"entreprise VARCHAR(100)," + //
+				"poste VARCHAR(100)," + //
+				"description TEXT" + //
+				");";
+
+		try {
+			statement = con.createStatement();
+			statement.executeUpdate(requete);
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}finally{
+			try {
+				statement.close();
+			} catch (SQLException e) {
+				e.printStackTrace();
+			}
 		}
 	}
 }
