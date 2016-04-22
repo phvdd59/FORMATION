@@ -18,6 +18,7 @@ import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
 import org.xml.sax.SAXException;
 
+import sdpc.metierScolaire.Etudiant;
 import sdpc.metierScolaire.FormationScolaire;
 import sdpc.metierScolaire.ListeFormationScolaire;
 
@@ -59,7 +60,10 @@ public class MethodesScolaire {
 			Document document = documentBuilder.parse(fLecture);
 
 			Element racine = document.getDocumentElement();
-
+			String sidEtudiant = racine.getAttribute("idEtudiant");
+			int idEtudiant = Integer.valueOf(sidEtudiant).intValue();
+			String sNom = racine.getAttribute("nom");
+			Etudiant etudiant = new Etudiant(idEtudiant, sNom, "", "", "", "", null);
 			NodeList liste = racine.getChildNodes();
 			int nbList = liste.getLength();
 			for (int i = 0; i < nbList; i++) {
@@ -74,10 +78,10 @@ public class MethodesScolaire {
 								String date = eFormation.getAttribute("date");
 								String diplome = eFormation.getAttribute("diplome");
 								String ecole = eFormation.getAttribute("ecole");
-								FormationScolaire form = new FormationScolaire(date, diplome, ecole);
+								FormationScolaire form = new FormationScolaire(etudiant, date, diplome, ecole);
 								listeFormationScolaire.add(form);
 								String commentaire = eFormation.getTextContent();
-								System.out.println(date + " " + diplome + " " + ecole);
+								System.out.println(etudiant.getIdEtudiant()+" "+ date + " " + diplome + " " + ecole);
 							}
 						}
 					}
@@ -123,6 +127,7 @@ public class MethodesScolaire {
 		affiche("creation table");
 
 		requete = "CREATE TABLE formation_scolaire ( id INT NOT NULL PRIMARY KEY AUTO_INCREMENT, " + //
+				"idEtudiant INT NOT NULL," + //
 				"date VARCHAR(20) NOT NULL," + //
 				"diplome VARCHAR(255) NOT NULL," + //
 				"ecole VARCHAR(255) NOT NULL" + //
@@ -170,7 +175,7 @@ public class MethodesScolaire {
 		// Création d'une table
 		affiche("insertion ligne");
 		requete = "INSERT INTO formation_scolaire (date, diplome, ecole) " + //
-				"VALUES ('" + formS.getDate() + "', '" + formS.getDiplome() + "', '" + formS.getEcole() + "' );";
+				"VALUES ('" + formS.getEtudiant().getIdEtudiant() + "', '" + formS.getDate() + "', '" + formS.getDiplome() + "', '" + formS.getEcole() + "' );";
 
 		try {
 			stmt = con.createStatement();

@@ -2,6 +2,8 @@ package sdpc.metierScolaire;
 
 public class FormationScolaire {
 
+	private Etudiant etudiant; 
+	
 	private String date;
 	private String diplome;
 	private String ecole;
@@ -14,7 +16,8 @@ public class FormationScolaire {
 	}
 
 
-	public FormationScolaire(String date, String diplome, String ecole) {
+	public FormationScolaire(Etudiant etudiant, String date, String diplome, String ecole) {
+		this.etudiant=etudiant; 
 		this.date = date;
 		this.diplome = diplome;
 		this.ecole = ecole;
@@ -50,7 +53,18 @@ public class FormationScolaire {
 	public void setEcole(String ecole) {
 		this.ecole = ecole;
 	}
+
 	
+	public Etudiant getEtudiant() {
+		return etudiant;
+	}
+
+
+	public void setEtudiant(Etudiant etudiant) {
+		this.etudiant = etudiant;
+	}
+
+
 	@Override
 	public String toString() {
 		return "Formation du " + date + " à " + ecole + " pour " + diplome;
