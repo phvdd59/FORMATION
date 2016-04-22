@@ -1,7 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<CV>
-<identite nom="DUMON" prenom="Alexia" mail="alexia47@hotmail.fr">
-</identite>
+<CV idEtudiant="" nom="DUMON" prenom="Alexia" mail="alexia47@hotmail.fr">
 <ListeCompetence>
 <Competence type="Langue" detail="Anglais" niveau="confirme, TOEIC : 800/995"/>
 <Competence type="Logiciel" detail="ERP Floris" niveau="debutant"/>
