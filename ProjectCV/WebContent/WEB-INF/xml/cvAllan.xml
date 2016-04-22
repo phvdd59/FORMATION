@@ -23,19 +23,19 @@
 
 </ListeFormationScolaire>
 	<listeExperiences>
-		<Experience date="Mars 2015 a Aout 2015" entreprise="Sky Paragliders (Republique Tcheque)" poste="Ingenieur Recherche et Developpement">
+		<Experience dateExp="Mars 2015 a Aout 2015" entreprise="Sky Paragliders (Republique Tcheque)" poste="Ingenieur Recherche et Developpement">
 			Conception et réalisation d'un nouveau type de toile de
 			parapente en polyester
 			haute densité enduit en polyuréthane phase
 			aqueuse
 		</Experience>
-		<Experience date="Juillet 2014 a Septembre 2014"
+		<Experience dateExp="Juillet 2014 a Septembre 2014"
 			entreprise="Dickson PTL, Balan(01)" poste="Ingénieur Recherche et Développement">
 			Modification d'un procédé
 			d'enduction afin de parer aux problèmes rencontrés en production,
 			enduction en phase solvent.
 		</Experience>
-		<Experience date="avril 2012 a juin 2012" entreprise="Université Polytechnique de Turin"
+		<Experience dateExp="avril 2012 a juin 2012" entreprise="Université Polytechnique de Turin"
 			poste="Laborantin">
 			Synthèse et tests de catalyseur métalliques permettant la
 			décomposition de gaz d'échappement
