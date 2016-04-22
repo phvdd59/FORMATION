@@ -1,62 +1,65 @@
 package sdpc.metierScolaire;
 
 public class Etudiant {
+
+	private int idEtudiant;
 	private String nom;
-    private String prenom;
-    private String metier;
-    private String email;
-    private String commentaire;
-    private Formation formation;
-   
-    public Etudiant(String nom, String prenom, String metier, String email, String commentaire, Formation formation) {
-        this.nom = nom;
-        this.prenom = prenom;
-        this.metier = metier;
-        this.email = email;
-        this.commentaire = commentaire;
-        this.formation = formation;
-    }
+	private String prenom;
+	private String metier;
+	private String email;
+	private String commentaire;
+	private Formation formation;
 
-    public String getNom() {
-        return nom;
-    }
+	public Etudiant(int idEtudiant, String nom, String prenom, String metier, String email, String commentaire,
+			Formation formation) {
+		this.idEtudiant = idEtudiant;
+		this.nom = nom;
+		this.prenom = prenom;
+		this.metier = metier;
+		this.email = email;
+		this.commentaire = commentaire;
+		this.formation = formation;
+	}
 
-    public void setNom(String nom) {
-        this.nom = nom;
-    }
+	public String getNom() {
+		return nom;
+	}
 
-    public String getPrenom() {
-        return prenom;
-    }
+	public void setNom(String nom) {
+		this.nom = nom;
+	}
 
-    public void setPrenom(String prenom) {
-        this.prenom = prenom;
-    }
+	public String getPrenom() {
+		return prenom;
+	}
 
-    public String getMetier() {
-        return metier;
-    }
+	public void setPrenom(String prenom) {
+		this.prenom = prenom;
+	}
 
-    public void setMetier(String metier) {
-        this.metier = metier;
-    }
+	public String getMetier() {
+		return metier;
+	}
 
-    public String getEmail() {
-        return email;
-    }
+	public void setMetier(String metier) {
+		this.metier = metier;
+	}
 
-    public void setEmail(String email) {
-        this.email = email;
-    }
+	public String getEmail() {
+		return email;
+	}
 
-    public String getCommentaire() {
-        return commentaire;
-    }
+	public void setEmail(String email) {
+		this.email = email;
+	}
 
-    public void setCommentaire(String commentaire) {
-        this.commentaire = commentaire;
-    }
+	public String getCommentaire() {
+		return commentaire;
+	}
 
+	public void setCommentaire(String commentaire) {
+		this.commentaire = commentaire;
+	}
 
 	public Formation getFormation() {
 		return formation;
@@ -64,6 +67,14 @@ public class Etudiant {
 
 	public void setFormation(Formation formation) {
 		this.formation = formation;
+	}
+
+	public int getIdEtudiant() {
+		return idEtudiant;
+	}
+
+	public void setIdEtudiant(int idEtudiant) {
+		this.idEtudiant = idEtudiant;
 	}
 
 }

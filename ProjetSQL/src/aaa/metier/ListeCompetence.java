@@ -9,10 +9,10 @@ public class ListeCompetence extends ArrayList<Competence> {
 	private ListeEtudiant listeEtudiant;
 
 	public ListeCompetence() {
-		this.listeEtudiant = listeEtudiant;
+		listeEtudiant = new ListeEtudiant();
 	}
 
 	public ListeCompetence(ListeEtudiant listeEtudiant) {
-		this.listeEtudiant = listeEtudiant;
+		listeEtudiant = new ListeEtudiant();
 	}
 }
