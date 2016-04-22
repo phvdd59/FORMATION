@@ -35,7 +35,6 @@
 		<Experience dateExp="01/12 - 03/13" entreprise="INSERM U851" poste ="Assistant Ingénieur">Projet de recherche, équipe 'Immunité Innée et les Oncovirus'</Experience>
 	</ListeExperiences>
 	<ListeFormationScolaire>
-		<FormationScolaire date="Date" diplome="Diplôme" ecole="Ecole"/>
 		<FormationScolaire date="10/13 - 01/15" diplome="Mastère spécialisé professionel Management et Marketing des Industries de la Santé" ecole="IMIS (Institut de Management des Industries de la Santé)" />
 		<FormationScolaire date="09/10 - 06/13" diplome="Master Recherche Génétique et Biologie de la Cellule spé. Infectiologie Fondamentale" ecole="Université Claude Bernard Lyon 1" />
 		
