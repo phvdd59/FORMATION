@@ -50,19 +50,19 @@
 		<FormationScolaire date="2016" ecole=""
 			diplome="Formation en programmation JAVA/JEE" />
 		<FormationScolaire  date="2014"
-			ecole="Université d'Auvergne - Institut Universitaire de Technologie ;
-					63172 Aubière"/>
+			ecole="Université d'Auvergne - Institut Universitaire de Technologie 
+					63172 Aubière"
 			diplome="Master Technologie Biomédicale - spécialité
 					Diagnostic Biomédical" />
 		<FormationScolaire  date="2012"
-			ecole="Université d'Auvergne - U.F.R Pharmacie ; 63000 CLERMONT-FERRAND"
+			ecole="Université d'Auvergne - U.F.R Pharmacie  63000 CLERMONT-FERRAND"
 			diplome="Licence Sciences-Technologies-Santé Mention Biologie Parcours
 					Pharmacologie" />
 		<FormationScolaire  date="2012"
-			ecole="Université d'Auvergne - U.F.R Pharmacie ; 63000 CLERMONT-FERRAND"
+			ecole="Université d'Auvergne - U.F.R Pharmacie  63000 CLERMONT-FERRAND"
 			diplome="Attestation de formation à l'expérimentation animale, niveau 1" />
 		<FormationScolaire  date="2006-2008"
-			ecole="Université d'Auvergne - U.F.R Medecine; 63000 CLERMONT-FERRAND"
+			ecole="Université d'Auvergne - U.F.R Medecine 63000 CLERMONT-FERRAND"
 			diplome="Première Année du Premier Cycle des Etudes Médicales (PCEM1)" />
 	</ListeFormationScolaire>
 </CV>

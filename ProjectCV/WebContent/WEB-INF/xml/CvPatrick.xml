@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<CV>
-	<identite idEtudiant="8" Prenom="Patrick" Nom="Walentek"/>  
+<CV idEtudiant="8" Prenom="Patrick" Nom="Walentek">  
 		<mailEtPhoto>
 			<mail alt="mail" src= "http://wp-cluster.fr.cloud.datalp.com/wp_altimet/wp-content/uploads/2015/03/mail.png"/>
 			<texteMail mail="patrick.walentek.bio@gmail.com"/>
