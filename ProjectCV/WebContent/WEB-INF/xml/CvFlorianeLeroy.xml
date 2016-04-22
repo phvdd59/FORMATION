@@ -1,36 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<CV nom="Leroy" prenom="Floriane" Email="leroy.floriane.63@gmail.com">
+<CV idEtudiant="6" nom="Leroy" prenom="Floriane" Email="leroy.floriane.63@gmail.com"> 
 	<ListeCompetence>
 	
-		<Competences type="Materiaux" detail="Polymère et Composite" niveau="confirme"/>
-		<Competences type="Materiaux"  detail="Adhésion" niveau="confirme"/>
-		<Competences type="Materiaux"  detail="Mise en oeuvre" niveau="confirme"/>
-		<Competences type="Materiaux"  detail="Acier" niveau="confirme"/>
-		<Competences type="Materiaux"  detail="Traitement des surfaces" niveau="confirme"/>
-		<Competences type="Materiaux"  detail="Endurance des materiaux" niveau="confirme"/>
-		<Competences type="Materiaux"  detail="Résistance des matériaux" niveau="intermediaire"/>
-		<Competences type="Materiaux"  detail="Eléments finis" niveau="intermediaire"/>
-		<Competences type="Materiaux"  detail="Milieux continus" niveau="intermediaire"/>
-		<Competences type="Materiaux"  detail="Système discret" niveau="intermediaire"/>
-		<Competences type="Materiaux"  detail="Conduite de projet" niveau="intermediaire"/>
-		<Competences type="Materiaux"  detail="Sureté des installations" niveau="intermediaire"/>
-		<Competences type="Logiciel"  detail="Material Studio" niveau="confirme"/>
-		<Competences type="Logiciel"  detail="Gauss-view" niveau="confirme"/>		
-		<Compétences type="Materiaux"  detail="Mécaniques" niveau="debutant"/>
-		<Compétences type="Logiciel"  detail="Hypermesh" niveau="debutant"/>
-		<Compétences type="Logiciel"  detail="Samcef" niveau="debutant"/>
-		<Compétences type="Logiciel"  detail="RDM" niveau="debutant"/>
-		<Competences type="Materiaux" precision="Plasturgie" niveau="intermediaire"/>
-		<Competences type="Logiciel" precision="Cadmould" niveau="intermediaire"/>
-		<Competences type="Langue" precision="Anglais" niveau="intermediaire, Toeic: 785 points"/>
-		<Competences type="Langue" precision="Japonais" niveau="debutant"/>
-		<Competences type="Informatique" precision="Java" niveau="debutant" />
-		<Competences type="Informatique" precision="SQL" niveau="debutant" />
-		<Competences type="Informatique" precision="JUnit" niveau="debutant" />
-		<Competences type="Informatique" precision="XML" niveau="debutant" />
-		<Competences type="Informatique" precision="HTML" niveau="debutant" />
-		<Competences type="Informatique" precision="UML" niveau="debutant" />
-		<Competences type="Informatique" precision="JEE" niveau="debutant" />
+		<Competence type="Materiaux" detail="Polymère et Composite" niveau="confirme"/>
+		<Competence type="Materiaux"  detail="Adhésion" niveau="confirme"/>
+		<Competence type="Materiaux"  detail="Mise en oeuvre" niveau="confirme"/>
+		<Competence type="Materiaux"  detail="Acier" niveau="confirme"/>
+		<Competence type="Materiaux"  detail="Traitement des surfaces" niveau="confirme"/>
+		<Competence type="Materiaux"  detail="Endurance des materiaux" niveau="confirme"/>
+		<Competence type="Materiaux"  detail="Résistance des matériaux" niveau="intermediaire"/>
+		<Competence type="Materiaux"  detail="Eléments finis" niveau="intermediaire"/>
+		<Competence type="Materiaux"  detail="Milieux continus" niveau="intermediaire"/>
+		<Competence type="Materiaux"  detail="Système discret" niveau="intermediaire"/>
+		<Competence type="Materiaux"  detail="Conduite de projet" niveau="intermediaire"/>
+		<Competence type="Materiaux"  detail="Sureté des installations" niveau="intermediaire"/>
+		<Competence type="Logiciel"  detail="Material Studio" niveau="confirme"/>
+		<Competence type="Logiciel"  detail="Gauss-view" niveau="confirme"/>		
+		<Compétence type="Materiaux"  detail="Mécaniques" niveau="debutant"/>
+		<Compétence type="Logiciel"  detail="Hypermesh" niveau="debutant"/>
+		<Compétence type="Logiciel"  detail="Samcef" niveau="debutant"/>
+		<Compétence type="Logiciel"  detail="RDM" niveau="debutant"/>
+		<Competence type="Materiaux" detail="Plasturgie" niveau="intermediaire"/>
+		<Competence type="Logiciel" detail="Cadmould" niveau="intermediaire"/>
+		<Competence type="Langue" detail="Anglais" niveau="intermediaire, Toeic: 785 points"/>
+		<Competence type="Langue" detail="Japonais" niveau="debutant"/>
+		<Competence type="Informatique" detail="Java" niveau="debutant" />
+		<Competence type="Informatique" detail="SQL" niveau="debutant" />
+		<Competence type="Informatique" detail="JUnit" niveau="debutant" />
+		<Competence type="Informatique" detail="XML" niveau="debutant" />
+		<Competence type="Informatique" detail="HTML" niveau="debutant" />
+		<Competence type="Informatique" detail="UML" niveau="debutant" />
+		<Competence type="Informatique" detail="JEE" niveau="debutant" />
 		
 	</ListeCompetence>
 	

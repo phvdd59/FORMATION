@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<CV nom="JULLIEN" prenom="Amandine" email="jullien.amandine@hotmail.fr">
+<CV idEtudiant="4" nom="JULLIEN" prenom="Amandine" email="jullien.amandine@hotmail.fr">
 	<ListeCompetence>
 		<Competence type="Langue" detail="Anglais" niveau="confirme" />
 		<Competence type="Biologie" detail="Culture cellulaire" niveau="confirme" />

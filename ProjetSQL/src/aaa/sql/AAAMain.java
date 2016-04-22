@@ -30,9 +30,26 @@ public class AAAMain {
 
 	private void init() {
 		createComp();
-		File fLecture = new File("C:/DevFormation/GIT/FORMATION/ProjectCV/WebContent/WEB-INF/xml/CVAdelineCapel.xml");
-		ListeCompetence listeCompetence = lireListe(fLecture);
-		insertCompetence(listeCompetence);
+		rechercherXml();
+		// File fLecture = new
+		// File("C:/DevFormation/GIT/FORMATION/ProjectCV/WebContent/WEB-INF/xml/CVAdelineCapel.xml");
+		// ListeCompetence listeCompetence = lireListe(fLecture);
+		// insertCompetence(listeCompetence);
+	}
+
+	private ListeCompetence rechercherXml() {
+		File rep = new File("../ProjectCV/WebContent/WEB-INF/xml");
+		File[] lf = rep.listFiles();
+		ListeCompetence listeCompetence = new ListeCompetence();
+		for (int i = 0; i < lf.length; i++) {
+			if (lf[i].isFile()) {
+				if (lf[i].getName().toLowerCase().contains("cv")) {
+					File fLecture = new File(rep.getAbsolutePath() + "/" + lf[i].getName());
+					listeCompetence = lireListe(fLecture);
+				}
+			}
+		}
+		return listeCompetence;
 	}
 
 	private void createComp() {
@@ -56,6 +73,7 @@ public class AAAMain {
 		}
 		requete = "CREATE TABLE competence" + //
 				"(id INT NOT NULL AUTO_INCREMENT PRIMARY KEY," + //
+				"idEtudiant VARCHAR(10)," + //
 				"type VARCHAR(100)," + //
 				"detail VARCHAR(100), " + //
 				"niveau VARCHAR(50)" + //
@@ -91,27 +109,30 @@ public class AAAMain {
 			documentBuilder = factory.newDocumentBuilder();
 			Document document = documentBuilder.parse(fLecture);
 			Element racine = document.getDocumentElement();
+			String idEtudiant = racine.getAttribute("idEtudiant");
+			// recuperer id etudiant
 			NodeList liste = racine.getChildNodes();
 			int nbList = liste.getLength();
 			for (int i = 0; i < nbList; i++) {
 				if (liste.item(i).getNodeType() == Node.ELEMENT_NODE) {
 					Element eCV = (Element) liste.item(i);
 					NodeList lCompetence = eCV.getChildNodes();
-					for (int j = 0; j < lCompetence.getLength(); j++) {
-						if (lCompetence.item(j).getNodeType() == Node.ELEMENT_NODE) {
-							Element eCompetence = (Element) lCompetence.item(j);
-							String type = eCompetence.getAttribute("type");
-							String detail = eCompetence.getAttribute("detail");
-							String niveau = eCompetence.getAttribute("niveau");
-
-							Competence competence = new Competence(type, detail, niveau);
-							listeCompetence.add(competence);
-							System.out.println(type + " " + detail + " " + niveau);
+					if (eCV.getNodeName() == "ListeCompetence") {
+						for (int j = 0; j < lCompetence.getLength(); j++) {
+							if (lCompetence.item(j).getNodeType() == Node.ELEMENT_NODE) {
+								Element eCompetence = (Element) lCompetence.item(j);
+								String type = eCompetence.getAttribute("type");
+								String detail = eCompetence.getAttribute("detail");
+								String niveau = eCompetence.getAttribute("niveau");
+								Competence competence = new Competence(idEtudiant, type, detail, niveau);
+								listeCompetence.add(competence);
+								System.out.println(idEtudiant +" " +type + " " + detail + " " + niveau);
+							}
 						}
 					}
 				}
 			}
-
+			insertCompetence(listeCompetence);
 		} catch (ParserConfigurationException e) {
 			e.printStackTrace();
 		} catch (SAXException e) {
@@ -144,7 +165,7 @@ public class AAAMain {
 		}
 		for (int i = 0; i < listeCompetence.size(); i++) {
 			Competence competence = listeCompetence.get(i);
-			requete = "INSERT INTO competence" + "(type,detail,niveau)" + "VALUES(" + "'" + competence.getType() + "',"
+			requete = "INSERT INTO competence" + "(idEtudiant,type,detail,niveau)" + "VALUES("+"'"+competence.getIdEtudiant()+"',"+ "'" + competence.getType() + "',"
 					+ "'" + competence.getDetail() + "'," + "'" + competence.getNiveau() + "'" + ");";
 
 			try {
@@ -160,6 +181,5 @@ public class AAAMain {
 				}
 			}
 		}
-
 	}
 }

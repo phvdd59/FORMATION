@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<CV idEtudiant="" nom="DUMON" prenom="Alexia" mail="alexia47@hotmail.fr">
+<CV idEtudiant="5" nom="DUMON" prenom="Alexia" mail="alexia47@hotmail.fr">
 <ListeCompetence>
 <Competence type="Langue" detail="Anglais" niveau="confirme, TOEIC : 800/995"/>
 <Competence type="Logiciel" detail="ERP Floris" niveau="debutant"/>
@@ -7,7 +7,6 @@
 <Competence type="Logiciel" detail="GanttProject" niveau="intermediaire"/>
 <Competence type="Logiciel" detail="Eclipse" niveau="intermediaire"/>
 <Competence type="Logiciel" detail="Pack office" niveau="confirme"/>
-<Competence type="Gestion" detail="Piloter un projet d'optimisation de la production" niveau="debutant"/>
 <Competence type="Gestion" detail="Travailler en equipe et animer une reunion de suivi du projet" niveau="debutant"/>
 <Competence type="Informatique" detail="Java" niveau="debutant" />
 <Competence type="Informatique" detail="SQL" niveau="debutant" />
