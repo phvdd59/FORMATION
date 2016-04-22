@@ -20,8 +20,6 @@ import org.xml.sax.SAXException;
 
 import aaa.metier.Competence;
 import aaa.metier.ListeCompetence;
-import sdpc.metierScolaire.FormationScolaire;
-import sdpc.metierScolaire.ListeFormationScolaire;
 
 public class AAAMain {
 
@@ -31,27 +29,10 @@ public class AAAMain {
 	}
 
 	private void init() {
-		//createComp();
-		ListeCompetence listeCompetence=rechercherXml();
-		//File fLecture = new File("C:/DevFormation/GIT/FORMATION/ProjectCV/WebContent/WEB-INF/xml/CVAdelineCapel.xml");
-		//ListeCompetence listeCompetence = lireListe(fLecture);
-		//insertCompetence(listeCompetence); 
-		
-	}
-
-	private ListeCompetence rechercherXml() {
-		File rep = new File("../ProjectCV/WebContent/WEB-INF/xml");
-		File[] lf = rep.listFiles();
-		ListeCompetence  listeCompetence=new ListeCompetence();
-		for (int i = 0; i < lf.length; i++) {
-			if (lf[i].isFile()) {
-				if (lf[i].getName().toLowerCase().contains("cv")) {
-					File fLecture = new File(rep.getAbsolutePath() +"/"+ lf[i].getName());
-					 listeCompetence = lireListe(fLecture);
-				}
-			}
-		}
-		return listeCompetence;
+		createComp();
+		File fLecture = new File("C:/DevFormation/GIT/FORMATION/ProjectCV/WebContent/WEB-INF/xml/CVAdelineCapel.xml");
+		ListeCompetence listeCompetence = lireListe(fLecture);
+		insertCompetence(listeCompetence);
 	}
 
 	private void createComp() {
@@ -125,7 +106,6 @@ public class AAAMain {
 
 							Competence competence = new Competence(type, detail, niveau);
 							listeCompetence.add(competence);
-							insertCompetence(listeCompetence);
 							System.out.println(type + " " + detail + " " + niveau);
 						}
 					}
@@ -180,5 +160,6 @@ public class AAAMain {
 				}
 			}
 		}
+
 	}
 }

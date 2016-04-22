@@ -19,11 +19,11 @@
 
 	</ListeCompetences>
 	<ListeExperiences>
-		<Experience date="Avril a Septembre 2013" entreprise="IPPON Innovation"
+		<Experience dateExp="Avril a Septembre 2013" entreprise="IPPON Innovation"
 			poste="CDD prestataire Ingénieur Statisticien au pole R&amp;D Sanofi Toulouse" />
-		<Experience date="Juin a Septembre 2012" entreprise="EATON LEONARD"
+		<Experience dateExp="Juin a Septembre 2012" entreprise="EATON LEONARD"
 			poste="Stage développement d'un simulateur 3D aux Etas-Unis" />
-		<Experience date="Juin a Juin 2011" entreprise="Laboratoire IGC"
+		<Experience dateExp="Juin a Juin 2011" entreprise="Laboratoire IGC"
 			poste="Developpement d'un programme de simulation de donnees genetiques au Portugal" />
 	</ListeExperiences>
 	<Formation>

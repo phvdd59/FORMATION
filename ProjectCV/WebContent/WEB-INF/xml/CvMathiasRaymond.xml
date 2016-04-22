@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<CV nom="RAYMOND" prenom="Mathias" e-mail="mathias.raymond@sfr.fr">
+<CV idEtudiant ="7" nom="RAYMOND" prenom="Mathias" e-mail="mathias.raymond@sfr.fr">
 	<ListeCompetences>
 		<Competences type="Programmation" detail="JAVA/JEE" />
 		<Competences type="Biologie" detail="Analyse moléculaire"
@@ -46,23 +46,23 @@
 		</Experience>
 	</ListeExperience>
 
-	<ListeFormation>
-		<Formation date="2016" Ecole=""
-			Diplome="Formation en programmation JAVA/JEE" />
-		<Formation date="2014"
-			Ecole="Université d'Auvergne - Institut Universitaire de Technologie ;
+	<ListeFormationScolaire>
+		<FormationScolaire date="2016" ecole=""
+			diplome="Formation en programmation JAVA/JEE" />
+		<FormationScolaire  date="2014"
+			ecole="Université d'Auvergne - Institut Universitaire de Technologie ;
 					63172 Aubière"
-			Diplome="Master Technologie Biomédicale - spécialité
+			diplome="Master Technologie Biomédicale - spécialité
 					Diagnostic Biomédical" />
-		<Formation date="2012"
-			Ecole="Université d'Auvergne - U.F.R Pharmacie ; 63000 CLERMONT-FERRAND"
-			Diplome="Licence Sciences-Technologies-Santé Mention Biologie Parcours
+		<FormationScolaire  date="2012"
+			ecole="Université d'Auvergne - U.F.R Pharmacie ; 63000 CLERMONT-FERRAND"
+			diplome="Licence Sciences-Technologies-Santé Mention Biologie Parcours
 					Pharmacologie" />
-		<Formation date="2012"
-			Ecole="Université d'Auvergne - U.F.R Pharmacie ; 63000 CLERMONT-FERRAND"
-			Diplome="Attestation de formation à l'expérimentation animale, niveau 1" />
-		<Formation date="2006-2008"
-			Ecole="Université d'Auvergne - U.F.R Medecine; 63000 CLERMONT-FERRAND"
-			Diplome="Première Année du Premier Cycle des Etudes Médicales (PCEM1)" />
-	</ListeFormation>
+		<FormationScolaire  date="2012"
+			ecole="Université d'Auvergne - U.F.R Pharmacie ; 63000 CLERMONT-FERRAND"
+			diplome="Attestation de formation à l'expérimentation animale, niveau 1" />
+		<FormationScolaire  date="2006-2008"
+			ecole="Université d'Auvergne - U.F.R Medecine; 63000 CLERMONT-FERRAND"
+			diplome="Première Année du Premier Cycle des Etudes Médicales (PCEM1)" />
+	</ListeFormationScolaire>
 </CV>
