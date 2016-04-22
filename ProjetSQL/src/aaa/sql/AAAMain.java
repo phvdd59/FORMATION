@@ -35,7 +35,8 @@ public class AAAMain {
 		ListeCompetence listeCompetence=rechercherXml();
 		//File fLecture = new File("C:/DevFormation/GIT/FORMATION/ProjectCV/WebContent/WEB-INF/xml/CVAdelineCapel.xml");
 		//ListeCompetence listeCompetence = lireListe(fLecture);
-		//insertCompetence(listeCompetence);
+		//insertCompetence(listeCompetence); 
+		
 	}
 
 	private ListeCompetence rechercherXml() {
