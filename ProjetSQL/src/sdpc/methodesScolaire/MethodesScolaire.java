@@ -32,7 +32,7 @@ public class MethodesScolaire {
 
 		File rep = new File("../ProjectCV/WebContent/WEB-INF/xml");
 		File[] lf = rep.listFiles();
-		// creTable();
+		creTable();
 		for (int i = 0; i < lf.length; i++) {
 			if (lf[i].isFile()) {
 				System.out.println(lf[i].getName().toLowerCase());
@@ -124,8 +124,8 @@ public class MethodesScolaire {
 
 		requete = "CREATE TABLE formation_scolaire ( id INT NOT NULL PRIMARY KEY AUTO_INCREMENT, " + //
 				"date VARCHAR(20) NOT NULL," + //
-				"diplome VARCHAR(40) NOT NULL," + //
-				"ecole VARCHAR(40) NOT NULL" + //
+				"diplome VARCHAR(80) NOT NULL," + //
+				"ecole VARCHAR(80) NOT NULL" + //
 				");";
 		try {
 			stmt = con.createStatement();
