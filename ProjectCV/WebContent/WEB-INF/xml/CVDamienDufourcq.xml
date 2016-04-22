@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<CV nom="Dufourcq" prenom="Damien" Email="damien.concept@gmail.com">
+<CV idEtudiant="9" nom="Dufourcq" prenom="Damien" Email="damien.concept@gmail.com">
 	<ListeCompetences>
 		<Competence type="Logiciel" detail="SAS" niveau="intermediaire" />
 		<Competence type="Logiciel" detail="R" niveau="intermediaire" />
