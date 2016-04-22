@@ -29,10 +29,10 @@ public class AAAMain {
 	}
 
 	private void init() {
-		createComp();
+		//createComp();
 		File fLecture = new File("../ProjectCV/WebContent/WEB-INF/xml/cvAllan.xml");
 		ListeCompetence listeCompetence = lireListe(fLecture);
-		insertCompetence(listeCompetence);
+		//insertCompetence(listeCompetence);
 	}
 
 	private void createComp() {
@@ -84,6 +84,7 @@ public class AAAMain {
 
 	public ListeCompetence lireListe(File fLecture) {
 		ListeCompetence listeCompetence = new ListeCompetence();
+		
 		final DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
 		DocumentBuilder documentBuilder;
 		try {
@@ -104,6 +105,7 @@ public class AAAMain {
 
 					Competence comp = new Competence(type, detail, niveau);
 					listeCompetence.add(comp);
+					System.out.println(comp);
 				}
 			}
 
