@@ -18,6 +18,5 @@
 		<% request.getParameter("nom"); %>
 		<br/>
 		score <%= correct ? "10" : "0" %></h1>
-		<%= etudiant.getNom() %>
 </body>
 </html>
