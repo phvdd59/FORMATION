@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <CV idEtudiant="3" nom="Gros" prenom="Allan" email="allan.gros@itech.fr">
-	<listeCompetence>
+	<ListeCompetence>
 		<Competence type="Langue" detail="Anglais" niveau="confirme, Toeic: 900" />
 		<Competence type="Informatique" detail="Java" niveau="debutant" />
 		<Competence type="Informatique" detail="SQL" niveau="debutant" />
@@ -14,7 +13,7 @@
 		<Competence type="Chimie" detail="Chimie Organique" niveau="Intermédiaire" />
 		<Competence type="Enduction" detail="Aqueuse/Solvent" niveau="Intermédiaire" />
 
-	</listeCompetence>
+	</ListeCompetence>
 	<ListeFormationScolaire>
 		<Formation date="2015" ecole="Itech Lyon"
 			diplome="Ingénieur Chimie des Polymères, spécialité Textile" />
