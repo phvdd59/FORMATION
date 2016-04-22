@@ -124,8 +124,8 @@ public class MethodesScolaire {
 
 		requete = "CREATE TABLE formation_scolaire ( id INT NOT NULL PRIMARY KEY AUTO_INCREMENT, " + //
 				"date VARCHAR(20) NOT NULL," + //
-				"diplome VARCHAR(80) NOT NULL," + //
-				"ecole VARCHAR(80) NOT NULL" + //
+				"diplome VARCHAR(255) NOT NULL," + //
+				"ecole VARCHAR(255) NOT NULL" + //
 				");";
 		try {
 			stmt = con.createStatement();
