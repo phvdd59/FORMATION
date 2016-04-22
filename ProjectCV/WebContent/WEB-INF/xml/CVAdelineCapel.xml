@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<CV nom="Capel" prenom="Adeline" Email="adelinecapel@gmail.com">
+<CV idEtudiant="1" nom="Capel" prenom="Adeline" Email="adelinecapel@gmail.com">
 	<ListeCompetence>
 		<Competence type="Logiciel" detail="Matlab" niveau="intermediaire" />
 		<Competence type="Logiciel" detail="Maple" niveau="intermediaire" />
