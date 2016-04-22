@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<CV nom="RAYMOND" prenom="Mathias" e-mail="mathias.raymond@sfr.fr">
+<CV idEtudiant ="7" nom="RAYMOND" prenom="Mathias" e-mail="mathias.raymond@sfr.fr">
 	<ListeCompetences>
 		<Competences type="Programmation" detail="JAVA/JEE" />
 		<Competences type="Biologie" detail="Analyse moléculaire"
