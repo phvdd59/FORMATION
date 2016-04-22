@@ -32,11 +32,12 @@ public class MethodesScolaire {
 
 		File rep = new File("../ProjectCV/WebContent/WEB-INF/xml");
 		File[] lf = rep.listFiles();
-		creTable();
+		// creTable();
 		for (int i = 0; i < lf.length; i++) {
 			if (lf[i].isFile()) {
-				if (lf[i].getName().toLowerCase().startsWith("CV")) {
-					File fLecture = new File(rep.getAbsolutePath() + lf[i].getName());
+				System.out.println(lf[i].getName().toLowerCase());
+				if (lf[i].getName().toLowerCase().startsWith("cv")) {
+					File fLecture = new File(rep.getAbsolutePath() + "/" + lf[i].getName());
 					ListeFormationScolaire listeFormation = lireFormationDom(fLecture);
 
 					for (FormationScolaire formationScolaire : listeFormation) {
@@ -44,9 +45,7 @@ public class MethodesScolaire {
 					}
 				}
 			}
-
 		}
-
 	}
 
 	// methode qui extrait la liste des formations scolaires pour Cv XML
@@ -65,14 +64,23 @@ public class MethodesScolaire {
 			int nbList = liste.getLength();
 			for (int i = 0; i < nbList; i++) {
 				if (liste.item(i).getNodeType() == Node.ELEMENT_NODE) {
-					Element eFormation = (Element) liste.item(i);
+					Element eListe = (Element) liste.item(i);
+					if (eListe.getNodeName().contains("ListeFormation")) {
+						NodeList lFormation = eListe.getChildNodes();
 
-					String date = eFormation.getAttribute("date");
-					String diplome = eFormation.getAttribute("diplome");
-					String ecole = eFormation.getAttribute("ecole");
-
-					FormationScolaire form = new FormationScolaire(date, diplome, ecole);
-					listeFormationScolaire.add(form);
+						for (int j = 0; j < lFormation.getLength(); j++) {
+							if (lFormation.item(j).getNodeType() == Node.ELEMENT_NODE) {
+								Element eFormation = (Element) lFormation.item(j);
+								String date = eFormation.getAttribute("date");
+								String diplome = eFormation.getAttribute("diplome");
+								String ecole = eFormation.getAttribute("ecole");
+								FormationScolaire form = new FormationScolaire(date, diplome, ecole);
+								listeFormationScolaire.add(form);
+								String commentaire = eFormation.getTextContent();
+								System.out.println(date + " " + diplome + " " + ecole);
+							}
+						}
+					}
 				}
 			}
 
@@ -103,11 +111,6 @@ public class MethodesScolaire {
 
 		String login = "Active";
 		String password = "VDDMichel";
-		// String login = "root";
-		// String password = "dLYZmjHnLR9Q";
-
-		// connection a la base de données
-
 		affiche("connection a la base de données");
 		try {
 			String DBurl = "jdbc:mysql://www.psyeval.fr/bddCV";
@@ -165,11 +168,9 @@ public class MethodesScolaire {
 		}
 
 		// Création d'une table
-		affiche("creation table");
-		requete = "INSERT INTO formation_scolaire" + //
-				"( date, diplome, ecole)" + //
-				"VALUES ('" + formS.getDate() + "','" + formS.getDiplome() + "','" + formS.getEcole() + //
-				");";
+		affiche("insertion ligne");
+		requete = "INSERT INTO formation_scolaire (date, diplome, ecole) " + //
+				"VALUES ('" + formS.getDate() + "', '" + formS.getDiplome() + "', '" + formS.getEcole() + "' );";
 
 		try {
 			stmt = con.createStatement();
