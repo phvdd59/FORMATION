@@ -1,32 +1,49 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CV nom="RAYMOND" prenom="Mathias" e-mail="mathias.raymond@sfr.fr">
 	<ListeCompetences>
-		<Competences type="Programmation" precision="JAVA/JEE" />
-		<Competences type="Biologie"
-			precision="Analyse moléculaire, culture cellulaire,
-						biologie moléculaire, microscopie, normes qualité en biomédical" />
+		<Competences type="Programmation" detail="JAVA/JEE" />
+		<Competences type="Biologie" detail="Analyse moléculaire"
+			niveau="intermediaire" />
+		<Competences type="Biologie" detail="Culture cellulaire"
+			niveau="confirme" />
+		<Competences type="Biologie" detail="Biologie moleculaire"
+			niveau="confirme" />
+		<Competences type="Biologie" detail="Microscopie"
+			niveau="intermediaire" />
+		<Competences type="Biologie" detail="Biologie medicale"
+			niveau="expert" />
+		<Competences type="Langue" detail="Anglais"
+			niveau="confirme, TOEIC : 865/990" />
+		<Competences type="Informatique" detail="Java" niveau="debutant" />
+		<Competences type="Informatique" detail="SQL" niveau="debutant" />
+		<Competences type="Informatique" detail="JUnit" niveau="debutant" />
+		<Competences type="Informatique" detail="XML" niveau="debutant" />
+		<Competences type="Informatique" detail="HTML" niveau="debutant" />
+		<Competences type="Informatique" detail="UML" niveau="debutant" />
+		<Competences type="Informatique" detail="JEE" niveau="debutant" />
+		<Competences type="Informatique" detail="Microsoft office"
+			niveau="confirme" />
+		<Competences type="Informatique" detail="BioEdit"
+			niveau="intermediaire" />
+		<Competences type="Informatique" detail="MEGA" niveau="intermediaire" />
+		<Competences type="Gestion" detail="Management" niveau="intermediaire" />
+		<Competences type="Gestion" detail="Gestion de projet"
+			niveau="intermediaire" />
+
 	</ListeCompetences>
 
 	<ListeExperience>
-		<Experience date=" Janvier-Juin 2014" Poste="Stage Recherche - Virologie"
-			Lieu="Laboratoire de Virologie - EA4843 ; Faculté de Médecine ; 63000 CLERMONT-FERRAND"
-			Description="Franchissement d'un modèle in vitro de barrière endothéliale
-					microvasculaire cérébrale par l'entérovirus 71,en conditions
-					normales et inflammatoires" />
+		<Experience dateExp=" Janvier-Juin 2014" entreprise="Laboratoire de Virologie - EA4843 ; Faculté de Médecine ; 63000 CLERMONT-FERRAND" poste="Stage Recherche - Virologie">
+			Franchissement d'un modèle in vitro de barrière endothéliale microvasculaire cérébrale par l'entérovirus 71 en conditions normales et inflammatoires
+		</Experience>
 
-		<Experience date="Juin-Juillet 2013" Poste="Stage au service de Virologie"
-			Lieu="Laboratoire de Virologie
-					Hospitalo-universitaire ; CHU Clermont-Ferrand &amp; Faculté de
-					Médecine (EA4843); 63000 CLERMONT-FERRAND"
-			Description="Analyse
-					moléculaire des souches VIH-1 à partir d'une cohorte de patients
-					suivis au CHU de Clermont-Ferrand" />
+		<Experience dateExp="Juin-Juillet 2013" entreprise="Laboratoire de Virologie Hospitalo-universitaire ; CHU Clermont-Ferrand &amp; Faculté de Médecine (EA4843); 63000 CLERMONT-FERRAND"	poste="Stage au service de Virologie">
+			Analyse moléculaire des souches VIH-1 à partir d'une cohorte de patients suivis au CHU de Clermont-Ferrand"
+		</Experience>
 
-		<Experience date="Avril 2010" Poste="Stage d'observation"
-			Lieu="Faculté de
-					Médecine/Pharmacie ; 63000 CLERMONT-FERRAND"
-			Description="Stage d'observation au laboratoire de pharmacologie pharmacie
-					INSERM U766 (Unité de recherche mixte)" />
+		<Experience dateExp="Avril 2010" entreprise="Faculté de Médecine/Pharmacie ; 63000 CLERMONT-FERRAND" poste="Stage d'observation">
+			Stage d'observation au laboratoire de pharmacologie pharmacie INSERM U766 (Unité de recherche mixte)
+		</Experience>
 	</ListeExperience>
 
 	<ListeFormation>
