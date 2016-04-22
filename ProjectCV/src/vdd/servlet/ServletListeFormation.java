@@ -5,6 +5,11 @@ import java.io.File;
 import java.io.FileReader;
 import java.io.IOException;
 import java.io.PrintWriter;
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Statement;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -68,8 +73,8 @@ public class ServletListeFormation extends HttpServlet {
 							String sPrenom = eEtudiant.getAttribute("prenom");
 							String sMail = eEtudiant.getAttribute("mail");
 							String sMetier = eEtudiant.getAttribute("metier");
-							String sCv=eEtudiant.getAttribute("cv");
-							Etudiant etudiant = new Etudiant(sNom, sPrenom, sMail, sMetier,sCv, formation);
+							String sCv = eEtudiant.getAttribute("cv");
+							Etudiant etudiant = new Etudiant(sNom, sPrenom, sMail, sMetier, sCv, formation);
 							formation.getListeEtudiant().add(etudiant);
 						}
 					}
@@ -87,9 +92,45 @@ public class ServletListeFormation extends HttpServlet {
 
 	private ListeFormation chargerListeFormationSQL() {
 		ListeFormation listeFormation = new ListeFormation();
+		Connection con = null;
+		ResultSet set = null;
+		Statement stmt = null;
+		String requete = "";
+		// chargement du pilote
+		try {
+			Class.forName("com.mysql.jdbc.Driver");
+			String login = "Active";
+			String password = "VDDMichel";
+			//connection a la base de données
+			String DBurl = "jdbc:mysql://www.psyeval.fr/bddCV";
+			con = DriverManager.getConnection(DBurl, login, password);
+			stmt = con.createStatement();
+			requete = "SELECT * FROM formation";
+			set = stmt.executeQuery(requete);
+			boolean trouve = set.first();
+			while (trouve) {
+				int id = set.getInt("idFormation");
+				String date = set.getString("dateFormation");
+				String lieu = set.getString("lieuFormation");
+				String domaine = set.getString("domaineFormation");
+				Formation formation = new Formation(id, date, lieu, domaine);
+				listeFormation.add(formation);
+				trouve = set.next();
+			}
+		} catch (SQLException e) {
+			e.printStackTrace();
+		} catch (ClassNotFoundException e) {
+			e.printStackTrace();
+		} finally {
+			try {
+				stmt.close();
+			} catch (SQLException e) {
+				e.printStackTrace();
+			}
+		}
 		return listeFormation;
 	}
-	
+
 	private ListeFormation chargerListeFormationXml() {
 		ListeFormation listeFormation = new ListeFormation();
 		File fXmlFormation = new File("../GIT/FORMATION/ProjectCV/WebContent/WEB-INF/xml/listeFormation.xml");
@@ -107,7 +148,7 @@ public class ServletListeFormation extends HttpServlet {
 					String sDate = eFormation.getAttribute("dateFormation");
 					String sLieu = eFormation.getAttribute("lieuFormation");
 					String sDomaine = eFormation.getAttribute("domaineFormation");
-					Formation formation = new Formation(sDate, sLieu, sDomaine);
+					Formation formation = new Formation(i, sDate, sLieu, sDomaine);
 					synchronized (listeFormation) {
 						listeFormation.add(formation);
 					}
@@ -129,7 +170,7 @@ public class ServletListeFormation extends HttpServlet {
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		HttpSession session = request.getSession();
-		ListeFormation listeFormation = chargerListeFormationXml();
+		ListeFormation listeFormation = chargerListeFormationSQL();
 		chargerListeEtudiants(listeFormation);
 		session.setAttribute("listeForm", listeFormation);
 		PrintWriter out = response.getWriter();
@@ -181,7 +222,7 @@ public class ServletListeFormation extends HttpServlet {
 					String ligneAAfficher = line;
 					ligneAAfficher = ligneAAfficher.replace("%%name%%", "bEtudiant");
 					ligneAAfficher = ligneAAfficher.replace("%%valeur%%", Integer.toString(i));
-					ligneAAfficher = ligneAAfficher.replace("%%nom%%", etudiant.getNom()+" "+etudiant.getPrenom());
+					ligneAAfficher = ligneAAfficher.replace("%%nom%%", etudiant.getNom() + " " + etudiant.getPrenom());
 					ligneAAfficher = ligneAAfficher.replace("%%prenom%%", etudiant.getPrenom());
 					ligneAAfficher = ligneAAfficher.replace("%%mail%%", etudiant.getMail());
 					ligneAAfficher = ligneAAfficher.replace("%%metier%%", etudiant.getMetier());
@@ -192,6 +233,5 @@ public class ServletListeFormation extends HttpServlet {
 			}
 			line = buf.readLine();
 		}
-
 	}
 }

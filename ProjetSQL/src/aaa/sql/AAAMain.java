@@ -29,10 +29,10 @@ public class AAAMain {
 	}
 
 	private void init() {
-		// createComp();
+		createComp();
 		File fLecture = new File("C:/DevFormation/GIT/FORMATION/ProjectCV/WebContent/WEB-INF/xml/CVAdelineCapel.xml");
 		ListeCompetence listeCompetence = lireListe(fLecture);
-		// insertCompetence(listeCompetence);
+		insertCompetence(listeCompetence);
 	}
 
 	private void createComp() {
