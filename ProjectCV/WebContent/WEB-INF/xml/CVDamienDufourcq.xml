@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CV idEtudiant="9" nom="Dufourcq" prenom="Damien" Email="damien.concept@gmail.com">
-	<ListeCompetences>
+	<ListeCompetence>
 		<Competence type="Logiciel" detail="SAS" niveau="intermediaire" />
 		<Competence type="Logiciel" detail="R" niveau="intermediaire" />
 		<Competence type="Langue" detail="Anglais" niveau="intermediaire" />
@@ -17,7 +17,7 @@
 		<Competence type="Informatique" detail="C++" niveau="intermediaire" />	
 
 
-	</ListeCompetences>
+	</ListeCompetence>
 	<ListeExperiences>
 		<Experience dateExp="Avril a Septembre 2013" entreprise="IPPON Innovation"
 			poste="CDD prestataire Ingénieur Statisticien au pole R&amp;D Sanofi Toulouse" />
