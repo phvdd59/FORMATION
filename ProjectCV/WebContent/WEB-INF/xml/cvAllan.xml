@@ -1,27 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <CV nom="Gros" prenom="Allan" email="allan.gros@itech.fr">
-	<listeCompetences>
-		<Competences type="Langue" precision="Anglais" niveau="confirme, Toeic: 900" />
-		<Competences type="Informatique" precision="Java" niveau="debutant" />
-		<Competences type="Informatique" precision="SQL" niveau="debutant" />
-		<Competences type="Informatique" precision="JUnit" niveau="debutant" />
-		<Competences type="Informatique" precision="XML" niveau="debutant" />
-		<Competences type="Informatique" precision="HTML" niveau="debutant" />
-		<Competences type="Informatique" precision="UML" niveau="debutant" />
-		<Competences type="Informatique" precision="JEE" niveau="debutant" />
-		<Competences type="Materiaux" precision="Textile" niveau="confirme" />
-		<Competences type="Chimie" precision="Chimie Organique" niveau="Intermédiaire" />
-		<Competences type="Enduction" precision="Aqueuse/Solvent" niveau="Intermédiaire" />
+	<listeCompetence>
+		<Competence type="Langue" detail="Anglais" niveau="confirme, Toeic: 900" />
+		<Competence type="Informatique" detail="Java" niveau="debutant" />
+		<Competence type="Informatique" detail="SQL" niveau="debutant" />
+		<Competence type="Informatique" detail="JUnit" niveau="debutant" />
+		<Competence type="Informatique" detail="XML" niveau="debutant" />
+		<Competence type="Informatique" detail="HTML" niveau="debutant" />
+		<Competence type="Informatique" detail="UML" niveau="debutant" />
+		<Competence type="Informatique" detail="JEE" niveau="debutant" />
+		<Competence type="Materiaux" detail="Textile" niveau="confirme" />
+		<Competence type="Chimie" detail="Chimie Organique" niveau="Intermédiaire" />
+		<Competence type="Enduction" detail="Aqueuse/Solvent" niveau="Intermédiaire" />
 
-	</listeCompetences>
-	<listeFormation>
+	</listeCompetence>
+	<ListeFormationScolaire>
 		<Formation date="2015" ecole="Itech Lyon"
 			diplome="Ingénieur Chimie des Polymères, spécialité Textile" />
 		<Formation date="2012" ecole="Université Claude Bernard"
 			diplome="DUT Génie Chimique, Génie des Procédés" />
 
-	</listeFormation>
+</ListeFormationScolaire>
 	<listeExperiences>
 		<Experience date="Mars 2015 a Aout 2015" entreprise="Sky Paragliders (Republique Tcheque)" poste="Ingenieur Recherche et Developpement">
 			Conception et réalisation d'un nouveau type de toile de
