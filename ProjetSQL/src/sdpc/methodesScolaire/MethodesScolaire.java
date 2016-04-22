@@ -174,7 +174,7 @@ public class MethodesScolaire {
 
 		// Création d'une table
 		affiche("insertion ligne");
-		requete = "INSERT INTO formation_scolaire (date, diplome, ecole) " + //
+		requete = "INSERT INTO formation_scolaire (idEtudiant, date, diplome, ecole) " + //
 				"VALUES ('" + formS.getEtudiant().getIdEtudiant() + "', '" + formS.getDate() + "', '" + formS.getDiplome() + "', '" + formS.getEcole() + "' );";
 
 		try {
