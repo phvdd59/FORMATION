@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<CV nom="Leroy" prenom="Floriane" Email="leroy.floriane.63@gmail.com">
+<CV idEtudiant="6" nom="Leroy" prenom="Floriane" Email="leroy.floriane.63@gmail.com"> 
 	<ListeCompetence>
 	
 		<Competences type="Materiaux" detail="Polymère et Composite" niveau="confirme"/>
