@@ -51,7 +51,7 @@
 			diplome="Formation en programmation JAVA/JEE" />
 		<FormationScolaire  date="2014"
 			ecole="Université d'Auvergne - Institut Universitaire de Technologie ;
-					63172 Aubière"
+					63172 Aubière"/>
 			diplome="Master Technologie Biomédicale - spécialité
 					Diagnostic Biomédical" />
 		<FormationScolaire  date="2012"
