@@ -50,4 +50,9 @@ public class FormationScolaire {
 	public void setEcole(String ecole) {
 		this.ecole = ecole;
 	}
+	
+	@Override
+	public String toString() {
+		return "Formation du " + date + " à " + ecole + " pour " + diplome;
+	}
 }
