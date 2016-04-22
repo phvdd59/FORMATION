@@ -170,6 +170,8 @@ public class ServletListeFormation extends HttpServlet {
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		HttpSession session = request.getSession();
+		File file=new File("");
+		System.out.println(file.getAbsolutePath());
 		ListeFormation listeFormation = chargerListeFormationSQL();
 		chargerListeEtudiants(listeFormation);
 		session.setAttribute("listeForm", listeFormation);
