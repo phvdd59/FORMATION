@@ -29,10 +29,10 @@ public class AAAMain {
 	}
 
 	private void init() {
-		//createComp();
-		File fLecture = new File("../ProjectCV/WebContent/WEB-INF/xml/cvAllan.xml");
+		// createComp();
+		File fLecture = new File("C:/DevFormation/GIT/FORMATION/ProjectCV/WebContent/WEB-INF/xml/CVAdelineCapel.xml");
 		ListeCompetence listeCompetence = lireListe(fLecture);
-		//insertCompetence(listeCompetence);
+		// insertCompetence(listeCompetence);
 	}
 
 	private void createComp() {
@@ -84,28 +84,31 @@ public class AAAMain {
 
 	public ListeCompetence lireListe(File fLecture) {
 		ListeCompetence listeCompetence = new ListeCompetence();
-		
+
 		final DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
 		DocumentBuilder documentBuilder;
 		try {
 			documentBuilder = factory.newDocumentBuilder();
 			Document document = documentBuilder.parse(fLecture);
-
 			Element racine = document.getDocumentElement();
-
 			NodeList liste = racine.getChildNodes();
 			int nbList = liste.getLength();
 			for (int i = 0; i < nbList; i++) {
 				if (liste.item(i).getNodeType() == Node.ELEMENT_NODE) {
-					Element eCompetence = (Element) liste.item(i);
+					Element eCV = (Element) liste.item(i);
+					NodeList lCompetence = eCV.getChildNodes();
+					for (int j = 0; j < lCompetence.getLength(); j++) {
+						if (lCompetence.item(j).getNodeType() == Node.ELEMENT_NODE) {
+							Element eCompetence = (Element) lCompetence.item(j);
+							String type = eCompetence.getAttribute("type");
+							String detail = eCompetence.getAttribute("detail");
+							String niveau = eCompetence.getAttribute("niveau");
 
-					String type = eCompetence.getAttribute("type");
-					String detail = eCompetence.getAttribute("detail");
-					String niveau = eCompetence.getAttribute("niveau");
-
-					Competence comp = new Competence(type, detail, niveau);
-					listeCompetence.add(comp);
-					System.out.println(comp);
+							Competence competence = new Competence(type, detail, niveau);
+							listeCompetence.add(competence);
+							System.out.println(type + " " + detail + " " + niveau);
+						}
+					}
 				}
 			}
 
