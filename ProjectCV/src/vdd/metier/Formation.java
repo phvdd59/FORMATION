@@ -2,13 +2,15 @@ package vdd.metier;
 
 public class Formation {
 
+	private int idFormation;
 	private String dateFormation;
 	private String lieuFormation;
 	private String domaineFormation;
 
 	private ListeEtudiant listeEtudiant;
 
-	public Formation(String dateFormation, String lieuFormation, String domaineFormation) {
+	public Formation(int idFormation,String dateFormation, String lieuFormation, String domaineFormation) {
+		this.idFormation=idFormation;
 		this.dateFormation = dateFormation;
 		this.lieuFormation = lieuFormation;
 		this.domaineFormation = domaineFormation;
@@ -45,5 +47,13 @@ public class Formation {
 
 	public void setListeEtudiant(ListeEtudiant listeEtudiant) {
 		this.listeEtudiant = listeEtudiant;
+	}
+
+	public int getIdFormation() {
+		return idFormation;
+	}
+
+	public void setIdFormation(int idFormation) {
+		this.idFormation = idFormation;
 	}
 }

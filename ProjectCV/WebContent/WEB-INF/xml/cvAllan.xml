@@ -2,12 +2,17 @@
 
 <CV nom="Gros" prenom="Allan" email="allan.gros@itech.fr">
 	<listeCompetences>
-		<Competences type="anglais" niveau="Confirmé, Toeic: 900" />
-		<Competences type="J2EE" niveau="debutant" />
-		<Competences type="Textile" niveau="confirme" />
-		<Competences type="Chimie Organique" niveau="Intermédiaire" />
-		<Competences type="Enduction Aqueuse/Solvent" niveau="Intermédiaire" />
-		<Competences type="" niveau="confirme" />
+		<Competences type="Langue" precision="Anglais" niveau="confirme, Toeic: 900" />
+		<Competences type="Informatique" precision="Java" niveau="debutant" />
+		<Competences type="Informatique" precision="SQL" niveau="debutant" />
+		<Competences type="Informatique" precision="JUnit" niveau="debutant" />
+		<Competences type="Informatique" precision="XML" niveau="debutant" />
+		<Competences type="Informatique" precision="HTML" niveau="debutant" />
+		<Competences type="Informatique" precision="UML" niveau="debutant" />
+		<Competences type="Informatique" precision="JEE" niveau="debutant" />
+		<Competences type="Materiaux" precision="Textile" niveau="confirme" />
+		<Competences type="Chimie" precision="Chimie Organique" niveau="Intermédiaire" />
+		<Competences type="Enduction" precision="Aqueuse/Solvent" niveau="Intermédiaire" />
 
 	</listeCompetences>
 	<listeFormation>
