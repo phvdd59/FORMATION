@@ -18,6 +18,8 @@ import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
 import org.xml.sax.SAXException;
 
+
+
 public class MfaMain {
 
 	public static void main(String[] args) {
@@ -26,15 +28,88 @@ public class MfaMain {
 	}
 
 	private void init() {
-		//createExperience();
-		ListeExperience listeExperience = lectureDom();
+		createExperience();
+		
+	}
+	
+	private void insertExperience(ListeExperience listeExperience) {
+		Connection con = null;
+		ResultSet res = null;
+		Statement statement = null;
+		String requete = "";
+
+//		String login = "Active";
+//		String password = "VDDMichel";
+		String login = "root";
+		String password = "";
+		try {
+			Class.forName("com.mysql.jdbc.Driver");
+		} catch (ClassNotFoundException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+//		String urlBDD = "jdbc:mysql://www.psyeval.fr/bddCV";
+		String urlBDD = "jdbc:mysql://localhost/vddcv";
+		try {
+			con = DriverManager.getConnection(urlBDD, login, password);
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		for (int i = 0; i < listeExperience.size(); i++) {
+			
+		Experience experience=listeExperience.get(i);
+		requete = "INSERT INTO experience" + //
+				"(dateExp,entreprise,poste,description)" + //
+				"VALUES (" + //
+				"'"+experience.getDateExp()+"'," + //
+				"'"+experience.getEntreprise()+"'," + //
+				"'"+experience.getPoste()+"'," + //
+				"'"+experience.getDescription()+"'" + //
+				");";
+
+		try {
+			statement = con.createStatement();
+			statement.executeUpdate(requete);
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} finally {
+			try {
+				statement.close();
+			} catch (SQLException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+		}
+		}
+
+		
+	}
+	
+	private void LireTousLesCv(){
+		File file=new File("C:/DevFormation/GIT/FORMATION/ProjectCV/WebContent/WEB-INF/xml");
+		File[] tableauCv=file.listFiles();
+		
+		for (int i = 0; i < tableauCv.length; i++) {
+			if (tableauCv[i].isFile()) {
+				if (tableauCv[i].getName().toUpperCase().startsWith("CV") && tableauCv[i].getName().toLowerCase().endsWith(".xml") ) {
+					File fLecture=new File(file.getAbsolutePath()+tableauCv[i].getName());
+					ListeExperience listeExperience= lectureDom(fLecture);
+					
+				}
+			}
+			
+		}
+		
+		
 	}
 
-	private ListeExperience lectureDom() {
-		File fLecture = new File("C:/DevFormation/GIT/FORMATION/ProjectCV/WebContent/WEB-INF/xml/CvMathiasRaymond.xml");
+	private ListeExperience lectureDom(File fLecture) {
+		
 		final DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
 		DocumentBuilder documentBuilder;
-		ListeExperience listeExperience = new ListeExperience();
+		ListeExperience listeDom = new ListeExperience();
 		try {
 			documentBuilder = factory.newDocumentBuilder();
 			Document document = documentBuilder.parse(fLecture);
@@ -52,8 +127,8 @@ public class MfaMain {
 					String poste = eExp.getAttribute("poste");
 					String description = eExp.getTextContent();
 					System.out.println(dateExp + " " + entreprise + " " + poste + " " + description);
-					Experience exp = new Experience(dateExp, entreprise, poste);
-					listeExperience.add(exp);
+					Experience exp = new Experience(dateExp, entreprise, poste,description);
+					listeDom.add(exp);
 				}
 			}
 		} catch (ParserConfigurationException e) {
@@ -63,10 +138,10 @@ public class MfaMain {
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
-		return listeExperience;
+		return listeDom;
 	}
 	private void createExperience() {
-		System.out.println("qsdfqdfqsdf");
+		
 		Connection con = null;
 		ResultSet res = null;
 		Statement statement = null;
