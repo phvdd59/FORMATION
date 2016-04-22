@@ -1,36 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CV idEtudiant ="7" nom="RAYMOND" prenom="Mathias" e-mail="mathias.raymond@sfr.fr">
-	<ListeCompetences>
-		<Competences type="Programmation" detail="JAVA/JEE" />
-		<Competences type="Biologie" detail="Analyse moléculaire"
+	<ListeCompetence>
+		<Competence type="Programmation" detail="JAVA/JEE" />
+		<Competence type="Biologie" detail="Analyse moléculaire"
 			niveau="intermediaire" />
-		<Competences type="Biologie" detail="Culture cellulaire"
+		<Competence type="Biologie" detail="Culture cellulaire"
 			niveau="confirme" />
-		<Competences type="Biologie" detail="Biologie moleculaire"
+		<Competence type="Biologie" detail="Biologie moleculaire"
 			niveau="confirme" />
-		<Competences type="Biologie" detail="Microscopie"
+		<Competence type="Biologie" detail="Microscopie"
 			niveau="intermediaire" />
-		<Competences type="Biologie" detail="Biologie medicale"
+		<Competence type="Biologie" detail="Biologie medicale"
 			niveau="expert" />
-		<Competences type="Langue" detail="Anglais"
+		<Competence type="Langue" detail="Anglais"
 			niveau="confirme, TOEIC : 865/990" />
-		<Competences type="Informatique" detail="Java" niveau="debutant" />
-		<Competences type="Informatique" detail="SQL" niveau="debutant" />
-		<Competences type="Informatique" detail="JUnit" niveau="debutant" />
-		<Competences type="Informatique" detail="XML" niveau="debutant" />
-		<Competences type="Informatique" detail="HTML" niveau="debutant" />
-		<Competences type="Informatique" detail="UML" niveau="debutant" />
-		<Competences type="Informatique" detail="JEE" niveau="debutant" />
-		<Competences type="Informatique" detail="Microsoft office"
+		<Competence type="Informatique" detail="Java" niveau="debutant" />
+		<Competence type="Informatique" detail="SQL" niveau="debutant" />
+		<Competence type="Informatique" detail="JUnit" niveau="debutant" />
+		<Competence type="Informatique" detail="XML" niveau="debutant" />
+		<Competence type="Informatique" detail="HTML" niveau="debutant" />
+		<Competence type="Informatique" detail="UML" niveau="debutant" />
+		<Competence type="Informatique" detail="JEE" niveau="debutant" />
+		<Competence type="Informatique" detail="Microsoft office"
 			niveau="confirme" />
-		<Competences type="Informatique" detail="BioEdit"
+		<Competence type="Informatique" detail="BioEdit"
 			niveau="intermediaire" />
-		<Competences type="Informatique" detail="MEGA" niveau="intermediaire" />
-		<Competences type="Gestion" detail="Management" niveau="intermediaire" />
-		<Competences type="Gestion" detail="Gestion de projet"
+		<Competence type="Informatique" detail="MEGA" niveau="intermediaire" />
+		<Competence type="Gestion" detail="Management" niveau="intermediaire" />
+		<Competence type="Gestion" detail="Gestion de projet"
 			niveau="intermediaire" />
 
-	</ListeCompetences>
+	</ListeCompetence>
 
 	<ListeExperience>
 		<Experience dateExp=" Janvier-Juin 2014" entreprise="Laboratoire de Virologie - EA4843 ; Faculté de Médecine ; 63000 CLERMONT-FERRAND" poste="Stage Recherche - Virologie">
