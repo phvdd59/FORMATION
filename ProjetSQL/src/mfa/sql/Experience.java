@@ -4,6 +4,7 @@ import sdpc.metierScolaire.ListeEtudiant;
 
 public class Experience {
 
+	private int idEtudiant;
 	private String dateExp;
 	private String entreprise;
 	private String poste;
@@ -11,6 +12,7 @@ public class Experience {
 	private ListeEtudiant listeEtudiant;
 	
 	public Experience(){
+		idEtudiant=0;
 		dateExp="";
 		entreprise="";
 		poste="";
@@ -18,7 +20,8 @@ public class Experience {
 		listeEtudiant=new ListeEtudiant();
 	}
 	
-	public Experience(String dateExp,String entreprise, String poste,String description, ListeEtudiant listeEtudiant){
+	public Experience(int idEtudiant, String dateExp,String entreprise, String poste,String description, ListeEtudiant listeEtudiant){
+		this.idEtudiant=idEtudiant;
 		this.dateExp=dateExp;
 		this.entreprise=entreprise;
 		this.poste=poste;
@@ -26,7 +29,8 @@ public class Experience {
 		this.listeEtudiant=listeEtudiant;
 	}
 	
-	public Experience(String dateExp,String entreprise, String poste,String description){
+	public Experience(int idEtudiant, String dateExp,String entreprise, String poste,String description){
+		this.idEtudiant=idEtudiant;
 		this.dateExp=dateExp;
 		this.entreprise=entreprise;
 		this.poste=poste;
@@ -72,6 +76,14 @@ public class Experience {
 
 	public void setDescription(String description) {
 		this.description = description;
+	}
+
+	public int getIdEtudiant() {
+		return idEtudiant;
+	}
+
+	public void setIdEtudiant(int idEtudiant) {
+		this.idEtudiant = idEtudiant;
 	}
 	
 }
