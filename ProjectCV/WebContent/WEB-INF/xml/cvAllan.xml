@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<CV nom="Gros" prenom="Allan" email="allan.gros@itech.fr">
+<CV idEtudiant="3" nom="Gros" prenom="Allan" email="allan.gros@itech.fr">
 	<listeCompetence>
 		<Competence type="Langue" detail="Anglais" niveau="confirme, Toeic: 900" />
 		<Competence type="Informatique" detail="Java" niveau="debutant" />
