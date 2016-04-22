@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<CV nom="KADRI" prenom="Souad" email="souad.kadri1@gmail.com">
+<CV idEtudiant="11" nom="KADRI" prenom="Souad" email="souad.kadri1@gmail.com">
 	<ListeCompetence>
 		<Competence type="Langue" detail="Anglais" niveau="intermediaire"/>
 		<Competence type="Langue" detail="Arabe" niveau="confirme"/>

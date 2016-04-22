@@ -22,7 +22,7 @@
 			<!ATTLIST Experience poste CDATA #REQUIRED>
 ]> -->
 
-<CV nom='Jourdain' prenom='Cédric' email='mailcedric@gmail.com'>
+<CV idEtudiant="10"  nom='Jourdain' prenom='Cédric' email='mailcedric@gmail.com'>
 	<ListeCompetence>
 		<Competence type='informatiques' detail='C' niveau='debutant' />
 		<Competence type='informatiques' detail='C++' niveau='debutant' />
