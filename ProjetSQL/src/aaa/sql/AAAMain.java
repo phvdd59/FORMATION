@@ -56,9 +56,9 @@ public class AAAMain {
 		}
 		requete = "CREATE TABLE competence" + //
 				"(id INT NOT NULL AUTO_INCREMENT PRIMARY KEY," + //
-				"type VARCHAR(30)," + //
-				"detail VARCHAR(30), " + //
-				"niveau VARCHAR(30)" + //
+				"type VARCHAR(100)," + //
+				"detail VARCHAR(100), " + //
+				"niveau VARCHAR(50)" + //
 				");";
 		// requete = "CREATE TABLE competence" + //
 		// "(id INT NOT NULL PRIMARY KEY," + //
