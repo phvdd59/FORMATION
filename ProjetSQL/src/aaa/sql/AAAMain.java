@@ -31,7 +31,7 @@ public class AAAMain {
 	}
 
 	private void init() {
-		//createComp();
+		createComp();
 		ListeCompetence listeCompetence=rechercherXml();
 		//File fLecture = new File("C:/DevFormation/GIT/FORMATION/ProjectCV/WebContent/WEB-INF/xml/CVAdelineCapel.xml");
 		//ListeCompetence listeCompetence = lireListe(fLecture);

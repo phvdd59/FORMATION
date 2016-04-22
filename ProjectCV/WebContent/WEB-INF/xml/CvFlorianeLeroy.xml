@@ -20,17 +20,17 @@
 		<Compétences type="Logiciel"  detail="Hypermesh" niveau="debutant"/>
 		<Compétences type="Logiciel"  detail="Samcef" niveau="debutant"/>
 		<Compétences type="Logiciel"  detail="RDM" niveau="debutant"/>
-		<Competences type="Materiaux" precision="Plasturgie" niveau="intermediaire"/>
-		<Competences type="Logiciel" precision="Cadmould" niveau="intermediaire"/>
-		<Competences type="Langue" precision="Anglais" niveau="intermediaire, Toeic: 785 points"/>
-		<Competences type="Langue" precision="Japonais" niveau="debutant"/>
-		<Competences type="Informatique" precision="Java" niveau="debutant" />
-		<Competences type="Informatique" precision="SQL" niveau="debutant" />
-		<Competences type="Informatique" precision="JUnit" niveau="debutant" />
-		<Competences type="Informatique" precision="XML" niveau="debutant" />
-		<Competences type="Informatique" precision="HTML" niveau="debutant" />
-		<Competences type="Informatique" precision="UML" niveau="debutant" />
-		<Competences type="Informatique" precision="JEE" niveau="debutant" />
+		<Competences type="Materiaux" detail="Plasturgie" niveau="intermediaire"/>
+		<Competences type="Logiciel" detail="Cadmould" niveau="intermediaire"/>
+		<Competences type="Langue" detail="Anglais" niveau="intermediaire, Toeic: 785 points"/>
+		<Competences type="Langue" detail="Japonais" niveau="debutant"/>
+		<Competences type="Informatique" detail="Java" niveau="debutant" />
+		<Competences type="Informatique" detail="SQL" niveau="debutant" />
+		<Competences type="Informatique" detail="JUnit" niveau="debutant" />
+		<Competences type="Informatique" detail="XML" niveau="debutant" />
+		<Competences type="Informatique" detail="HTML" niveau="debutant" />
+		<Competences type="Informatique" detail="UML" niveau="debutant" />
+		<Competences type="Informatique" detail="JEE" niveau="debutant" />
 		
 	</ListeCompetence>
 	
