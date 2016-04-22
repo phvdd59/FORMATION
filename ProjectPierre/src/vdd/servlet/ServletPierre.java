@@ -28,7 +28,6 @@ public class ServletPierre extends HttpServlet {
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		/* ouvre un fichier et affiche le path si le fichier existe. sinon, affiche une erreur dans la console ! */
 		File file = new File("../workspace/ProjectPierre/WebContent/pierre/pierre.txt");
 		if (file.exists()) {
 			System.out.println(file.getAbsolutePath());
