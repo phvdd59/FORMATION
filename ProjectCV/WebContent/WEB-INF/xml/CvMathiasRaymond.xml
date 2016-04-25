@@ -32,7 +32,7 @@
 
 	</ListeCompetence>
 
-	<ListeExperience>
+	<ListeExperiences>
 		<Experience dateExp=" Janvier-Juin 2014" entreprise="Laboratoire de Virologie - EA4843 ; Faculté de Médecine ; 63000 CLERMONT-FERRAND" poste="Stage Recherche - Virologie">
 			Franchissement d'un modèle in vitro de barrière endothéliale microvasculaire cérébrale par l'entérovirus 71 en conditions normales et inflammatoires
 		</Experience>
@@ -44,7 +44,7 @@
 		<Experience dateExp="Avril 2010" entreprise="Faculté de Médecine/Pharmacie ; 63000 CLERMONT-FERRAND" poste="Stage d'observation">
 			Stage d'observation au laboratoire de pharmacologie pharmacie INSERM U766 (Unité de recherche mixte)
 		</Experience>
-	</ListeExperience>
+	</ListeExperiences>
 
 	<ListeFormationScolaire>
 		<FormationScolaire date="2016" ecole=""

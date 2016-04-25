@@ -1,5 +1,7 @@
 package vdd.metier;
 
+import javax.management.ListenerNotFoundException;
+
 public class Etudiant {
 
 	private String nom;
@@ -9,7 +11,10 @@ public class Etudiant {
 	private String cv;
 
 	private Formation formation;
-
+	private ListeCompetence listeCompetence;
+	private ListeFormationScolaire listeFormationScolaire;
+	private ListeExperience listeExperience;
+	
 	public Etudiant(String nom, String prenom, String mail, String metier,String cv, Formation formation) {
 		super();
 		this.nom = nom;
@@ -18,6 +23,7 @@ public class Etudiant {
 		this.metier = metier;
 		this.cv=cv;
 		this.formation = formation;
+		
 	}
 
 	public String getNom() {
