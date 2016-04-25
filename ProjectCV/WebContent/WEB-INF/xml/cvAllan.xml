@@ -21,7 +21,7 @@
 			diplome="DUT Génie Chimique, Génie des Procédés" />
 
 </ListeFormationScolaire>
-	<listeExperiences>
+	<ListeExperiences>
 		<Experience dateExp="Mars 2015 a Aout 2015" entreprise="Sky Paragliders (Republique Tcheque)" poste="Ingenieur Recherche et Developpement">
 			Conception et réalisation d'un nouveau type de toile de
 			parapente en polyester
@@ -39,7 +39,7 @@
 			Synthèse et tests de catalyseur métalliques permettant la
 			décomposition de gaz d'échappement
 		</Experience>
-	</listeExperiences>
+	</ListeExperiences>
 	<CentreInteret> Nouvelles technologies, Informatique, Jeux Vidéo,
 		Lecture, Golf
 	</CentreInteret>
