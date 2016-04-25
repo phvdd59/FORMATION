@@ -58,14 +58,14 @@ public class AAAMain {
 		Statement statement = null;
 		String requete = "";
 
-		String login = "root";
-		String password = "";
+		String login = "Active";
+		String password = "VDDMichel";
 		try {
 			Class.forName("com.mysql.jdbc.Driver");
 		} catch (ClassNotFoundException e) {
 			e.printStackTrace();
 		}
-		String urlBDD = "jdbc:mysql://localhost/bddcv";
+		String urlBDD = "jdbc:mysql://www.psyeval.fr/bddCV";
 		try {
 			connex = DriverManager.getConnection(urlBDD, login, password);
 		} catch (SQLException e) {
@@ -110,6 +110,7 @@ public class AAAMain {
 			Document document = documentBuilder.parse(fLecture);
 			Element racine = document.getDocumentElement();
 			String idEtudiant = racine.getAttribute("idEtudiant");
+			int id = Integer.valueOf(idEtudiant).intValue();
 			// recuperer id etudiant
 			NodeList liste = racine.getChildNodes();
 			int nbList = liste.getLength();
@@ -124,7 +125,7 @@ public class AAAMain {
 								String type = eCompetence.getAttribute("type");
 								String detail = eCompetence.getAttribute("detail");
 								String niveau = eCompetence.getAttribute("niveau");
-								Competence competence = new Competence(idEtudiant, type, detail, niveau);
+								Competence competence = new Competence(id, type, detail, niveau);
 								listeCompetence.add(competence);
 								System.out.println(idEtudiant +" " +type + " " + detail + " " + niveau);
 							}
@@ -149,15 +150,15 @@ public class AAAMain {
 		Statement stat = null;
 		String requete = "";
 
-		String login = "root";
-		String password = "";
+		String login = "Active";
+		String password = "VDDMichel";
 
 		try {
 			Class.forName("com.mysql.jdbc.Driver");
 		} catch (ClassNotFoundException e) {
 			e.printStackTrace();
 		}
-		String urlBDD = "jdbc:mysql://localhost/bddcv";
+		String urlBDD = "jdbc:mysql://www.psyeval.fr/bddCV";
 		try {
 			connection = DriverManager.getConnection(urlBDD, login, password);
 		} catch (SQLException e) {
