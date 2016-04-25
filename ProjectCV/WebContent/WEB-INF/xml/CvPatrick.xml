@@ -6,7 +6,7 @@
 			<texteMail mail="patrick.walentek.bio@gmail.com"/>
 			<photo alt="photo" src= "http://www.doyoubuzz.com/var/users/_/2013/7/25/16/534625/avatar/461588/avatar_cp_big.jpg?t=1458848091"/>
 		</mailEtPhoto>
-	<listeCompetence>
+	<ListeCompetence>
 		
 			<Competence type="Biologie" detail="Culture cellulaire" niveau = "confirme"/>
 			<Competence type="Biologie" detail="Biologie moleculaire" niveau = "confirme"/>
@@ -24,7 +24,7 @@
 			<Competence type="Informatique" detail="UML" niveau="debutant" />
 			<Competence type="Informatique" detail="XML" niveau="debutant" />
 			<Competence type="Informatique" detail="JEE" niveau="debutant" />
-	</listeCompetence>
+	</ListeCompetence>
 	<ListeExperiences>
 		<Experience dateExp="10/14 - 11/15" entreprise="BioDocs-Lyon" poste ="Chargé de communication adjoint">Développement de la communication inbound/outbond de l'association</Experience>
 		<Experience dateExp="04/15 - 06/15" entreprise="Forum BIOTechno Rhône-Alpes" poste ="Coordinateur logistique">Organisation et supervision logistique événementielle</Experience>
