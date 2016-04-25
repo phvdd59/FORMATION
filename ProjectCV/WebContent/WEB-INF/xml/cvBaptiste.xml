@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CV nom="DEMONTROND" prenom="Baptiste" email="baptiste.demontrond@gmail.fr" idEtudiant="2">
+	<ListeCompetence>
+		<Competence type="Langue" precision="Anglais" niveau="TOEIC 700" />
+		<Competence type="Programmation" precision="JEE" niveau="débutant" />
+		<Competence type="Programmation" precision="C/C++" niveau="maitrise" />
+		<Competence type="Programmation" precision="MySQL" niveau="débutant" />
+		<Competence type="Programmation" precision="VBA" niveau="débutant" />
+		<Competence type="Simulation" precision="Matlab" niveau="approfondie" />
+		<Competence type="Simulation" precision="LabView" niveau="approfondi" />
+	</ListeCompetence>
+	
+	<ListeExperiences>
+		<Experience dateExp="Avril 2015 a Septembre 2015" entreprise="Arkema" poste="Ingénieur procédé">
+			Sujet d'étude : amélioration des performances des ateliers de
+			fabrication des ethylamines et de
+			l'isophorone. Avec planification et réalisation de test de perforance.
+			Amélioration des anciens
+			schémas de régulation.Mise en place sur le SNCC. Réglage et suivi des
+			boucles de contrôle.
+			Formation des opérateurs aux changements.
+		</Experience>
+		<Experience dateExp="Avril 2014 a Juillet 2014" entreprise="Institut Lumière Matière (CNRS)" poste="Ingenieur développement informatique">
+			Programmation et interfaçage graphique de la gestion des
+			alimentation haute tension d'un spectromètre
+			de masse à temps de vol.Paramétrage du régulateur PID. Réalisation de
+			boitier électronique pour réaliser
+			la communication entre les instruments de mesures et l'ordinateur.
+		</Experience>
+		<Experience dateExp="Septembre 2012 a juin 2015" entreprise="Conservatoir National des Arts et Métiers de Lyon" poste="Appariteur">
+			Job étudiant : mise en place des vidéos conférences, assistances
+			technique et administrative, sécurisation
+			des lieux de formations.
+		</Experience>
+	</ListeExperiences>
+	
+	<ListeFormationScolaire>
+		<FormationScolaire date="2015" diplome="Master 2 Electronique Informatique Industriel et Instrumentation" ecole="Universite ClaudeBernard Lyon 1"  />
+		<FormationScolaire date="2012" diplome="Licence Electronique Electrotechnique et Automatique" ecole="Universite ClaudeBernard Lyon 1" />
+	</ListeFormationScolaire>
+
+</CV>
