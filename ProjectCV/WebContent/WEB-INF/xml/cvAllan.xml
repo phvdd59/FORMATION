@@ -1,36 +1,40 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<CV idEtudiant="3" nom="Gros" prenom="Allan" email="allan.gros@itech.fr">
+	<ListeCompetence>
+		<Competence type="Langue" detail="Anglais" niveau="confirme, Toeic: 900" />
+		<Competence type="Informatique" detail="Java" niveau="debutant" />
+		<Competence type="Informatique" detail="SQL" niveau="debutant" />
+		<Competence type="Informatique" detail="JUnit" niveau="debutant" />
+		<Competence type="Informatique" detail="XML" niveau="debutant" />
+		<Competence type="Informatique" detail="HTML" niveau="debutant" />
+		<Competence type="Informatique" detail="UML" niveau="debutant" />
+		<Competence type="Informatique" detail="JEE" niveau="debutant" />
+		<Competence type="Materiaux" detail="Textile" niveau="confirme" />
+		<Competence type="Chimie" detail="Chimie Organique" niveau="Intermédiaire" />
+		<Competence type="Enduction" detail="Aqueuse/Solvent" niveau="Intermédiaire" />
 
-<CV nom="Gros" prenom="Allan" email="allan.gros@itech.fr">
-	<listeCompetences>
-		<Competences type="anglais" niveau="Confirmé, Toeic: 900" />
-		<Competences type="J2EE" niveau="debutant" />
-		<Competences type="Textile" niveau="confirme" />
-		<Competences type="Chimie Organique" niveau="Intermédiaire" />
-		<Competences type="Enduction Aqueuse/Solvent" niveau="Intermédiaire" />
-		<Competences type="" niveau="confirme" />
-
-	</listeCompetences>
-	<listeFormation>
+	</ListeCompetence>
+	<ListeFormationScolaire>
 		<Formation date="2015" ecole="Itech Lyon"
 			diplome="Ingénieur Chimie des Polymères, spécialité Textile" />
 		<Formation date="2012" ecole="Université Claude Bernard"
 			diplome="DUT Génie Chimique, Génie des Procédés" />
 
-	</listeFormation>
+</ListeFormationScolaire>
 	<listeExperiences>
-		<Experience date="Mars 2015 a Aout 2015" entreprise="Sky Paragliders (Republique Tcheque)" poste="Ingenieur Recherche et Developpement">
+		<Experience dateExp="Mars 2015 a Aout 2015" entreprise="Sky Paragliders (Republique Tcheque)" poste="Ingenieur Recherche et Developpement">
 			Conception et réalisation d'un nouveau type de toile de
 			parapente en polyester
 			haute densité enduit en polyuréthane phase
 			aqueuse
 		</Experience>
-		<Experience date="Juillet 2014 a Septembre 2014"
+		<Experience dateExp="Juillet 2014 a Septembre 2014"
 			entreprise="Dickson PTL, Balan(01)" poste="Ingénieur Recherche et Développement">
 			Modification d'un procédé
 			d'enduction afin de parer aux problèmes rencontrés en production,
-			enduction en phase solvent.
+			enduction en phase solvent. 
 		</Experience>
-		<Experience date="avril 2012 a juin 2012" entreprise="Université Polytechnique de Turin"
+		<Experience dateExp="avril 2012 a juin 2012" entreprise="Université Polytechnique de Turin"
 			poste="Laborantin">
 			Synthèse et tests de catalyseur métalliques permettant la
 			décomposition de gaz d'échappement

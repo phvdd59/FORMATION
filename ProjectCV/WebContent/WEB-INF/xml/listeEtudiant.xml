@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<listeEt>
+	<formation id="0">
+		<etudiant nom="nom0" prenom="prenom" mail="mail" metier="metier"/>
+	</formation>
+	<formation id="1">
+		<etudiant nom="Julien" prenom="Amandine" mail="julien.amandine@hotmail.fr" metier="Biologiste" cv="pageCV.html"/>
+		<etudiant nom="nom2" prenom="prenom" mail="mail" metier="metier"/>
+		<etudiant nom="nom3" prenom="prenom" mail="mail" metier="metier"/>
+		<etudiant nom="nom4" prenom="prenom" mail="mail" metier="metier"/>
+		<etudiant nom="nom5" prenom="prenom" mail="mail" metier="metier"/>
+		<etudiant nom="nom6" prenom="prenom" mail="mail" metier="metier"/>
+	</formation>
+	<formation id="2">
+		<etudiant nom="nom7" prenom="prenom" mail="mail" metier="metier"/>
+		<etudiant nom="nom8" prenom="prenom" mail="mail" metier="metier"/>
+		<etudiant nom="nom9" prenom="prenom" mail="mail" metier="metier"/>
+	</formation>
+</listeEt>

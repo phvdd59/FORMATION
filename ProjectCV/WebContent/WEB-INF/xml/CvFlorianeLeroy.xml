@@ -1,28 +1,51 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<CV nom="Leroy" prenom="Floriane" Email="leroy.floriane.63@gmail.com">
+<CV idEtudiant="6" nom="Leroy" prenom="Floriane" Email="leroy.floriane.63@gmail.com"> 
 	<ListeCompetence>
-		<Competences type="Polymère et Composite, Adhésion, Mise en oeuvre, Acier, Traitement des surfaces, Endurance des matériaux" niveau="Bien connu"/>
-		<Competences type="Résistance des matériaux,Système discret, Milieux continus, Eléments finis" niveau="Connu"/>
-		<Competences type="Conduite de projet, Sureté des installations" niveau="Connu"/>
-		<Competences type="Modélisation moléculaire :Gauss-view,Material Studio" niveau="Très bien connu"/>
-		<Compétences type="Mécaniques : Hypermesh, Samcef, RDM" niveau="Notion"/>
-		<Competences type="Plasturgie : Cadmould" niveau="Connu"/>
-		<Competences type="Anglais" niveau="Toeic 785 points"/>
-		<Competences type="Japonais" niveau="Notion"/>
+	
+		<Competence type="Materiaux" detail="Polymère et Composite" niveau="confirme"/>
+		<Competence type="Materiaux"  detail="Adhésion" niveau="confirme"/>
+		<Competence type="Materiaux"  detail="Mise en oeuvre" niveau="confirme"/>
+		<Competence type="Materiaux"  detail="Acier" niveau="confirme"/>
+		<Competence type="Materiaux"  detail="Traitement des surfaces" niveau="confirme"/>
+		<Competence type="Materiaux"  detail="Endurance des materiaux" niveau="confirme"/>
+		<Competence type="Materiaux"  detail="Résistance des matériaux" niveau="intermediaire"/>
+		<Competence type="Materiaux"  detail="Eléments finis" niveau="intermediaire"/>
+		<Competence type="Materiaux"  detail="Milieux continus" niveau="intermediaire"/>
+		<Competence type="Materiaux"  detail="Système discret" niveau="intermediaire"/>
+		<Competence type="Materiaux"  detail="Conduite de projet" niveau="intermediaire"/>
+		<Competence type="Materiaux"  detail="Sureté des installations" niveau="intermediaire"/>
+		<Competence type="Logiciel"  detail="Material Studio" niveau="confirme"/>
+		<Competence type="Logiciel"  detail="Gauss-view" niveau="confirme"/>		
+		<Compétence type="Materiaux"  detail="Mécaniques" niveau="debutant"/>
+		<Compétence type="Logiciel"  detail="Hypermesh" niveau="debutant"/>
+		<Compétence type="Logiciel"  detail="Samcef" niveau="debutant"/>
+		<Compétence type="Logiciel"  detail="RDM" niveau="debutant"/>
+		<Competence type="Materiaux" detail="Plasturgie" niveau="intermediaire"/>
+		<Competence type="Logiciel" detail="Cadmould" niveau="intermediaire"/>
+		<Competence type="Langue" detail="Anglais" niveau="intermediaire, Toeic: 785 points"/>
+		<Competence type="Langue" detail="Japonais" niveau="debutant"/>
+		<Competence type="Informatique" detail="Java" niveau="debutant" />
+		<Competence type="Informatique" detail="SQL" niveau="debutant" />
+		<Competence type="Informatique" detail="JUnit" niveau="debutant" />
+		<Competence type="Informatique" detail="XML" niveau="debutant" />
+		<Competence type="Informatique" detail="HTML" niveau="debutant" />
+		<Competence type="Informatique" detail="UML" niveau="debutant" />
+		<Competence type="Informatique" detail="JEE" niveau="debutant" />
+		
 	</ListeCompetence>
 	
-	<Experiences>
-		<Exp date="2016" entreprise="Mc Donald's" poste="Equipière polyvalente"/>
-		<Exp date="2015" entreprise="LECLERC" poste="Vendeuse"/>
-		<Exp date="2015" entreprise="MICHELIN" poste="Stagiaire">Modélisation de thermoplastique-élastomères</Exp>
-		<Exp date="2014-2015" entreprise="SOURIAU" poste="Stagiaire">Amélioration de productivité par optimisation de l'interface lopin-outil</Exp>
-		<Exp date="2014" entreprise="AMIPI" poste="Stagiaire">Audit qualité</Exp>
-		<Exp date="2014" entreprise="AIA" poste="Stagiaire">Elaboration de procédure de contrôle par ultrasons pour les pieds de perches Transall et les nervures des Mirages 2000</Exp>
-	</Experiences>
+	<ListeExperiences>
+		<Experience dateExp="2016" entreprise="Mc Donald's" poste="Equipière polyvalente"/>
+		<Experience dateExp="2015" entreprise="LECLERC" poste="Vendeuse"/>
+		<Experience dateExp="2015" entreprise="MICHELIN" poste="Stagiaire">Modélisation de thermoplastique-élastomères</Experience>
+		<Experience dateExp="2014-2015" entreprise="SOURIAU" poste="Stagiaire">Amélioration de productivité par optimisation de l'interface lopin-outil</Experience>
+		<Experience dateExp="2014" entreprise="AMIPI" poste="Stagiaire">Audit qualité</Experience>
+		<Experience dateExp="2014" entreprise="AIA" poste="Stagiaire">Elaboration de procédure de contrôle par ultrasons pour les pieds de perches Transall et les nervures des Mirages 2000</Experience>
+	</ListeExperiences>
 	
-	<Formation>
-		<Form date="2015" ecole="ISMANS" diplome="Ingénieur génie des matériaux"/>
-		<Form date="2010-2012" ecole="Lycée Godefroy de Bouillon" diplome="Classes préparatoires aux grandes écoles MP/MPSI"/>
-		<Form date="2010" ecole="Lycée Blaise-Pascal" diplome="Baccalauréat série scientifique"/>
-	</Formation>
+	<ListeFormationScolaire>
+		<FormationScolaire date="2015" ecole="ISMANS" diplome="Ingénieur génie des matériaux"/>
+		<FormationScolaire date="2010-2012" ecole="Lycée Godefroy de Bouillon" diplome="Classes préparatoires aux grandes écoles MP/MPSI"/>
+		<FormationScolaire date="2010" ecole="Lycée Blaise-Pascal" diplome="Baccalauréat série scientifique"/>
+	</ListeFormationScolaire>
 </CV>

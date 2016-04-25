@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CV idEtudiant="9" nom="Dufourcq" prenom="Damien" Email="damien.concept@gmail.com">
+	<ListeCompetence>
+		<Competence type="Logiciel" detail="SAS" niveau="intermediaire" />
+		<Competence type="Logiciel" detail="R" niveau="intermediaire" />
+		<Competence type="Langue" detail="Anglais" niveau="intermediaire" />
+		<Competence type="Informatique" detail="Data Mining" niveau="debutant" />
+		<Competence type="Mathematiques" detail="Analyse Statistique,modelisation,prediction" niveau="confirme" />
+		<Competence type="Informatique" detail="Java" niveau="debutant" />
+		<Competence type="Informatique" detail="SQL" niveau="debutant" />
+		<Competence type="Informatique" detail="Junit" niveau="debutant" />
+		<Competence type="Informatique" detail="Html" niveau="debutant" />
+		<Competence type="Informatique" detail="UML" niveau="debutant" />
+		<Competence type="Informatique" detail="XML" niveau="debutant" />
+		<Competence type="Informatique" detail="JEE" niveau="debutant" />
+		<Competence type="Informatique" detail="C" niveau="intermediaire" />	
+		<Competence type="Informatique" detail="C++" niveau="intermediaire" />	
+
+
+	</ListeCompetence>
+	<ListeExperiences>
+		<Experience dateExp="Avril a Septembre 2013" entreprise="IPPON Innovation"
+			poste="CDD prestataire Ingénieur Statisticien au pole R&amp;D Sanofi Toulouse" />
+		<Experience dateExp="Juin a Septembre 2012" entreprise="EATON LEONARD"
+			poste="Stage développement d'un simulateur 3D aux Etas-Unis" />
+		<Experience dateExp="Juin a Juin 2011" entreprise="Laboratoire IGC"
+			poste="Developpement d'un programme de simulation de donnees genetiques au Portugal" />
+	</ListeExperiences>
+	<Formation>
+		<Form date="2008-2013" ecole="INSA Toulouse"
+			diplome="Ingenieur Mathematique et Modelisation, Biostatistique" />
+		<Form date="2007-2008" ecole="Deodat de Severac" diplome="Classe Préparatoire PCSI" />
+		<Form date="2011-2012" ecole="Lycée Deodat de Severac" diplome="Baccalauréat série scientiﬁque" />
+	</Formation>
+	
+</CV>

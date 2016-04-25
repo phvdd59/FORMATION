@@ -1,0 +1,44 @@
+@CHARSET "ISO-8859-1";
+
+flotte {
+  float:right;
+} 
+
+table{
+	border-collapse:collapse;
+	font-family:Raleway;
+	border-width:1px;
+	margin:0 auto;
+	
+} 
+ 
+td{
+	border: solid black;
+	
+}
+
+th{
+	border: solid black;
+	
+	
+} 
+
+h1{
+	font-family:Raleway;
+	text-align: center;
+} 
+
+p{
+	font-family:Raleway;
+	text-align: center;
+}
+
+h4{
+	text-align: center;
+	background-color: #808080;
+}
+h6{
+	text-align: center;
+	background-color: #c0c0c0;
+}
+
