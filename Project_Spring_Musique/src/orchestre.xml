@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans 
+	http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+
+	<!--1) Instrument : saxophone (création et déclaration d'un nouveau bean 
+		avec id='saxophone') -->
+
+	<!--2) Instrument : violon (création et déclaration d'un nouveau bean avec 
+		id='violon') -->
+
+	<!--3) Instrument : guitare (création et déclaration d'un nouveau bean avec 
+		id='guitare') -->
+
+	<!--4) Musicien : Olivier est un saxophoniste . Il joue morceau 'Vive le 
+		vent...' -->
+
+	<!--5) Musicien : Jean-Marc est un saxophoniste . Il utilise un saxophone 
+		différent de celui d'Olivier (ne pas faire un deuxième bean saxophone !) -->
+
+	<!--6) Musicien : Caroline est violoniste -->
+
+	<!--7) Musicien : Franck est guitariste -->
+
+	<!--8) Musicien : Julien joue plusieurs instruments, dont 2 saxophones (demo 
+		<list>) . Analyser et Utiliser classe GroupeMusique fournie -->
+
+	<!--9) Musicien : Alain joue plusieurs instruments , dont 2 saxophones (demo 
+		<set>) -->
+
+	<!--10) Louis joue le même morceau qu'Olivier (utiliser SpEL. Vous aurez 
+		besoin d'ajouter les jars context, asm et expressions de spring et il faut 
+		utiliser ApplicationContext à la place de BeanFactory -->
+
+	<!--11) Optimisation - Réduction XML : démo classe abstraite (chercher dans 
+		doc reference attribut 'parent') -->
+
+	<!--12) Optimisation - Réduction XML : démo AutoWiring 'byName' -->
+
+	<!--13) Optimisation - Réduction XML : démo default-autowiring='byName' -->
+
+	<!--14) Optimisation - Réduction XML : démo AutoWiring 'byType' -->
+
+	<!--15) Optimisation - Réduction XML : démo <context:annotation-config/> 
+		+ @AutoWired -->
+
+	<!--16) Optimisation - Réduction XML : démo <context:component-scan base-package='com.demo'/> 
+		+ @Service -->
+
+	<!--17) Optimisation - Réduction XML : démo <context:component-scan base-package='com.demo'/> 
+		+ @Service . (PAs de filtre au scan: use-default-filters="false") -->
+
+	<!--18) Optimisation - Réduction XML : démo <context:component-scan base-package='com.demo'/> 
+		+ @Configuration + @Bean -->
+
+	<!--19) Optimisation - Cycle de vie : accorder un instrument lors de son 
+		initialisation (Ex : guitare) (chercher dans doc reference attribut 'init-method') -->
+
+	<!--20) Optimisation - Cycle de vie : nettoyer un instrument lors de sa 
+		destruction (chercher dans doc reference attribut 'destroy-method') -->
+
+</beans>
