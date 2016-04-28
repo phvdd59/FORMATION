@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<CV nom="DEMONTROND" prenom="Baptiste" email="baptiste.demontrond@gmail.fr" idEtudiant="2">
+<CV nom="HUSION" prenom="Paul" email="paul.husion@gmail.fr" idEtudiant="2">
 	<ListeCompetence>
-		<Competence type="Langue" precision="Anglais" niveau="TOEIC 700" />
+		<Competence type="Langue" precision="Anglais" niveau="TOEIC 1600" />
 		<Competence type="Programmation" precision="JEE" niveau="débutant" />
 		<Competence type="Programmation" precision="C/C++" niveau="maitrise" />
 		<Competence type="Programmation" precision="MySQL" niveau="débutant" />
