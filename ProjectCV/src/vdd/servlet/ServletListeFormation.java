@@ -77,8 +77,9 @@ public class ServletListeFormation extends HttpServlet {
 							String sPrenom = eEtudiant.getAttribute("prenom");
 							String sMail = eEtudiant.getAttribute("mail");
 							String sMetier = eEtudiant.getAttribute("metier");
+							String sPhoto = eEtudiant.getAttribute("photo");
 							String sCv = eEtudiant.getAttribute("cv");
-							Etudiant etudiant = new Etudiant(id, sNom, sPrenom, sMail, sMetier, formation);
+							Etudiant etudiant = new Etudiant(id, sNom, sPrenom, sMail, sMetier,sPhoto, formation);
 							formation.getListeEtudiant().add(etudiant);
 						}
 					}
@@ -147,12 +148,13 @@ public class ServletListeFormation extends HttpServlet {
 			set = stmt.executeQuery(requete);
 			boolean trouve = set.first();
 			while (trouve) {
-				int id = set.getInt("idFormation");
+				int id = set.getInt("id");
 				String nom = set.getString("nom");
 				String prenom = set.getString("prenom");
 				String metier = set.getString("metier");
 				String mail = set.getString("mail");
-				Etudiant etudiant = new Etudiant(id, nom, prenom, mail, metier, formation);
+				String photo = set.getString("photo");
+				Etudiant etudiant = new Etudiant(id, nom, prenom, mail, metier,photo, formation);
 				chargeListeCompetenceSQL(etudiant, con);
 				chargeListeExperienceSQL(etudiant, con);
 				chargeListeFormationScolaireSQL(etudiant, con);

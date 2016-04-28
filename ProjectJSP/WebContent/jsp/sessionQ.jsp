@@ -18,7 +18,7 @@ if (request.getParameter("nom") != null){
 	if (session.getAttribute("nb1") != null){
 		int n1=((Integer) session.getAttribute("nb1")).intValue(); 
 		int n2=((Integer) session.getAttribute("nb2")).intValue();
-		int essai=Integer.parceInt(request.getParameter("essai"));
+		int essai=Integer.parseInt(request.getParameter("essai"));
 		if (essai == n1*n2){
 			int nbr = ((Integer) session.getAttribute("nbBonneReponse")).intValue();
 			session.setAttribute("nbBonneReponse",new Integer(nbr+1));

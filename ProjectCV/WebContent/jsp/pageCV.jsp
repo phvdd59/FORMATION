@@ -102,7 +102,7 @@ th {
 			<a href="http://www.activconsult-ing.com/recrutement_rh.html"><img src="http://www.activconsult-ing.com/img/Menu_capitaine.png" width="71" height="103" alt="Recrutement RH" /></a>
 		</div>
 		<div id="logo8">
-			<a href="http://www.activconsult-ing.com/ressources_externes.html"><img src="http://www.activconsult-ing.com/img/Menu_bouÃ©e.png" width="71" height="103" alt="Ressouces externes" /></a>
+			<a href="http://www.activconsult-ing.com/ressources_externes.html"><img src="http://www.activconsult-ing.com/img/Menu_bouée.png" width="71" height="103" alt="Ressouces externes" /></a>
 		</div>
 		<div id="logo7">
 			<a href="http://www.activconsult-ing.com/contact.html"><img src="http://www.activconsult-ing.com/img/Menu_gouvernail.png" width="71" height="93" alt="Contact" /></a>
@@ -118,17 +118,14 @@ th {
 		<div id="info2">
 			<%
 				String sIdEtudiant=request.getParameter("bEtudiant");
-				out.println("<h1>"+sIdEtudiant+"</h1>");
 				Formation formation=(Formation) session.getAttribute("formation");
 				Etudiant etudiant=formation.getListeEtudiant().get(Integer.parseInt(sIdEtudiant));
 				ListeCompetence lstC=etudiant.getListeCompetence();					
 				ListeExperience lstE=etudiant.getListeExperience();
 				ListeFormationScolaire lstF=etudiant.getListeFormationScolaire();
 			%>
-			<div style="position: absolute; top: -105px; left: 320px;">
-				<h1 style="color: blue;">
-					CV
-					</h2>
+			<div style="position: absolute; top: -65px; left: 550px;">
+				<img src="http://localhost:8080/ProjectCV/img/<%= etudiant.getPhoto() %>" alt="<%= etudiant.getPhoto() %>" style="width:150px;height: 200px;"/>
 			</div>
 			<div style="position: absolute; top: -85px; left: 340px;">
 				<h2 style="color: blue;"><%= etudiant.getNom() %></h2>
@@ -152,8 +149,8 @@ th {
 							</div>
 							<div class="rTableHead" style="width: 39%">Niveau</div>
 						</div>
-						<% for (int i=0;i<lstC.size();i++) {
-								Competence competence=lstC.get(i);
+						<% for (Competence competence: lstC) {
+								
 						%>
 							<div class="rTableRow">
 								<div class="rTableCell" style="width: 20%"><%= competence.getType() %></div>
@@ -194,7 +191,7 @@ th {
 								<strong>Date</strong>
 							</div>
 							<div class="rTableHead" style="width: 39%">
-								<span style="font-weight: bold;">DiplÃ´me</span>
+								<span style="font-weight: bold;">Dipl&ocirc;me</span>
 							</div>
 							<div class="rTableHead" style="width: 39%">Ecole</div>
 						</div>
@@ -208,7 +205,6 @@ th {
 					</div>
 				</div>
 			</div>
-
 		</div>
 		<div id="fpage2">
 			<img src="http://www.activconsult-ing.com/img/Article_fond_blanc_double_copie.png" />
@@ -221,7 +217,7 @@ th {
 			<div id="viadeo2">
 				<img src="http://www.activconsult-ing.com/img/Viadeo.png" />
 			</div>
-			<div id="droit2">Â©1997-2012 - Tous droits de reproduction et de reprÃ©sentation rÃ©servÃ©s | Mentions lÃ©gales</div>
+			<div id="droit2">&#174;1997-2012 - Tous droits de reproduction et de repr&eacute;sentation r&eacute;serv&eacute;s | Mentions l&eacute;gales</div>
 		</div>
 </body>
 </html>

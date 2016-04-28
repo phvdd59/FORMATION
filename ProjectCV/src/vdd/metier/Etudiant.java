@@ -7,19 +7,21 @@ public class Etudiant {
 	private String prenom;
 	private String mail;
 	private String metier;
+	private String photo;
 
 	private Formation formation;
 	private ListeCompetence listeCompetence;
 	private ListeFormationScolaire listeFormationScolaire;
 	private ListeExperience listeExperience;
 
-	public Etudiant(int id, String nom, String prenom, String mail, String metier, Formation formation) {
+	public Etudiant(int id, String nom, String prenom, String mail, String metier,String photo, Formation formation) {
 		super();
 		this.id = id;
 		this.nom = nom;
 		this.prenom = prenom;
 		this.mail = mail;
 		this.metier = metier;
+		this.photo = photo;
 		this.formation = formation;
 		listeCompetence = new ListeCompetence();
 		listeFormationScolaire = new ListeFormationScolaire();
@@ -96,5 +98,13 @@ public class Etudiant {
 
 	public void setListeExperience(ListeExperience listeExperience) {
 		this.listeExperience = listeExperience;
+	}
+
+	public String getPhoto() {
+		return photo;
+	}
+
+	public void setPhoto(String photo) {
+		this.photo = photo;
 	}
 }
