@@ -1,31 +1,27 @@
 package vdd.metier;
 
 public class Competence {
+	
+	private int id;
 	private String type;
 	private String detail;
 	private String niveau;
-	private String idEtudiant;
+	private Etudiant etudiant;
 
 	public Competence() {
-		idEtudiant="-1";
+		id=0;
 		type = "";
 		detail = "";
 		niveau = "";
+		etudiant=null;
 	}
 
-	public Competence(String idEtudiant,String type, String detail, String niveau) {
-		this.idEtudiant=idEtudiant;
+	public Competence(int id,String type, String detail, String niveau,Etudiant etudiant) {
+		this.id=id;
 		this.type = type;
 		this.detail = detail;
 		this.niveau = niveau;
-	}
-
-	public String getIdEtudiant() {
-		return idEtudiant;
-	}
-
-	public void setIdEtudiant(String idEtudiant) {
-		this.idEtudiant = idEtudiant;
+		this.etudiant=etudiant;
 	}
 
 	public String getType() {
@@ -50,6 +46,22 @@ public class Competence {
 
 	public void setNiveau(String niveau) {
 		this.niveau = niveau;
+	}
+
+	public int getId() {
+		return id;
+	}
+
+	public void setId(int id) {
+		this.id = id;
+	}
+
+	public Etudiant getEtudiant() {
+		return etudiant;
+	}
+
+	public void setEtudiant(Etudiant etudiant) {
+		this.etudiant = etudiant;
 	}
 
 }

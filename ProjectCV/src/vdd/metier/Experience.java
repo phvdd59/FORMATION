@@ -2,26 +2,28 @@ package vdd.metier;
 
 public class Experience {
 
+	private int id;
 	private String dateExp;
 	private String entreprise;
 	private String poste;
 	private String description;
-	private ListeEtudiant listeEtudiant;
+	private Etudiant etudiant;
 
 	public Experience() {
 		dateExp = "";
 		entreprise = "";
 		poste = "";
 		description = "";
-		listeEtudiant = new ListeEtudiant();
+		etudiant = null;
 	}
 
-	public Experience(String dateExp, String entreprise, String poste, String description, ListeEtudiant listeEtudiant) {
+	public Experience(int id,String dateExp, String entreprise, String poste, String description, Etudiant etudiant) {
+		this.id=id;
 		this.dateExp = dateExp;
 		this.entreprise = entreprise;
 		this.poste = poste;
 		this.description = description;
-		this.listeEtudiant = listeEtudiant;
+		this.etudiant = etudiant;
 	}
 
 	public Experience(String dateExp, String entreprise, String poste, String description) {
@@ -29,7 +31,7 @@ public class Experience {
 		this.entreprise = entreprise;
 		this.poste = poste;
 		this.description = description;
-		listeEtudiant = new ListeEtudiant();
+		etudiant = null;
 	}
 
 	public String getDateExp() {
@@ -56,20 +58,28 @@ public class Experience {
 		this.poste = poste;
 	}
 
-	public ListeEtudiant getListeEtudiant() {
-		return listeEtudiant;
-	}
-
-	public void setListeEtudiant(ListeEtudiant listeEtudiant) {
-		this.listeEtudiant = listeEtudiant;
-	}
-
 	public String getDescription() {
 		return description;
 	}
 
 	public void setDescription(String description) {
 		this.description = description;
+	}
+
+	public int getId() {
+		return id;
+	}
+
+	public void setId(int id) {
+		this.id = id;
+	}
+
+	public Etudiant getEtudiant() {
+		return etudiant;
+	}
+
+	public void setEtudiant(Etudiant etudiant) {
+		this.etudiant = etudiant;
 	}
 
 }

@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
+
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
@@ -17,7 +18,7 @@ if (request.getParameter("nom") != null){
 	if (session.getAttribute("nb1") != null){
 		int n1=((Integer) session.getAttribute("nb1")).intValue(); 
 		int n2=((Integer) session.getAttribute("nb2")).intValue();
-		int essai=Integer.parseInt(request.getParameter("essai"));
+		int essai=Integer.parceInt(request.getParameter("essai"));
 		if (essai == n1*n2){
 			int nbr = ((Integer) session.getAttribute("nbBonneReponse")).intValue();
 			session.setAttribute("nbBonneReponse",new Integer(nbr+1));

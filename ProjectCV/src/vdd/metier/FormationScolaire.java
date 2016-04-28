@@ -2,26 +2,27 @@ package vdd.metier;
 
 public class FormationScolaire {
 
-	private Etudiant etudiant; 
-	
+	private int id;
 	private String date;
 	private String diplome;
 	private String ecole;
+	private Etudiant etudiant; 
 
 	public FormationScolaire() {
+		id=0;
 		date = "";
 		diplome = "";
 		ecole = "";
-
+		etudiant=null;
 	}
 
 
-	public FormationScolaire(Etudiant etudiant, String date, String diplome, String ecole) {
-		this.etudiant=etudiant; 
+	public FormationScolaire(int id, String date, String diplome, String ecole,Etudiant etudiant) {
+		this.id=id;
 		this.date = date;
 		this.diplome = diplome;
 		this.ecole = ecole;
-
+		this.etudiant=etudiant; 
 	}
 
 
