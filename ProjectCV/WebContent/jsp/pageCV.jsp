@@ -96,7 +96,7 @@ th {
 			<a href="http://www.activconsult-ing.com/nos_offres1.html"><img src="http://www.activconsult-ing.com/img/Menu_rose_des_vents.png" width="71" height="93" alt="Nos offres" /></a>
 		</div>
 		<div id="logo5">
-			<a href="http://www.activconsult-ing.com/domaines_activites.html"><img src="http://www.activconsult-ing.com/img/Menu_noeuds.png" width="72" height="103" alt="Domaines d'activitÃ©s" /></a>
+			<a href="http://www.activconsult-ing.com/domaines_activites.html"><img src="http://www.activconsult-ing.com/img/Menu_noeuds.png" width="72" height="103" alt="Domaines d'activit&eacute;s" /></a>
 		</div>
 		<div id="logo6">
 			<a href="http://www.activconsult-ing.com/recrutement_rh.html"><img src="http://www.activconsult-ing.com/img/Menu_capitaine.png" width="71" height="103" alt="Recrutement RH" /></a>
@@ -120,12 +120,19 @@ th {
 				String sIdEtudiant=request.getParameter("bEtudiant");
 				Formation formation=(Formation) session.getAttribute("formation");
 				Etudiant etudiant=formation.getListeEtudiant().get(Integer.parseInt(sIdEtudiant));
+				Formateur formateur=formation.getFormateur();
 				ListeCompetence lstC=etudiant.getListeCompetence();					
 				ListeExperience lstE=etudiant.getListeExperience();
 				ListeFormationScolaire lstF=etudiant.getListeFormationScolaire();
 			%>
+			<div style="width: 500px; position: relative; left: 0px; top: -40px; text-align: left;color: rgb(136, 136, 136);">
+				<p><i><g>Formateur : <%= formateur.getNom() %></g> 
+				<%= formateur.getMail() %></i>
+				<br/><i><%= formateur.getTel() %></i></p>
+			</div>
+		
 			<div style="position: absolute; top: -65px; left: 550px;">
-				<img src="http://localhost:8080/ProjectCV/img/<%= etudiant.getPhoto() %>" alt="<%= etudiant.getPhoto() %>" style="width:150px;height: 200px;"/>
+				<img src="http://www.psyeval.fr/img/<%= etudiant.getPhoto() %>" alt="<%= etudiant.getPhoto() %>" style="width:150px;height: 200px;"/>
 			</div>
 			<div style="position: absolute; top: -85px; left: 340px;">
 				<h2 style="color: blue;"><%= etudiant.getNom() %></h2>
@@ -136,7 +143,7 @@ th {
 			<div style="position: absolute; top: -35px; left: 360px;">
 				<p><%= etudiant.getMail() %></p>
 			</div>
-			<div id="formationLyon">
+			<div id="formationLyon" style="position: relative;top: -50px;">
 				<div style="width: 500px; height: 200px; overflow: auto">
 					<h3>Comp&eacute;tences</h3>
 					<div class="rTable">

@@ -30,6 +30,7 @@ import org.xml.sax.SAXException;
 import vdd.metier.Competence;
 import vdd.metier.Etudiant;
 import vdd.metier.Experience;
+import vdd.metier.Formateur;
 import vdd.metier.Formation;
 import vdd.metier.FormationScolaire;
 import vdd.metier.ListeFormation;
@@ -39,7 +40,15 @@ import vdd.metier.ListeFormation;
  */
 @WebServlet("/ServletListeFormation")
 public class ServletListeFormation extends HttpServlet {
+	private static final String REPERTOIRE="/home/psyeval/www/ProjectCV/"; 
+	//private static final String REPERTOIRE="../GIT/FORMATION/ProjectCV/WebContent/"; 
 	private static final long serialVersionUID = 1L;
+	
+
+	private static final String DRIVER = "com.mysql.jdbc.Driver";
+	private static final String LOGIN = "Active";
+	private static final String PASSWORD = "VDDMichel";
+	private static final String DBURL = "jdbc:mysql://www.psyeval.fr/bddCV";
 
 	/**
 	 * @see HttpServlet#HttpServlet()
@@ -54,7 +63,7 @@ public class ServletListeFormation extends HttpServlet {
 	}
 
 	private void chargerListeEtudiantsXML(ListeFormation listeFormation) {
-		File fXmlEtudiant = new File("../GIT/FORMATION/ProjectCV/WebContent/WEB-INF/xml/listeEtudiant.xml");
+		File fXmlEtudiant = new File(REPERTOIRE+"WEB-INF/xml/listeEtudiant.xml");
 
 		final DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
 		DocumentBuilder builder;
@@ -79,7 +88,7 @@ public class ServletListeFormation extends HttpServlet {
 							String sMetier = eEtudiant.getAttribute("metier");
 							String sPhoto = eEtudiant.getAttribute("photo");
 							String sCv = eEtudiant.getAttribute("cv");
-							Etudiant etudiant = new Etudiant(id, sNom, sPrenom, sMail, sMetier,sPhoto, formation);
+							Etudiant etudiant = new Etudiant(id, sNom, sPrenom, sMail, sMetier, sPhoto, formation);
 							formation.getListeEtudiant().add(etudiant);
 						}
 					}
@@ -103,11 +112,11 @@ public class ServletListeFormation extends HttpServlet {
 		String requete = "";
 		// chargement du pilote
 		try {
-			Class.forName("com.mysql.jdbc.Driver");
-			String login = "Active";
-			String password = "VDDMichel";
+			Class.forName(DRIVER);
+			String login = LOGIN;
+			String password = PASSWORD;
 			//connection a la base de données
-			String DBurl = "jdbc:mysql://www.psyeval.fr/bddCV";
+			String DBurl = DBURL;
 			con = DriverManager.getConnection(DBurl, login, password);
 			stmt = con.createStatement();
 			requete = "SELECT * FROM formation";
@@ -119,6 +128,7 @@ public class ServletListeFormation extends HttpServlet {
 				String lieu = set.getString("lieuFormation");
 				String domaine = set.getString("domaineFormation");
 				Formation formation = new Formation(id, date, lieu, domaine);
+				chargeFormateurSQL(formation, con);
 				chargeListeEtudiantSQL(formation, con);
 				listeFormation.add(formation);
 				trouve = set.next();
@@ -135,6 +145,35 @@ public class ServletListeFormation extends HttpServlet {
 			}
 		}
 		return listeFormation;
+	}
+
+	private void chargeFormateurSQL(Formation formation, Connection con) {
+		ResultSet set = null;
+		Statement stmt = null;
+		String requete = "";
+		// chargement du pilote
+		try {
+			stmt = con.createStatement();
+			requete = "SELECT * FROM formateur WHERE idFormation = " + formation.getIdFormation();
+			set = stmt.executeQuery(requete);
+			boolean trouve = set.first();
+			if (trouve) {
+				int id = set.getInt("id");
+				String nom = set.getString("nom");
+				String mail = set.getString("mail");
+				String tel = set.getString("tel");
+				Formateur formateur = new Formateur(id, nom, mail, tel, formation);
+				formation.setFormateur(formateur);
+			}
+		} catch (SQLException e) {
+			e.printStackTrace();
+		} finally {
+			try {
+				stmt.close();
+			} catch (SQLException e) {
+				e.printStackTrace();
+			}
+		}
 	}
 
 	private void chargeListeEtudiantSQL(Formation formation, Connection con) {
@@ -154,7 +193,7 @@ public class ServletListeFormation extends HttpServlet {
 				String metier = set.getString("metier");
 				String mail = set.getString("mail");
 				String photo = set.getString("photo");
-				Etudiant etudiant = new Etudiant(id, nom, prenom, mail, metier,photo, formation);
+				Etudiant etudiant = new Etudiant(id, nom, prenom, mail, metier, photo, formation);
 				chargeListeCompetenceSQL(etudiant, con);
 				chargeListeExperienceSQL(etudiant, con);
 				chargeListeFormationScolaireSQL(etudiant, con);
@@ -265,7 +304,7 @@ public class ServletListeFormation extends HttpServlet {
 
 	private ListeFormation chargerListeFormationXml() {
 		ListeFormation listeFormation = new ListeFormation();
-		File fXmlFormation = new File("../GIT/FORMATION/ProjectCV/WebContent/WEB-INF/xml/listeFormation.xml");
+		File fXmlFormation = new File(REPERTOIRE+"WEB-INF/xml/listeFormation.xml");
 
 		final DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
 		DocumentBuilder builder;
@@ -306,7 +345,7 @@ public class ServletListeFormation extends HttpServlet {
 		ListeFormation listeFormation = chargerListeFormationSQL();
 		session.setAttribute("listeForm", listeFormation);
 		PrintWriter out = response.getWriter();
-		File fHtml = new File("../GIT/FORMATION/ProjectCV/WebContent/WEB-INF/page/pageListeFormation.html");
+		File fHtml = new File(REPERTOIRE+"WEB-INF/page/pageListeFormation.html");
 		BufferedReader buf = new BufferedReader(new FileReader(fHtml));
 		String line = buf.readLine();
 		while (line != null) {
@@ -339,15 +378,23 @@ public class ServletListeFormation extends HttpServlet {
 		HttpSession session = request.getSession();
 		ListeFormation listeFormation = (ListeFormation) session.getAttribute("listeForm");
 		String sSel = request.getParameter("bFormation");
-		System.out.println(sSel);
 		Formation formation = listeFormation.get(Integer.valueOf(sSel).intValue());
 		session.setAttribute("formation", formation);
 
-		File fHtml = new File("../GIT/FORMATION/ProjectCV/WebContent/WEB-INF/page/pageListeEtudiant.html");
+		File fHtml = new File(REPERTOIRE+"WEB-INF/page/pageListeEtudiant.html");
 		PrintWriter out = response.getWriter();
 		BufferedReader buf = new BufferedReader(new FileReader(fHtml));
 		String line = buf.readLine();
 		while (line != null) {
+			if (line.contains("%%nomFormateur%%")) {
+				line = line.replace("%%nomFormateur%%", formation.getFormateur().getNom());
+			}
+			if (line.contains("%%mailFormateur%%")) {
+				line = line.replace("%%mailFormateur%%", formation.getFormateur().getMail());
+			}
+			if (line.contains("%%telFormateur%%")) {
+				line = line.replace("%%telFormateur%%", formation.getFormateur().getTel());
+			}
 			if (line.contains("%%name%%")) {
 				for (int i = 0; i < formation.getListeEtudiant().size(); i++) {
 					Etudiant etudiant = formation.getListeEtudiant().get(i);
